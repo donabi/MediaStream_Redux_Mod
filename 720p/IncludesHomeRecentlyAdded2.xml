@@ -1,5 +1,5 @@
 <includes>
-	<include name="HomeRecentlyAddedInfo">
+	<include name="HomeRecentlyAddedInfo2">
  		<control type="group">
 		 	<visible>!Window.IsVisible(Favourites)</visible>
 			<include>VisibleFadeEffect</include>
@@ -8,7 +8,7 @@
 			<control type="group">
 				<posx>275r</posx>
 				<posy>50</posy>
-				<visible>Container(9000).HasFocus(10) | [Container(9000).HasFocus(2) + !Skin.HasSetting(HomeMenuNoMoviesButton)]</visible>
+			 	<visible>Container(19000).HasFocus(10) | [Container(19000).HasFocus(2) + !Skin.HasSetting(HomeMenuNoMoviesButton)]</visible>  
 				<include>VisibleFadeEffect</include>
 			 	<animation effect="slide" time="0" start="0,0" end="-260,0" condition="[Library.HasContent(TVShows) + ![Skin.HasSetting(HomeMenuNoMoviesButton) | Skin.HasSetting(HomeMenuNoTVShowsButton)]]">Conditional</animation>  
 				<control type="image">
@@ -77,15 +77,15 @@
 					<bordertexture border="8">ThumbShadow.png</bordertexture>
 					<bordersize>8</bordersize>
 				</control>
-				<control type="list" id="8000">
+				<control type="list" id="8002">
 					<posx>0</posx>
 					<posy>200</posy>
 					<width>250</width>
 					<height>92</height>
-					<onleft>9000</onleft>
-					<onright>8001</onright>
-					<onup>8000</onup>
-					<ondown>8000</ondown>
+					<onleft>19000</onleft>
+					<onright>8003</onright>
+					<onup>8002</onup>
+					<ondown>8002</ondown>
 					<viewtype label="535">list</viewtype>
 					<pagecontrol>-</pagecontrol>
 					<scrolltime>0</scrolltime>
@@ -111,7 +111,7 @@
 							<width>250</width>
 							<height>23</height>
 							<texture>MenuItemFO.png</texture>
-							<visible>Control.HasFocus(8000)</visible>
+							<visible>Control.HasFocus(8002)</visible>
 							<include>VisibleFadeEffect</include>
 						</control>
 						<control type="label">
@@ -163,7 +163,7 @@
 			<control type="group">
 				<posx>275r</posx>
 				<posy>50</posy>
-				<visible>Container(9000).HasFocus(11) | Container(9000).HasFocus(2) + !Skin.HasSetting(HomeMenuNoTVShowsButton)</visible>
+				<visible>Container(19000).HasFocus(11) | Container(19000).HasFocus(2) + !Skin.HasSetting(HomeMenuNoTVShowsButton)</visible>
 				<include>VisibleFadeEffect</include>
 				<control type="image">
 					<description>background</description>
@@ -195,7 +195,7 @@
 					<height>120</height>
 					<aspectratio>keep</aspectratio>
 					<texture background="true">$INFO[Window.Property(LatestEpisode.1.Thumb)]</texture>
-					<visible>!Control.HasFocus(8001)</visible>
+					<visible>!Control.HasFocus(8003)</visible>
 					<include>VisibleFadeEffect</include>
 				</control>
 				<control type="image">
@@ -206,19 +206,19 @@
 					<height>120</height>
 					<aspectratio>keep</aspectratio>
 					<fadetime>200</fadetime>
-					<texture background="true">$INFO[Container(8001).ListItem.Thumb]</texture>
-					<visible>Control.HasFocus(8001)</visible>
+					<texture background="true">$INFO[Container(8003).ListItem.Thumb]</texture>
+					<visible>Control.HasFocus(8003)</visible>
 					<include>VisibleFadeEffect</include>
 				</control>
-				<control type="list" id="8001">
+				<control type="list" id="8003">
 					<posx>0</posx>
 					<posy>155</posy>
 					<width>250</width>
 					<height>136</height>
-					<onleft>8000</onleft>
-					<onright>8001</onright>
-					<onup>8001</onup>
-					<ondown>8001</ondown>
+					<onleft>8002</onleft>
+					<onright>8003</onright>
+					<onup>8003</onup>
+					<ondown>8003</ondown>
 					<viewtype label="535">list</viewtype>
 					<pagecontrol>-</pagecontrol>
 					<scrolltime>0</scrolltime>
@@ -257,7 +257,7 @@
 							<width>250</width>
 							<height>34</height>
 							<texture>MenuItemFO.png</texture>
-							<visible>Control.HasFocus(8001)</visible>
+							<visible>Control.HasFocus(8003)</visible>
 							<include>VisibleFadeEffect</include>
 						</control>
 						<control type="label">
