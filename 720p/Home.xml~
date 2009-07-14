@@ -965,7 +965,7 @@
 					<width>240</width>
 					<height>550</height>
 					<onleft>19000</onleft>
-					<onright>8002</onright>
+					<onright>8000</onright>
 					<onup>19010</onup>
 					<ondown>19010</ondown>
 					<itemgap>0</itemgap>
@@ -1241,7 +1241,7 @@
 					<width>240</width>
 					<height>550</height>
 					<onleft>19000</onleft>
-					<onright>8002</onright>
+					<onright>8000</onright>
 					<onup>19016</onup>
 					<ondown>19016</ondown>
 					<itemgap>0</itemgap>
@@ -1301,7 +1301,7 @@
 					<width>240</width>
 					<height>550</height>
 					<onleft>19000</onleft>
-					<onright>8002</onright>
+					<onright>8000</onright>
 					<onup>19017</onup>
 					<ondown>19017</ondown>
 					<itemgap>0</itemgap>
