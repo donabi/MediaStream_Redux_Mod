@@ -63,7 +63,7 @@
 				</control>
 				<control type="label">
 					<description>current temp Value</description>
-					<posx>190</posx>
+					<posx>180</posx>
 					<posy>175</posy>
 					<width>150</width>
 					<height>40</height>
@@ -76,7 +76,7 @@
 				</control>
 				<control type="label">
 					<description>current temp Value Units</description>
-					<posx>200</posx>
+					<posx>195</posx>
 					<posy>185</posy>
 					<width>100</width>
 					<height>40</height>
@@ -89,12 +89,25 @@
 				</control>
 				<control type="image">
 					<description>current weather icon</description>
-					<posx>230</posx>
+					<posx>235</posx>
 					<posy>135</posy>
 					<width>230</width>
 					<height>180</height>
 					<info>Window.Property(Current.ConditionIcon)</info>
 					<aspectratio>keep</aspectratio>
+					<visible>Skin.HasSetting(AnimatedWeatherIcons)</visible>
+				</control>
+				<control type="multiimage">
+					<description>current weather icon (animated)</description>
+					<posx>235</posx>
+					<posy>135</posy>
+					<width>230</width>
+					<height>180</height>
+					<imagepath>weather/$INFO[Window.Property(Current.FanartCode)]</imagepath>
+					<timeperimage>100</timeperimage>
+					<randomize>false</randomize>
+					<fadetime>0</fadetime>
+					<visible>!Skin.HasSetting(AnimatedWeatherIcons)</visible>
 				</control>
 				<control type="label">
 					<description>current condition label</description>
@@ -294,6 +307,19 @@
 						<width>80</width>
 						<info>Window.Property(Day0.OutlookIcon)</info>
 						<aspectratio align="right">keep</aspectratio>
+						<visible>Skin.HasSetting(AnimatedWeatherIcons)</visible>
+					</control>
+					<control type="multiimage">
+						<description>day icon (animated)</description>
+						<posx>370</posx>
+						<posy>40</posy>
+						<height>80</height>
+						<width>80</width>
+						<imagepath>weather/$INFO[Window.Property(Day0.FanartCode)]</imagepath>
+						<timeperimage>100</timeperimage>
+						<randomize>false</randomize>
+						<fadetime>0</fadetime>
+						<visible>!Skin.HasSetting(AnimatedWeatherIcons)</visible>
 					</control>
 					<control type="label">
 						<description>high label</description>
@@ -393,6 +419,19 @@
 						<width>80</width>
 						<info>Window.Property(Day1.OutlookIcon)</info>
 						<aspectratio align="right">keep</aspectratio>
+						<visible>Skin.HasSetting(AnimatedWeatherIcons)</visible>
+					</control>
+					<control type="multiimage">
+						<description>day icon (animated)</description>
+						<posx>370</posx>
+						<posy>40</posy>
+						<height>80</height>
+						<width>80</width>
+						<imagepath>weather/$INFO[Window.Property(Day1.FanartCode)]</imagepath>
+						<timeperimage>100</timeperimage>
+						<randomize>false</randomize>
+						<fadetime>0</fadetime>
+						<visible>!Skin.HasSetting(AnimatedWeatherIcons)</visible>
 					</control>
 					<control type="label">
 						<description>high label</description>
@@ -492,6 +531,19 @@
 						<width>80</width>
 						<info>Window.Property(Day2.OutlookIcon)</info>
 						<aspectratio align="right">keep</aspectratio>
+						<visible>Skin.HasSetting(AnimatedWeatherIcons)</visible>
+					</control>
+					<control type="multiimage">
+						<description>day icon (animated)</description>
+						<posx>370</posx>
+						<posy>40</posy>
+						<height>80</height>
+						<width>80</width>
+						<imagepath>weather/$INFO[Window.Property(Day2.FanartCode)]</imagepath>
+						<timeperimage>100</timeperimage>
+						<randomize>false</randomize>
+						<fadetime>0</fadetime>
+						<visible>!Skin.HasSetting(AnimatedWeatherIcons)</visible>
 					</control>
 					<control type="label">
 						<description>high label</description>
@@ -591,6 +643,19 @@
 						<width>80</width>
 						<info>Window.Property(Day3.OutlookIcon)</info>
 						<aspectratio align="right">keep</aspectratio>
+						<visible>Skin.HasSetting(AnimatedWeatherIcons)</visible>
+					</control>
+					<control type="multiimage">
+						<description>day icon (animated)</description>
+						<posx>370</posx>
+						<posy>40</posy>
+						<height>80</height>
+						<width>80</width>
+						<imagepath>weather/$INFO[Window.Property(Day3.FanartCode)]</imagepath>
+						<timeperimage>100</timeperimage>
+						<randomize>false</randomize>
+						<fadetime>0</fadetime>
+						<visible>!Skin.HasSetting(AnimatedWeatherIcons)</visible>
 					</control>
 					<control type="label">
 						<description>high label</description>
