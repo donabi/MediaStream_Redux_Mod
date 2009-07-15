@@ -296,7 +296,7 @@
 					<height>550</height>
 					<onleft>9011</onleft>
 					<onright>9011</onright>
-					<onup>8000</onup>
+					<onup>8005</onup>
 					<ondown>9000</ondown>
 					<itemgap>0</itemgap>
 					<orientation>horizontal</orientation>
@@ -956,7 +956,7 @@
 					<width>240</width>
 					<height>550</height>
 					<onleft>19000</onleft>
-					<onright>19001</onright>
+					<onright>8006</onright>
 					<onup>19011</onup>
 					<ondown>19011</ondown>
 					<itemgap>0</itemgap>
