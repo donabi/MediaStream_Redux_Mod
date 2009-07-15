@@ -16,6 +16,22 @@
 			<texture>flagging/video/hddvd.png</texture>
 			<visible>substring(ListItem.filename,hddvd)</visible>
 		</control>
+        <control type="image">
+			<description>DVD Image</description>
+			<width>90</width>
+			<height>33</height>
+			<aspectratio>keep</aspectratio>
+			<texture>flagging/video/dvd.png</texture>
+			<visible>substring(ListItem.filename,sddvd)</visible>
+		</control>
+		<control type="image">
+			<description>HDTV Image</description>
+			<width>90</width>
+			<height>33</height>
+			<aspectratio>keep</aspectratio>
+			<texture>flagging/video/hdtv.png</texture>
+			<visible>substring(ListItem.filename,hdtv)</visible>
+		</control>
 		<control type="image">
 			<description>Video rez Image</description>
 			<width>90</width>
@@ -70,6 +86,14 @@
 			<aspectratio>keep</aspectratio>
 			<texture>flagging/video/mpeg1video.png</texture>
 			<visible>substring(ListItem.VideoCodec,mpeg1video)</visible>
+		</control>
+		<control type="image">
+			<description>mpeg2video Codec Image</description>
+			<width>90</width>
+			<height>33</height>
+			<aspectratio>keep</aspectratio>
+			<texture>flagging/video/mpeg2video.png</texture>
+			<visible>substring(ListItem.VideoCodec,mpeg2video)</visible>
 		</control>
 	</include>
 	<include name="AudioCodecFlaggingConditions">
