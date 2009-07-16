@@ -404,6 +404,19 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
 					<control type="radiobutton" id="508">
+						<description>Hide Favorites Button</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>$LOCALIZE[31111] - $LOCALIZE[1036]</label>
+						<onclick>Skin.ToggleSetting(HomeMenuNoFavoritesButton)</onclick>
+						<selected>Skin.HasSetting(HomeMenuNoFavoritesButton)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+					</control>
+					<control type="radiobutton" id="509">
 						<description>Hide Weather Button</description>
 						<width>750</width>
 						<height>40</height>
@@ -416,7 +429,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="radiobutton" id="509">
+					<control type="radiobutton" id="510">
 						<description>Hide Shutdown Button</description>
 						<width>750</width>
 						<height>40</height>
@@ -429,7 +442,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="radiobutton" id="510">
+					<control type="radiobutton" id="511">
 						<description>Hide Disc Drive Button</description>
 						<width>750</width>
 						<height>40</height>
@@ -442,7 +455,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="radiobutton" id="511">
+					<control type="radiobutton" id="512">
 						<description>Hide Disc Drive Button If No Media</description>
 						<width>750</width>
 						<height>40</height>
@@ -838,19 +851,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
 					<control type="radiobutton" id="203">
-						<description>Hide Favorites</description>
-						<width>750</width>
-						<height>40</height>
-						<font>font13</font>
-						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<label>$LOCALIZE[31111] Favorites</label>
-						<onclick>Skin.ToggleSetting(HomeMenuNoFavoritesButton)</onclick>
-						<selected>Skin.HasSetting(HomeMenuNoFavoritesButton)</selected>
-						<texturefocus>MenuItemFO.png</texturefocus>
-						<texturenofocus>MenuItemNF.png</texturenofocus>
-					</control>
-					<control type="radiobutton" id="204">
 						<description>enable video info</description>
 						<width>750</width>
 						<height>40</height>
@@ -863,7 +863,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="radiobutton" id="205">
+					<control type="radiobutton" id="204">
 						<description>enable Video Preview info</description>
 						<width>750</width>
 						<height>40</height>
@@ -877,7 +877,7 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<enable>!Skin.HasSetting(homepageVideoinfo)</enable>
 					</control>
-					<control type="radiobutton" id="206">
+					<control type="radiobutton" id="205">
 						<description>enable music info</description>
 						<width>750</width>
 						<height>40</height>
@@ -890,7 +890,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="radiobutton" id="207">
+					<control type="radiobutton" id="206">
 						<description>enable weather info</description>
 						<width>750</width>
 						<height>40</height>
@@ -903,21 +903,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="radiobutton" id="208">
-						<description>Use animated icons for Weather</description>
-						<width>750</width>
-						<height>40</height>
-						<font>font13</font>
-						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<label> - $LOCALIZE[31135]</label>
-						<onclick>Skin.ToggleSetting(AnimatedWeatherIcons)</onclick>
-						<selected>!Skin.HasSetting(AnimatedWeatherIcons)</selected>
-						<texturefocus>MenuItemFO.png</texturefocus>
-						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<enable>!Skin.HasSetting(homepageWeatherinfo)</enable>
-					</control>
-					<control type="radiobutton" id="209">
+					<control type="radiobutton" id="207">
 						<description>Show Recently added info</description>
 						<width>750</width>
 						<height>40</height>
@@ -1098,35 +1084,42 @@
 								<thumb>$INFO[Skin.String(Home_Custom_Back_Programs_Folder)]</thumb>
 							</item>
 							<item id="5">
+								<label>1036</label>
+								<onclick>-</onclick>
+								<icon>special://skin/backgrounds/favorites.jpg</icon>
+								<thumb>$INFO[Skin.String(Home_Custom_Back_Favorites_Folder)]</thumb>
+							</item>
+							<item id="6">
 								<label>8</label>
 								<onclick>-</onclick>
 								<icon>special://skin/backgrounds/weather.jpg</icon>
 								<thumb>$INFO[Skin.String(Home_Custom_Back_Weather_Folder)]</thumb>
 							</item>
-							<item id="6">
+							<item id="7">
 								<label>247</label>
 								<onclick>-</onclick>
 								<icon>special://skin/backgrounds/scripts.jpg</icon>
 								<thumb>$INFO[Skin.String(Home_Custom_Back_Scripts_Folder)]</thumb>
 							</item>
-							<item id="7">
+							<item id="8">
 								<label>5</label>
 								<onclick>-</onclick>
 								<icon>special://skin/backgrounds/settings.jpg</icon>
 								<thumb>$INFO[Skin.String(Home_Custom_Back_Settings_Folder)]</thumb>
 							</item>
-							<item id="8">
+							<item id="9">
 								<label>31011</label>
 								<onclick>-</onclick>
 								<icon>special://skin/backgrounds/playdisc.jpg</icon>
 								<thumb>$INFO[Skin.String(Home_Custom_Back_PlayDisc_Folder)]</thumb>
 							</item>
-							<item id="9">
+							<item id="10">
 								<label>31008</label>
 								<onclick>-</onclick>
 								<icon>special://skin/backgrounds/shutdown.jpg</icon>
 								<thumb>$INFO[Skin.String(Home_Custom_Back_Shutdown_Folder)]</thumb>
 							</item>
+
 						</content>
 					</control>
 					<control type="image">

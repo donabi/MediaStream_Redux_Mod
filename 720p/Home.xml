@@ -2,19 +2,19 @@
 	<defaultcontrol always="true">8999</defaultcontrol>
 	<allowoverlay>no</allowoverlay>	
 	<controls>
-	<!-- Backgrounds Horizontal -->	
+	<!-- Backgrounds Horizontal  -->
 		<control type="multiimage">
 			<posx>0</posx>
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<imagepath background="true">$INFO[Container(9000).ListItem.Icon]</imagepath>
+			<imagepath background="true" >$INFO[Container(9000).ListItem.Icon]</imagepath>
 			<timeperimage>8000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>1000</fadetime>
-			<visible>Skin.HasSetting(HorizontalMenu)</visible>
-		</control>
-	<!-- Backgrounds Vertical -->	
+		 	<visible>Skin.HasSetting(HorizontalMenu)</visible>  
+		</control>  
+	<!-- Backgrounds Vertical   -->
 		<control type="multiimage">
 			<posx>0</posx>
 			<posy>0</posy>
@@ -24,9 +24,8 @@
 			<timeperimage>8000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>1000</fadetime>
-			<visible>!Skin.HasSetting(HorizontalMenu)</visible>
-		</control>
-	
+		 	<visible>!Skin.HasSetting(HorizontalMenu)</visible>   
+		</control>  
 	<!-- weather Info -->
 		<control type="group">
 			<posx>510r</posx>
@@ -163,52 +162,6 @@
 			<animation effect="slide" start="0,0" end="0,-60" time="300" tween="quadratic" easing="out" condition="ControlGroup(19001).HasFocus">conditional</animation>  
 			<include condition="!Skin.HasSetting(BigVideoInfo)">SmallVideoInfo</include>
 			<include condition="Skin.HasSetting(BigVideoInfo)">BigVideoInfo</include>
-		</control>
-		<control type="group">
-			<posx>75</posx>
-			<posy>40</posy>
-			<visible>!Control.HasFocus(9000) + Control.HasFocus(10)</visible>
-			<animation effect="fade" delay="0" start="100" end="0" time="100">Hidden</animation>
-			<animation effect="fade" reversible="false" start="0" end="100" time="500">Visible</animation>
-			<control type="label">
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>870</width>
-				<height>20</height>
-				<font>font10caps</font>
-				<textcolor>white</textcolor>
-				<align>left</align>
-				<aligny>bottom</aligny>
-				<label>$LOCALIZE[31009]</label>
-			</control>
-			<control type="label">
-				<posx>0</posx>
-				<posy>15</posy>
-				<width>380</width>
-				<height>20</height>
-				<font>font13caps_title</font>
-				<textcolor>white</textcolor>
-				<align>left</align>
-				<aligny>top</aligny>
-				<label>$LOCALIZE[1036]</label>
-			</control>
-		</control>
-		<control type="button" id="10">
-			<description>Favourites button</description>
-			<posx>20</posx>
-			<posy>40</posy>
-			<width>45</width>
-			<height>45</height>
-			<label>-</label>
-			<font>-</font>
-			<onclick>ActivateWindow(Favourites)</onclick>
-			<texturenofocus>MediaSubSetNF.png</texturenofocus>
-			<texturefocus>MediaSubSet.png</texturefocus>
-			<onleft>10</onleft>
-			<onright>10</onright>
-			<onup>9000</onup>
-			<ondown>9000</ondown>
-			<visible>!Skin.HasSetting(HomeMenuNoFavoritesButton)</visible>
 		</control>
 	<!-- Horizontal Menu -->			
 		<control type="group">
@@ -843,6 +796,14 @@
 						<thumb>$INFO[Skin.String(Home_Custom_Back_Programs_Folder)]</thumb>
 						<visible>!Skin.HasSetting(HomeMenuNoProgramsButton)</visible>
 					</item>
+					<item id="12">
+						<label>1036</label>
+						<label2>31002</label2>
+						<onclick>ActivateWindow(Favourites)</onclick>
+						<icon>special://skin/backgrounds/favorites.jpg</icon>
+						<thumb>$INFO[Skin.String(Home_Custom_Back_Favorites_Folder)]</thumb>
+						<visible>!Skin.HasSetting(HomeMenuNoFavoritesButton)</visible>
+					</item>
 					<item id="8">
 						<label>247</label>
 						<label2>31003</label2>
@@ -1433,6 +1394,14 @@
 						<thumb>$INFO[Skin.String(Home_Custom_Back_Programs_Folder)]</thumb>
 						<visible>!Skin.HasSetting(HomeMenuNoProgramsButton)</visible>
 					</item>
+					<item id="12">
+						<label>1036</label>
+						<label2>31002</label2>
+						<onclick>ActivateWindow(Favourites)</onclick>
+						<icon>special://skin/backgrounds/favorites.jpg</icon>
+						<thumb>$INFO[Skin.String(Home_Custom_Back_Favorites_Folder)]</thumb>
+						<visible>!Skin.HasSetting(HomeMenuNoFavoritesButton)</visible>
+					</item>
 					<item id="8">
 						<label>247</label>
 						<label2>31003</label2>
@@ -1502,52 +1471,6 @@
 				<height>720</height>
 				<texture diffuse="HomeMenuDiffuse.png">HomeBlade.png</texture>
 			</control>
-			<control type="group">
-				<posx>75</posx>
-				<posy>23</posy>
-				<visible>!Control.HasFocus(19000) + Control.HasFocus(111)</visible>
-				<animation effect="fade" delay="0" start="100" end="0" time="100">Hidden</animation>
-				<animation effect="fade" reversible="false" start="0" end="100" time="500">Visible</animation>
-				<control type="label">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>870</width>
-					<height>20</height>
-					<font>font10caps</font>
-					<textcolor>white</textcolor>
-					<align>left</align>
-					<aligny>bottom</aligny>
-					<label>$LOCALIZE[31009]</label>
-				</control>
-				<control type="label">
-					<posx>0</posx>
-					<posy>15</posy>
-					<width>380</width>
-					<height>20</height>
-					<font>font13caps_title</font>
-					<textcolor>white</textcolor>
-					<align>left</align>
-					<aligny>top</aligny>
-					<label>$LOCALIZE[1036]</label>		
-				</control>
-			</control>
-		 	<control type="button" id="111">
-				<description>Favourites button</description>
-				<visible>!Skin.HasSetting(HomeMenuNoFavoritesButton)</visible>
-				<posx>20</posx>
-				<posy>20</posy>
-				<width>45</width>
-				<height>45</height>
-				<label>-</label>
-				<font>-</font>
-				<onclick>ActivateWindow(Favourites)</onclick>
-				<texturenofocus>MediaSubSetNF.png</texturenofocus>
-				<texturefocus>MediaSubSet.png</texturefocus>
-				<onleft>111</onleft>
-				<onright>19000</onright>
-				<onup>19000</onup>
-				<ondown>19000</ondown>
-			</control>   
 		</control>
 	 	<control type="image">
 			<posx>1289</posx>
@@ -1631,3 +1554,4 @@
 		<include>Clock</include>
 	</controls>	
 </window>
+
