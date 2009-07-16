@@ -492,7 +492,7 @@
 				<posx>330</posx>
 				<posy>40</posy>
 				<width>850</width>
-				<height>180</height>
+				<height>160</height>
 				<font>font12</font>
 				<align>justify</align>
 				<textcolor>white</textcolor>
@@ -501,7 +501,7 @@
 			</control>
 			<control type="label">
 				<posx>330</posx>
-				<posy>230</posy>
+				<posy>215</posy>
 				<width>400</width>
 				<height>30</height>
 				<font>font24caps_title</font>
@@ -514,7 +514,7 @@
 			</control>
 			<control type="fadelabel">
 				<posx>330</posx>
-				<posy>260</posy>
+				<posy>245</posy>
 				<width>400</width>
 				<height>30</height>
 				<font>font13</font>
@@ -529,7 +529,7 @@
 			</control>
 			<control type="fadelabel">
 				<posx>330</posx>
-				<posy>285</posy>
+				<posy>270</posy>
 				<width>400</width>
 				<height>30</height>
 				<font>font13</font>
@@ -544,7 +544,7 @@
 			</control>
 			<control type="fadelabel">
 				<posx>330</posx>
-				<posy>310</posy>
+				<posy>295</posy>
 				<width>400</width>
 				<height>30</height>
 				<font>font13</font>
@@ -559,7 +559,7 @@
 			</control>
 			<control type="fadelabel">
 				<posx>330</posx>
-				<posy>335</posy>
+				<posy>320</posy>
 				<width>400</width>
 				<height>30</height>
 				<font>font13</font>
@@ -576,7 +576,7 @@
 				<description>Media Codec Flagging Images</description>
 				<posx>320</posx>
 				<posy>370</posy>
-				<width>410</width>
+				<width>500</width>
 				<align>left</align>
 				<itemgap>0</itemgap>
 				<orientation>horizontal</orientation>
@@ -586,7 +586,7 @@
 			</control>
 			<control type="label">
 				<posx>780</posx>
-				<posy>230</posy>
+				<posy>215</posy>
 				<width>400</width>
 				<height>30</height>
 				<font>font24caps_title</font>
@@ -599,7 +599,7 @@
 			</control>
 			<control type="label">
 				<posx>780</posx>
-				<posy>260</posy>
+				<posy>245</posy>
 				<width>400</width>
 				<height>30</height>
 				<font>font13</font>
@@ -612,7 +612,7 @@
 			</control>
 			<control type="label">
 				<posx>780</posx>
-				<posy>310</posy>
+				<posy>295</posy>
 				<width>400</width>
 				<height>30</height>
 				<font>font24caps_title</font>
@@ -625,7 +625,7 @@
 			</control>
 			<control type="label">
 				<posx>780</posx>
-				<posy>340</posy>
+				<posy>325</posy>
 				<width>400</width>
 				<height>30</height>
 				<font>font13</font>
@@ -635,7 +635,6 @@
 				<align>left</align>
 				<aligny>top</aligny>
 				<label>$INFO[ListItem.Writer]</label>
-				<wrapmultiline>true</wrapmultiline>
 			</control>
 		</control>
 	</include>   

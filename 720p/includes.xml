@@ -960,7 +960,7 @@
 			<control type="label">
 				<description>time label</description>
 				<posx>38</posx>
-				<posy>5</posy>
+				<posy>4</posy>
 				<width>400</width>
 				<height>20</height>
 				<align>left</align>
@@ -994,3 +994,4 @@
 		<animation effect="slide" time="400" start="0,0" end="700,0" acceleration="-1.3" delay="0" condition="!Skin.HasSetting(Animate_Skin)">WindowClose</animation>
 	</include>
 </includes>
+
