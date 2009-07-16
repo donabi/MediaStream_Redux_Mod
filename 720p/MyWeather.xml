@@ -87,16 +87,6 @@
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>
-				<control type="image">
-					<description>current weather icon</description>
-					<posx>235</posx>
-					<posy>135</posy>
-					<width>230</width>
-					<height>180</height>
-					<info>Window.Property(Current.ConditionIcon)</info>
-					<aspectratio>keep</aspectratio>
-					<visible>Skin.HasSetting(AnimatedWeatherIcons)</visible>
-				</control>
 				<control type="multiimage">
 					<description>current weather icon (animated)</description>
 					<posx>235</posx>
@@ -107,7 +97,6 @@
 					<timeperimage>100</timeperimage>
 					<randomize>false</randomize>
 					<fadetime>0</fadetime>
-					<visible>!Skin.HasSetting(AnimatedWeatherIcons)</visible>
 				</control>
 				<control type="label">
 					<description>current condition label</description>
@@ -299,16 +288,6 @@
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
 					</control>
-					<control type="image">
-						<description>day icon</description>
-						<posx>370</posx>
-						<posy>40</posy>
-						<height>80</height>
-						<width>80</width>
-						<info>Window.Property(Day0.OutlookIcon)</info>
-						<aspectratio align="right">keep</aspectratio>
-						<visible>Skin.HasSetting(AnimatedWeatherIcons)</visible>
-					</control>
 					<control type="multiimage">
 						<description>day icon (animated)</description>
 						<posx>370</posx>
@@ -319,7 +298,6 @@
 						<timeperimage>100</timeperimage>
 						<randomize>false</randomize>
 						<fadetime>0</fadetime>
-						<visible>!Skin.HasSetting(AnimatedWeatherIcons)</visible>
 					</control>
 					<control type="label">
 						<description>high label</description>
@@ -411,16 +389,6 @@
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
 					</control>
-					<control type="image">
-						<description>day icon</description>
-						<posx>370</posx>
-						<posy>40</posy>
-						<height>80</height>
-						<width>80</width>
-						<info>Window.Property(Day1.OutlookIcon)</info>
-						<aspectratio align="right">keep</aspectratio>
-						<visible>Skin.HasSetting(AnimatedWeatherIcons)</visible>
-					</control>
 					<control type="multiimage">
 						<description>day icon (animated)</description>
 						<posx>370</posx>
@@ -431,7 +399,6 @@
 						<timeperimage>100</timeperimage>
 						<randomize>false</randomize>
 						<fadetime>0</fadetime>
-						<visible>!Skin.HasSetting(AnimatedWeatherIcons)</visible>
 					</control>
 					<control type="label">
 						<description>high label</description>
@@ -523,16 +490,6 @@
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
 					</control>
-					<control type="image">
-						<description>day icon</description>
-						<posx>370</posx>
-						<posy>40</posy>
-						<height>80</height>
-						<width>80</width>
-						<info>Window.Property(Day2.OutlookIcon)</info>
-						<aspectratio align="right">keep</aspectratio>
-						<visible>Skin.HasSetting(AnimatedWeatherIcons)</visible>
-					</control>
 					<control type="multiimage">
 						<description>day icon (animated)</description>
 						<posx>370</posx>
@@ -543,7 +500,6 @@
 						<timeperimage>100</timeperimage>
 						<randomize>false</randomize>
 						<fadetime>0</fadetime>
-						<visible>!Skin.HasSetting(AnimatedWeatherIcons)</visible>
 					</control>
 					<control type="label">
 						<description>high label</description>
@@ -635,16 +591,6 @@
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
 					</control>
-					<control type="image">
-						<description>day icon</description>
-						<posx>370</posx>
-						<posy>40</posy>
-						<height>80</height>
-						<width>80</width>
-						<info>Window.Property(Day3.OutlookIcon)</info>
-						<aspectratio align="right">keep</aspectratio>
-						<visible>Skin.HasSetting(AnimatedWeatherIcons)</visible>
-					</control>
 					<control type="multiimage">
 						<description>day icon (animated)</description>
 						<posx>370</posx>
@@ -655,7 +601,6 @@
 						<timeperimage>100</timeperimage>
 						<randomize>false</randomize>
 						<fadetime>0</fadetime>
-						<visible>!Skin.HasSetting(AnimatedWeatherIcons)</visible>
 					</control>
 					<control type="label">
 						<description>high label</description>
@@ -926,3 +871,4 @@
 		<include>Clock</include>
 	</controls>
 </window>
+

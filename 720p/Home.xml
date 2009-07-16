@@ -45,16 +45,6 @@
 				<colordiffuse>DDFFFFFF</colordiffuse>
 				<texture border="20">OverlayDialogBackground.png</texture>
 			</control>
-		 	<control type="image">
-				<description>Weather image</description>
-				<posx>20</posx>
-				<posy>15</posy>
-				<width>90</width>
-				<height>85</height>
-				<aspectratio>keep</aspectratio>
-				<texture>$INFO[Weather.Conditions]</texture>
-				<visible>Skin.HasSetting(AnimatedWeatherIcons)</visible>
-			</control>  
 			<control type="multiimage">
 				<description>Weather image</description>
 				<posx>10</posx>
@@ -65,8 +55,8 @@
 				<timeperimage>100</timeperimage>
 				<randomize>false</randomize>
 				<fadetime>0</fadetime>
-				<visible>!Skin.HasSetting(AnimatedWeatherIcons)</visible>
 			</control>
+
 			<control type="fadelabel">
 				<description>location label</description>
 				<posx>130</posx>
