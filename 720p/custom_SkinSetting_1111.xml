@@ -1051,14 +1051,14 @@
 								<icon>special://skin/backgrounds/videos.jpg</icon>
 								<thumb>$INFO[Skin.String(Home_Custom_Back_Video_Folder)]</thumb>
 							</item>
-							<item id="10">
+							<item id="11">
 								<label>20342</label>
 								<onclick>-</onclick>
 								<icon>special://skin/backgrounds/movies.jpg</icon>
 								<thumb>$INFO[Skin.String(Home_Custom_Back_Movies_Folder)]</thumb>
 								<visible>Skin.HasSetting(HomeMenuNoMoviesButton) + Library.HasContent(Movies)</visible>
 							</item>
-							<item id="11">
+							<item id="12">
 								<label>20343</label>
 								<onclick>-</onclick>
 								<icon>special://skin/backgrounds/tv.jpg</icon>
@@ -1387,6 +1387,66 @@
 								<align>center</align>
 								<texturenofocus border="5">button-nofocus.png</texturenofocus>
 								<texturefocus border="5">button-focus.png</texturefocus>
+								<onclick>Skin.SetImage(Home_Custom_Back_Favorites_Folder)</onclick>
+								<onleft>302</onleft>
+								<onright>301</onright>
+								<onup>304</onup>
+								<ondown>304</ondown>
+							</control>
+							<control type="button" id="301">
+								<description>Multi Image button</description>
+								<posx>190</posx>
+								<posy>0</posy>
+								<width>180</width>
+								<height>40</height>
+								<label>31114</label>
+								<font>font12caps_title</font>
+								<textcolor>grey2</textcolor>
+								<focusedcolor>white</focusedcolor>
+								<align>center</align>
+								<texturenofocus border="5">button-nofocus.png</texturenofocus>
+								<texturefocus border="5">button-focus.png</texturefocus>
+								<onclick>Skin.SetPath(Home_Custom_Back_Favorites_Folder)</onclick>
+								<onleft>300</onleft>
+								<onright>302</onright>
+								<onup>304</onup>
+								<ondown>304</ondown>
+							</control>
+							<control type="button" id="302">
+								<description>Default Image button</description>
+								<posx>375</posx>
+								<posy>0</posy>
+								<width>180</width>
+								<height>40</height>
+								<label>571</label>
+								<font>font12caps_title</font>
+								<textcolor>grey2</textcolor>
+								<focusedcolor>white</focusedcolor>
+								<align>center</align>
+								<texturenofocus border="5">button-nofocus.png</texturenofocus>
+								<texturefocus border="5">button-focus.png</texturefocus>
+								<onclick>Skin.Reset(Home_Custom_Back_Favorites_Folder)</onclick>
+								<onleft>301</onleft>
+								<onright>300</onright>
+								<onup>304</onup>
+								<ondown>304</ondown>
+							</control>
+						</control>
+						<control type="group">
+							<visible>Container(9003).HasFocus(6)</visible>
+							<control type="button" id="300">
+								<description>Single Image button</description>
+								<posx>5</posx>
+								<posy>0</posy>
+								<width>180</width>
+								<height>40</height>
+								<label>31113</label>
+								<font>font12caps_title</font>
+								<textcolor>grey2</textcolor>
+								<focusedcolor>white</focusedcolor>
+								<align>center</align>
+								<texturenofocus border="5">button-nofocus.png</texturenofocus>
+								<texturefocus border="5">button-focus.png</texturefocus>
 								<onclick>Skin.SetImage(Home_Custom_Back_Weather_Folder)</onclick>
 								<onleft>302</onleft>
 								<onright>301</onright>
@@ -1433,7 +1493,7 @@
 							</control>
 						</control>
 						<control type="group">
-							<visible>Container(9003).HasFocus(6)</visible>
+							<visible>Container(9003).HasFocus(7)</visible>
 							<control type="button" id="300">
 								<description>Single Image button</description>
 								<posx>5</posx>
@@ -1493,7 +1553,7 @@
 							</control>
 						</control>
 						<control type="group">
-							<visible>Container(9003).HasFocus(7)</visible>
+							<visible>Container(9003).HasFocus(8)</visible>
 							<control type="button" id="300">
 								<description>Single Image button</description>
 								<posx>5</posx>
@@ -1553,7 +1613,7 @@
 							</control>
 						</control>
 						<control type="group">
-							<visible>Container(9003).HasFocus(8)</visible>
+							<visible>Container(9003).HasFocus(9)</visible>
 							<control type="button" id="300">
 								<description>Single Image button</description>
 								<posx>5</posx>
@@ -1613,7 +1673,7 @@
 							</control>
 						</control>
 						<control type="group">
-							<visible>Container(9003).HasFocus(9)</visible>
+							<visible>Container(9003).HasFocus(10)</visible>
 							<control type="button" id="300">
 								<description>Single Image button</description>
 								<posx>5</posx>
@@ -1673,7 +1733,7 @@
 							</control>
 						</control>
 						<control type="group">
-							<visible>Container(9003).HasFocus(10)</visible>
+							<visible>Container(9003).HasFocus(11)</visible>
 							<control type="button" id="300">
 								<description>Single Image button</description>
 								<posx>5</posx>
@@ -1733,7 +1793,7 @@
 							</control>
 						</control>
 						<control type="group">
-							<visible>Container(9003).HasFocus(11)</visible>
+							<visible>Container(9003).HasFocus(12)</visible>
 							<control type="button" id="300">
 								<description>Single Image button</description>
 								<posx>5</posx>
