@@ -146,6 +146,14 @@
 			<visible>substring(ListItem.AudioCodec,wmapro)</visible>
 		</control>
 		<control type="image">
+			<description>FLAC Codec Image</description>
+			<width>90</width>
+			<height>33</height>
+			<aspectratio>keep</aspectratio>
+			<texture>flagging/audio/flac.png</texture>
+			<visible>substring(ListItem.AudioCodec,flac)</visible>
+		</control>
+		<control type="image">
 			<description>Audio Channels Image</description>
 			<width>45</width>
 			<height>33</height>
@@ -160,6 +168,48 @@
 			<height>33</height>
 			<aspectratio>keep</aspectratio>
 			<texture>$INFO[ListItem.VideoAspect,flagging/aspectratio/,.png]</texture>
+		</control>
+	</include>
+	<include name="MPAAFlaggingConditions">
+		<control type="image">
+			<description>MPAA R Image</description>
+			<width>90</width>
+			<height>33</height>
+			<aspectratio>keep</aspectratio>	
+			<texture>r.png</texture>
+			<visible>substring(ListItem.mpaa,R) + !substring(ListItem.mpaa,ated)</visible>
+		</control>
+		<control type="image">
+			<description>MPAA PG-13 Image</description>
+			<width>90</width>
+			<height>33</height>
+			<aspectratio>keep</aspectratio>
+			<texture>pg-13.png</texture>
+			<visible>substring(ListItem.mpaa,PG-13)</visible>
+		</control>
+		<control type="image">
+			<description>MPAA PG Image</description>
+			<width>90</width>
+			<height>33</height>
+			<aspectratio>keep</aspectratio>
+			<texture>pg.png</texture>
+			<visible>substring(ListItem.mpaa,PG) + !substring(ListItem.mpaa,PG-13) + !substring(ListItem.mpaa,G)</visible>
+		</control>
+		<control type="image">
+			<description>MPAA G Image</description>
+			<width>90</width>
+			<height>33</height>
+			<aspectratio>keep</aspectratio>
+			<texture>g.png</texture>
+			<visible>substring(ListItem.mpaa,G) + !substring(ListItem.mpaa,PG)</visible>
+		</control>
+		<control type="image">
+			<description>MPAA Not Rated Image</description>
+			<width>90</width>
+			<height>33</height>
+			<aspectratio>keep</aspectratio>
+			<texture>nr.png</texture>
+			<visible>substring(ListItem.mpaa,Not)</visible>
 		</control>
 	</include>
 </includes>

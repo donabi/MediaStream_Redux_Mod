@@ -568,7 +568,7 @@
 				<scroll>true</scroll>
 				<align>left</align>
 				<aligny>center</aligny>
-				<label>$LOCALIZE[563] :$INFO[ListItem.RatingAndVotes]</label>
+				<label>$LOCALIZE[563]: $INFO[ListItem.RatingAndVotes]</label>
 				<scrollout>false</scrollout>
 				<pauseatend>2000</pauseatend>
 			</control>
@@ -576,10 +576,11 @@
 				<description>Media Codec Flagging Images</description>
 				<posx>320</posx>
 				<posy>370</posy>
-				<width>500</width>
+				<width>560</width>
 				<align>left</align>
 				<itemgap>0</itemgap>
 				<orientation>horizontal</orientation>
+			<!--	<include>MPAAFlaggingConditions</include>  -->
 				<include>VideoCodecFlaggingConditions</include>
 				<include>AudioCodecFlaggingConditions</include>
 				<include>AspectCodecFlaggingConditions</include>
@@ -1088,6 +1089,7 @@
 					<align>justify</align>
 					<textcolor>white</textcolor>
 					<label>$INFO[ListItem.Plot]</label>
+					<autoscroll time="2000" delay="3000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
 				</control>
 			</control>
 			<control type="group">
@@ -1366,6 +1368,7 @@
 					<align>justify</align>
 					<textcolor>white</textcolor>
 					<label>$INFO[ListItem.Plot]</label>
+					<autoscroll time="2000" delay="3000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
 				</control>
 			</control>
 			<control type="group">
@@ -1428,6 +1431,7 @@
 					<align>justify</align>
 					<textcolor>white</textcolor>
 					<label>$INFO[ListItem.Plot]</label>
+					<autoscroll time="2000" delay="3000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
 				</control>
 			</control>
 		</control>
@@ -1754,6 +1758,7 @@
 						<align>justify</align>
 						<textcolor>white</textcolor>
 						<label>$INFO[ListItem.Plot]</label>
+						<autoscroll time="2000" delay="3000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
 					</control>
 				</control>
 				<control type="group">
@@ -1848,6 +1853,7 @@
 						<align>justify</align>
 						<textcolor>white</textcolor>
 						<label>$INFO[ListItem.Plot]</label>
+						<autoscroll time="2000" delay="3000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
 					</control>
 				</control>
 				<control type="group">
@@ -1918,6 +1924,7 @@
 						<align>justify</align>
 						<textcolor>white</textcolor>
 						<label>$INFO[ListItem.Plot]</label>
+						<autoscroll time="2000" delay="3000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
 					</control>
 				</control>
 			</control>
@@ -2060,6 +2067,7 @@
 						<align>justify</align>
 						<textcolor>white</textcolor>
 						<label>$INFO[ListItem.Plot]</label>
+						<autoscroll time="2000" delay="3000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
 					</control>
 				</control>
 				<control type="group">
@@ -2325,6 +2333,7 @@
 						<align>justify</align>
 						<textcolor>white</textcolor>
 						<label>$INFO[ListItem.Plot]</label>
+						<autoscroll time="2000" delay="3000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
 					</control>
 				</control>
 			</control>

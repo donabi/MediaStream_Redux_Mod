@@ -171,7 +171,7 @@
 		</control>
 		<control type="group">
 			<posx>135</posx>
-			<posy>490</posy>
+			<posy>510</posy>
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
@@ -201,17 +201,29 @@
 				<enable>VideoPlayer.Content(Movies) | VideoPlayer.Content(Episodes) | VideoPlayer.Content(MusicVideos) | VideoPlayer.Content(LiveTV)</enable>
 			</control>
 		</control>
+		<control type="label">
+			<posx>370</posx>
+			<posy>640</posy>
+			<width>360</width>
+			<height>25</height>
+			<label>$LOCALIZE[31053] : $INFO[Player.FinishTime]</label>
+			<align>right</align>
+			<aligny>center</aligny>
+			<font>font12caps_title</font>
+			<textcolor>grey2</textcolor>
+			<shadowcolor>black</shadowcolor>
+		</control>
 		<control type="progress">
 			<description>Progressbar</description>
 			<posx>15</posx>
-			<posy>645</posy>
+			<posy>665</posy>
 			<width>360</width>
 			<height>14</height>
 			<info>Player.Progress</info>
 		</control>
 		<control type="label">
 			<posx>10</posx>
-			<posy>660</posy>
+			<posy>680</posy>
 			<width>375</width>
 			<height>25</height>
 			<label>$INFO[Player.Time]</label>
@@ -222,35 +234,11 @@
 			<shadowcolor>black</shadowcolor>
 		</control>
 		<control type="label">
-			<posx>10</posx>
-			<posy>690</posy>
-			<width>375</width>
-			<height>25</height>
-			<label>$INFO[System.Time]</label>
-			<align>left</align>
-			<aligny>center</aligny>
-			<font>font24caps_title</font>
-			<textcolor>grey2</textcolor>
-			<shadowcolor>black</shadowcolor>
-		</control>
-		<control type="label">
 			<posx>375</posx>
-			<posy>660</posy>
+			<posy>680</posy>
 			<width>370</width>
 			<height>25</height>
 			<label>$INFO[Player.Duration]</label>
-			<align>right</align>
-			<aligny>center</aligny>
-			<font>font24caps_title</font>
-			<textcolor>grey2</textcolor>
-			<shadowcolor>black</shadowcolor>
-		</control>
-		<control type="label">
-			<posx>375</posx>
-			<posy>690</posy>
-			<width>370</width>
-			<height>25</height>
-			<label>$INFO[Player.FinishTime]</label>
 			<align>right</align>
 			<aligny>center</aligny>
 			<font>font24caps_title</font>

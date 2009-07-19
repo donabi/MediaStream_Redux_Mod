@@ -116,7 +116,7 @@
 			</control>
 			<control type="label">
 				<posx>10</posx>
-				<posy>450</posy>
+				<posy>440</posy>
 				<width>370</width>
 				<height>25</height>
 				<label>$LOCALIZE[31041]</label>
@@ -128,7 +128,7 @@
 			</control>
 			<control type="label">
 				<posx>10</posx>
-				<posy>470</posy>
+				<posy>460</posy>
 				<width>370</width>
 				<height>25</height>
 				<label>$INFO[MusicPlayer.offset(1).TrackNumber,,. ]$INFO[MusicPlayer.offset(1).Title]</label>
@@ -140,7 +140,7 @@
 			</control>
 			<control type="label">
 				<posx>10</posx>
-				<posy>490</posy>
+				<posy>480</posy>
 				<width>370</width>
 				<height>25</height>
 				<label>$INFO[MusicPlayer.offset(2).TrackNumber,,. ]$INFO[MusicPlayer.offset(2).Title]</label>
@@ -152,11 +152,10 @@
 			</control>
 			<control type="image">
 				<posx>10</posx>
-				<posy>530</posy>
+				<posy>520</posy>
 				<width>370</width>
 				<height>4</height>
 				<texture>separator.png</texture>
-				<animation effect="slide" start="0,0" end="0,-10" time="0" condition="LastFM.RadioPlaying">conditional</animation>
 			</control>
 			<control type="progress">
 				<description>Progressbar</description>

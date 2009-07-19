@@ -1,17 +1,17 @@
 <includes>
 	<include name="HomeRecentlyAddedInfo">
- 		<control type="group">
-		 	<visible>!Window.IsVisible(Favourites)</visible>
+		<control type="group">
+			<visible>!Window.IsVisible(Favourites)</visible>
 			<include>VisibleFadeEffect</include>
 			<animation effect="fade" time="300" delay="1000">WindowOpen</animation>
-			<animation effect="fade" time="200">WindowClose</animation>  
-		<!-- Movies -->
+			<animation effect="fade" time="200">WindowClose</animation>
 			<control type="group">
 				<posx>275r</posx>
 				<posy>50</posy>
-				<visible>Container(9000).HasFocus(10) | [Container(9000).HasFocus(2) + !Skin.HasSetting(HomeMenuNoMoviesButton)]</visible>
+				<visible>Library.HasContent(Movies)</visible>
+				<visible>[Container(9000).Hasfocus(2) + !Skin.HasSetting(HomeMenuNoMoviesButton)] | Container(9000).Hasfocus(10)</visible>
 				<include>VisibleFadeEffect</include>
-			 	<animation effect="slide" time="0" start="0,0" end="-260,0" condition="[Library.HasContent(TVShows) + ![Skin.HasSetting(HomeMenuNoMoviesButton) | Skin.HasSetting(HomeMenuNoTVShowsButton)]]">Conditional</animation>  
+				<animation effect="slide" time="0" start="0,0" end="-260,0" condition="[Library.HasContent(TVShows) + ![Skin.HasSetting(HomeMenuNoMoviesButton) | Skin.HasSetting(HomeMenuNoTVShowsButton)]]">Conditional</animation>
 				<control type="image">
 					<description>background</description>
 					<posx>0</posx>
@@ -161,11 +161,11 @@
 					</content>
 				</control>
 			</control>
-		<!-- TV Shows -->
 			<control type="group">
 				<posx>275r</posx>
 				<posy>50</posy>
-				<visible>Container(9000).HasFocus(11) | Container(9000).HasFocus(2) + !Skin.HasSetting(HomeMenuNoTVShowsButton)</visible>
+				<visible>Library.HasContent(TVShows)</visible>
+				<visible>[Container(9000).Hasfocus(2) + !Skin.HasSetting(HomeMenuNoTVShowsButton)] | Container(9000).Hasfocus(11)</visible>
 				<include>VisibleFadeEffect</include>
 				<control type="image">
 					<description>background</description>
@@ -321,166 +321,6 @@
 					</content>
 				</control>
 			</control>
-		<!-- Music -->
-			<control type="group">
-				<posx>275r</posx>
-				<posy>50</posy>
-				<visible>Container(9000).HasFocus(3)</visible>
-				<include>VisibleFadeEffect</include>
-				<control type="image">
-					<description>background</description>
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>250</width>
-					<height>300</height>
-					<colordiffuse>CCFFFFFF</colordiffuse>
-					<texture border="10">KeyboardEditArea.png</texture>
-				</control>
-				<control type="label">
-					<description>Title label</description>
-					<posx>10</posx>
-					<posy>5</posy>
-					<height>20</height>
-					<width>230</width>
-					<label>31329</label>
-					<align>left</align>
-					<aligny>center</aligny>
-					<font>font12caps_title</font>
-					<textcolor>white</textcolor>
-					<shadowcolor>black</shadowcolor>
-				</control>
-				<control type="image">
-					<description>Main Icon</description>
-					<posx>10</posx>
-					<posy>30</posy>
-					<width>230</width>
-					<height>120</height>
-					<aspectratio>keep</aspectratio>
-					<texture background="true">$INFO[Window.Property(LatestSong.1.Thumb)]</texture>
-					<visible>!Control.HasFocus(8005)</visible>
-					<include>VisibleFadeEffect</include>
-				</control>
-				<control type="image">
-					<description>Main Icon</description>
-					<posx>10</posx>
-					<posy>30</posy>
-					<width>230</width>
-					<height>120</height>
-					<aspectratio>keep</aspectratio>
-					<fadetime>200</fadetime>
-					<texture background="true">$INFO[Container(8005).ListItem.Thumb]</texture>
-					<visible>Control.HasFocus(8005)</visible>
-					<include>VisibleFadeEffect</include>
-				</control>
-				<control type="list" id="8005">
-					<posx>0</posx>
-					<posy>155</posy>
-					<width>250</width>
-					<height>136</height>
-					<onleft>9000</onleft>
-					<onright>8005</onright>
-					<onup>8005</onup>
-					<ondown>8005</ondown>
-					<viewtype label="535">list</viewtype>
-					<pagecontrol>-</pagecontrol>
-					<scrolltime>0</scrolltime>
-					<itemlayout height="34" width="230">
-						<control type="label">
-							<posx>10</posx>
-							<posy>2</posy>
-							<width>230</width>
-							<height>10</height>
-							<font>font10caps</font>
-							<textcolor>grey</textcolor>
-							<shadowcolor>black</shadowcolor>
-							<selectedcolor>selected</selectedcolor>
-							<align>left</align>
-							<aligny>center</aligny>
-							<label>$INFO[ListItem.Label2]</label>
-						</control>
-						<control type="label">
-							<posx>10</posx>
-							<posy>12</posy>
-							<width>230</width>
-							<height>20</height>
-							<font>font12caps</font>
-							<textcolor>white</textcolor>
-							<shadowcolor>black</shadowcolor>
-							<selectedcolor>selected</selectedcolor>
-							<align>left</align>
-							<aligny>center</aligny>
-							<label>$INFO[ListItem.Label]</label>
-						</control>
-					</itemlayout>
-					<focusedlayout height="34" width="230">
-						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
-							<width>250</width>
-							<height>34</height>
-							<texture>MenuItemFO.png</texture>
-							<visible>Control.HasFocus(8005)</visible>
-							<include>VisibleFadeEffect</include>
-						</control>
-						<control type="label">
-							<posx>10</posx>
-							<posy>2</posy>
-							<width>230</width>
-							<height>10</height>
-							<font>font10caps</font>
-							<textcolor>grey</textcolor>
-							<shadowcolor>black</shadowcolor>
-							<selectedcolor>selected</selectedcolor>
-							<align>left</align>
-							<aligny>center</aligny>
-							<label>$INFO[ListItem.Label2]</label>
-						</control>
-						<control type="label">
-							<posx>10</posx>
-							<posy>12</posy>
-							<width>230</width>
-							<height>20</height>
-							<font>font12caps</font>
-							<textcolor>white</textcolor>
-							<shadowcolor>black</shadowcolor>
-							<selectedcolor>selected</selectedcolor>
-							<align>left</align>
-							<aligny>center</aligny>
-							<label>$INFO[ListItem.Label]</label>
-						</control>
-					</focusedlayout>
-					<content>
-						<item id="1">
-							<label>$INFO[Window.Property(LatestSong.1.Title)]</label>
-							<label2>$INFO[Window.Property(LatestSong.1.Artist)] - $INFO[Window.Property(LatestSong.1.Album)]</label2>
-							<onclick>PlayMedia($INFO[Window.Property(LatestSong.1.Path)])</onclick>
-							<icon>-</icon>
-							<thumb>$INFO[Window.Property(LatestSong.1.Thumb)]</thumb>
-						</item>
-						<item id="2">
-							<label>$INFO[Window.Property(LatestSong.2.Title)]</label>
-							<label2>$INFO[Window.Property(LatestSong.2.Artist)] - $INFO[Window.Property(LatestSong.2.Album)]</label2>
-							<onclick>PlayMedia($INFO[Window.Property(LatestSong.2.Path)])</onclick>
-							<icon>-</icon>
-							<thumb>$INFO[Window.Property(LatestSong.2.Thumb)]</thumb>
-						</item>
-						<item id="3">
-							<label>$INFO[Window.Property(LatestSong.3.Title)]</label>
-							<label2>$INFO[Window.Property(LatestSong.3.Artist)] - $INFO[Window.Property(LatestSong.3.Album)]</label2>
-							<onclick>PlayMedia($INFO[Window.Property(LatestSong.3.Path)])</onclick>
-							<icon>-</icon>
-							<thumb>$INFO[Window.Property(LatestSong.3.Thumb)]</thumb>
-						</item>
-						<item id="4">
-							<label>$INFO[Window.Property(LatestSong.4.Title)]</label>
-							<label2>$INFO[Window.Property(LatestSong.4.Artist)] - $INFO[Window.Property(LatestSong.4.Album)]</label2>
-							<onclick>PlayMedia($INFO[Window.Property(LatestSong.4.Path)])</onclick>
-							<icon>-</icon>
-							<thumb>$INFO[Window.Property(LatestSong.4.Thumb)]</thumb>
-						</item>
-					</content>
-				</control>
-			</control>
-		</control>  
+		</control>
 	</include>
 </includes>

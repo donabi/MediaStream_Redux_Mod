@@ -3,6 +3,7 @@ from xbmcgui import Window
 from urllib import quote_plus, unquote_plus
 import re
 import sys
+import os
 
 
 class Main:
@@ -54,7 +55,7 @@ class Main:
         # fetch media info
         self._fetch_movie_info()
         self._fetch_tvshow_info()
-        self._fetch_music_info()
+        # self._fetch_music_info()
 
     def _fetch_movie_info( self ):
         # set our unplayed query
@@ -76,13 +77,19 @@ class Main:
             fields = re.findall( "<field>(.*?)</field>", movie, re.DOTALL )
             # set properties
             self.WINDOW.setProperty( "LatestMovie.%d.Title" % ( count + 1, ), fields[ 1 ] )
-            self.WINDOW.setProperty( "LatestMovie.%d.Year" % ( count + 1, ), fields[ 8 ] )
-            self.WINDOW.setProperty( "LatestMovie.%d.RunningTime" % ( count + 1, ), fields[ 12 ] )
+            # self.WINDOW.setProperty( "LatestMovie.%d.Rating" % ( count + 1, ), fields[ 6 ] )
+            # self.WINDOW.setProperty( "LatestMovie.%d.Year" % ( count + 1, ), fields[ 8 ] )
+            # self.WINDOW.setProperty( "LatestMovie.%d.RunningTime" % ( count + 1, ), fields[ 12 ] )
             # get cache names of path to use for thumbnail/fanart and play path
             thumb_cache, fanart_cache, play_path = self._get_media( fields[ 24 ], fields[ 23 ] )
             self.WINDOW.setProperty( "LatestMovie.%d.Path" % ( count + 1, ), play_path )
-            self.WINDOW.setProperty( "LatestMovie.%d.Fanart" % ( count + 1, ), "special://profile/Thumbnails/Video/%s/%s" % ( "Fanart", fanart_cache, ) )
-            self.WINDOW.setProperty( "LatestMovie.%d.Thumb" % ( count + 1, ), "special://profile/Thumbnails/Video/%s/%s" % ( thumb_cache[ 0 ], thumb_cache, ) )
+            # self.WINDOW.setProperty( "LatestMovie.%d.Fanart" % ( count + 1, ), "special://profile/Thumbnails/Video/%s/%s" % ( "Fanart", fanart_cache, ) )
+            # initial thumb path
+            thumb = "special://profile/Thumbnails/Video/%s/%s" % ( thumb_cache[ 0 ], thumb_cache, )
+            # if thumb does not exist use an auto generated thumb path
+            if ( not os.path.isfile( xbmc.translatePath( thumb ) ) ):
+                thumb = "special://profile/Thumbnails/Video/%s/auto-%s" % ( thumb_cache[ 0 ], thumb_cache, )
+            self.WINDOW.setProperty( "LatestMovie.%d.Thumb" % ( count + 1, ), thumb )
 
     def _fetch_tvshow_info( self ):
         # set our unplayed query
@@ -106,11 +113,17 @@ class Main:
             self.WINDOW.setProperty( "LatestEpisode.%d.ShowTitle" % ( count + 1, ), fields[ 27 ] )
             self.WINDOW.setProperty( "LatestEpisode.%d.EpisodeTitle" % ( count + 1, ), fields[ 1 ] )
             self.WINDOW.setProperty( "LatestEpisode.%d.EpisodeNo" % ( count + 1, ), "s%02de%02d" % ( int( fields[ 13 ] ), int( fields[ 14 ] ), ) )
+            # self.WINDOW.setProperty( "LatestEpisode.%d.Rating" % ( count + 1, ), fields[ 4 ] )
             # get cache names of path to use for thumbnail/fanart and play path
             thumb_cache, fanart_cache, play_path = self._get_media( fields[ 24 ], fields[ 23 ] )
             self.WINDOW.setProperty( "LatestEpisode.%d.Path" % ( count + 1, ), play_path )
             # self.WINDOW.setProperty( "LatestEpisode.%d.Fanart" % ( count + 1, ), "special://profile/Thumbnails/Video/%s/%s" % ( "Fanart", fanart_cache, ) )
-            self.WINDOW.setProperty( "LatestEpisode.%d.Thumb" % ( count + 1, ), "special://profile/Thumbnails/Video/%s/%s" % ( thumb_cache[ 0 ], thumb_cache, ) )
+            # initial thumb path
+            thumb = "special://profile/Thumbnails/Video/%s/%s" % ( thumb_cache[ 0 ], thumb_cache, )
+            # if thumb does not exist use an auto generated thumb path
+            if ( not os.path.isfile( xbmc.translatePath( thumb ) ) ):
+                thumb = "special://profile/Thumbnails/Video/%s/auto-%s" % ( thumb_cache[ 0 ], thumb_cache, )
+            self.WINDOW.setProperty( "LatestEpisode.%d.Thumb" % ( count + 1, ), thumb )
 
     def _fetch_music_info( self ):
         # sql statement
@@ -134,7 +147,7 @@ class Main:
             # set our unplayed query
             unplayed = ( "", "where lastplayed isnull ", )[ self.UNPLAYED ]
             # sql statement
-            sql_music = "select songview.* from albumview join songview on (songview.idAlbum = albumview.idAlbum) %sorder by idSong desc limit %d" % ( unplayed, self.LIMIT, )
+            sql_music = "select * from songview %sorder by idSong desc limit %d" % ( unplayed, self.LIMIT, )
             # query the database
             music_xml = xbmc.executehttpapi( "QueryMusicDatabase(%s)" % quote_plus( sql_music ), )
         # separate the records

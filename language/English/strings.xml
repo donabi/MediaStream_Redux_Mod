@@ -56,6 +56,8 @@
   <string id="31050">Change Settings for</string>
   <string id="31051">Visualization Presets</string>
   <string id="31052">Details</string>
+  <string id="31053">End Time</string>
+  <string id="31054">Remaining</string>
 
 
   <!-- Playlist Editor labels -->
@@ -85,13 +87,11 @@
   <string id="31115">Customizer</string>
   <string id="31116">Addon Scripts</string>
   <string id="31117">Show Recently added Videos</string>
-
   <string id="31118">Home Page Submenu</string>
   <string id="31119">Enable Custom Script Button</string>
   <string id="31120">BUTTON LABEL</string>
   <string id="31121">PATH TO SCRIPT</string>
   <string id="31122">Weather Page</string>
-
   <string id="31123">Use "Posters" instead of "Banners" for TV Shows</string>
   <string id="31124">Use Video Preview Instead of Cover</string>
   <string id="31125">Show Disc Drive only when media inserted</string>
@@ -104,7 +104,9 @@
   <string id="31132">TV Shows Buttons</string>
   <string id="31133">Music Buttons</string>
   <string id="31134">Trailers</string>
-  <string id="31135">Use Animated Weather Icons</string>
+  <string id="31135">Enable Lyrics in Music OSD</string>
+  <string id="31136">PATH TO LYRICS SCRIPT</string>
+  <string id="31137">XBMC Lyrics</string>
 
   <!-- Script labels -->
   <string id="31200">Shortcuts</string>
@@ -114,9 +116,14 @@
   <string id="31204">Section Links</string>
   <string id="31205">Lyrics Source</string>
   <string id="31206">Choose Your Song</string>
-  <string id="31207"></string>
+  <string id="31207">Song Lyrics</string>
   <string id="31208"></string>
   <string id="31209"></string>
+
+  <!-- The Weather Channel Script labels -->
+  <string id="31250">Radar &amp; Forecast</string>
+  <string id="31251">Forecast</string>
+  <string id="31252">TWC Script</string>
 
   <!-- Extra labels -->
   <string id="31300">Current Temp</string>
@@ -149,6 +156,7 @@
   <string id="31327">Resolution</string>
   <string id="31328">Recently Added</string>
   <string id="31329">Latest Music</string>
+  <string id="31330">[B]TIMER SET![/B] [COLOR=grey2] - SYSTEM AUTO SHUTDOWN IN[/COLOR]</string>
 
   <!-- Description Labels  -->
   <string id="31400">[B]Edit your Appearance settings, Including.[/B][CR][CR]Calibrate the GUI · Change the Skin · Set up a screensaver · Change your regional settings · Set global Viewing options</string>

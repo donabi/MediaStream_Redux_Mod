@@ -8,7 +8,7 @@
 	<include file="IncludesCodecFlagging.xml" />
 	<include file="IncludesHomeRecentlyAdded.xml" />
 	<include file="IncludesHomeRecentlyAdded2.xml" />
-	<include file="IncludesGenres.xml" />  <!-- Add This -->
+	<include file="IncludesGenres.xml" /> 
 
 	<constant name="FanartCrossfadeTime">500</constant>
 	<constant name="IconCrossfadeTime">400</constant>
@@ -51,7 +51,6 @@
 			<fadetime>1000</fadetime>
 		</control>
 	</include>
-
 	<include name="CommonMusicBackground">
 		<control type="multiimage">
 			<posx>0</posx>
