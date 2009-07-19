@@ -2183,6 +2183,16 @@
 							<onclick>Skin.SetFile(WeatherScript_Path,.py)</onclick>
 							<visible>Skin.HasSetting(WeatherScript_Enable)</visible>
 						</control>
+						<control type="label" id="423">
+							<width>750</width>
+							<height>45</height>
+							<font>font13caps_title</font>
+							<label>31137</label>
+							<textcolor>blue</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<align>left</align>
+							<aligny>center</aligny>
+						</control>
 						<control type="radiobutton" id="424">
 							<width>750</width>
 							<height>35</height>
