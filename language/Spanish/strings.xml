@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
-<!--Language file translated by bardenas-->
-<!--Date of translation: 17/07/2009-->
-
+ï»¿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--Language file translated with Team XBMC Translator-->
+<!--Translator: bardenas-->
+<!--Date of translation: 07/20/2009-->
+<!--$Revision$-->
 <strings>
-  <!-- home page labels -->
   <string id="31000">Ver tus</string>
   <string id="31001">Escuchar tu</string>
   <string id="31002">Mirar tus</string>
@@ -15,37 +15,43 @@
   <string id="31008">On/Off</string>
   <string id="31009">Abrir tus</string>
   <string id="31010">Reproducir</string>
-  <string id="31011">Unidad de disco</string>
-  <string id="31012"></string>
-  <string id="31013"></string>
-  <string id="31014"></string>
-  <string id="31015"></string>
-  <string id="31016"></string>
-  <string id="31017"></string>
-  <string id="31018"></string>
-  <string id="31019"></string>
-
-  <string id="31020"></string>
-  <string id="31021">Archivos de Vídeo</string>
-  <string id="31022">Archivos de Música</string>
+  <string id="31011">Unidad DVD</string>
+  <string id="31012">
+  </string>
+  <string id="31013">
+  </string>
+  <string id="31014">
+  </string>
+  <string id="31015">
+  </string>
+  <string id="31016">
+  </string>
+  <string id="31017">
+  </string>
+  <string id="31018">
+  </string>
+  <string id="31019">
+  </string>
+  <string id="31020">
+  </string>
+  <string id="31021">Archivos de VÃ­deo</string>
+  <string id="31022">Archivos de MÃºsica</string>
   <string id="31023">Reproduciendo</string>
-  <string id="31024">Página</string>
+  <string id="31024">PÃ¡gina</string>
   <string id="31025">Elementos</string>
-  <string id="31026">Opciones misceláneas</string>
+  <string id="31026">Opciones miscelÃ¡neas</string>
   <string id="31027">Localidad</string>
- 
-  <!-- View Type labels -->
-  <string id="31028">Poster de recapitulación</string>
+  <string id="31028">Flujo de poster</string>
   <string id="31029">Lista de DVD</string>
   <string id="31030">Fanarts</string>
   <string id="31031">Lista completa</string>
-  <string id="31032"></string>
+  <string id="31032">
+  </string>
   <string id="31033">Miniaturas</string>
   <string id="31034">Iconos anchos</string>
   <string id="31035">Detalles</string>
-  <string id="31036">Info Wrap</string>
-  <string id="31037">Image Wrap</string>
-
+  <string id="31036">Flujo de info</string>
+  <string id="31037">Flujo de imagen</string>
   <string id="31040">Reproduciendo ahora...</string>
   <string id="31041">Canciones siguientes...</string>
   <string id="31042">REPRODUCIENDO</string>
@@ -54,115 +60,110 @@
   <string id="31045">RETROCESO</string>
   <string id="31046">Propiedades de Audio</string>
   <string id="31047">Seleccionados</string>
-  <string id="31048">Opciones de Visualización</string>
+  <string id="31048">Opciones de VisualizaciÃ³n</string>
   <string id="31049">Cambiar seleccionados por</string>
   <string id="31050">Cambiar opciones para</string>
-  <string id="31051">Visualización seleccionada</string>
+  <string id="31051">VisualizaciÃ³n seleccionada</string>
   <string id="31052">Detalles</string>
-
-
-  <!-- Playlist Editor labels -->
-  <string id="31055">Abrir lista de reproducción</string>
-  <string id="31056">Guardar lista de reproducción</string>
-  <string id="31057">Cerra lista de reproducción</string>
-  <string id="31058">Sistema de archivos de música</string>
-  <string id="31059">Lista de reproducción actual</string>
-  <string id="31060">This file is stacked, select the part you want to play from.</string>
-  
-  <!-- Skin Settings labels -->
+  <string id="31053">Hora de finalizaciÃ³n</string>
+  <string id="31054">Restante</string>
+  <string id="31055">Abrir lista de reproducciÃ³n</string>
+  <string id="31056">Guardar lista de reproducciÃ³n</string>
+  <string id="31057">Cerra lista de reproducciÃ³n</string>
+  <string id="31058">Sistema de archivos de mÃºsica</string>
+  <string id="31059">Lista de reproducciÃ³n actual</string>
+  <string id="31060">Este archivo estÃ¡ apilado, seleccione la parte que desea reproducir.</string>
   <string id="31100">Opciones de fondos de pantalla</string>
   <string id="31101">Opciones de pantalla principal</string>
   <string id="31102">Fondos</string>
-  <string id="31103">Ver "Pausa" en modo presentación de imágenes</string>
+  <string id="31103">Ver "Pausa" en modo presentaciÃ³n de imÃ¡genes</string>
   <string id="31104">Botones de pantalla principal</string>
-  <string id="31105">Mostrar títulos en escáner de segundo plano</string>
-  <string id="31106">Opciones de miscelánea</string>
+  <string id="31105">Mostrar tÃ­tulos en escÃ¡ner de segundo plano</string>
+  <string id="31106">Opciones de miscelÃ¡nea</string>
   <string id="31107">Ocultar las etiquetas "VER TUS" "ESCUCHAR TU" etc...</string>
   <string id="31108">Ocultar Botones de pantalla principal</string>
   <string id="31109">Fondos de pantalla principal</string>
-  <string id="31110">Editar fondo para botón principal de</string>
+  <string id="31110">Editar fondo para botÃ³n principal de</string>
   <string id="31111">Ocultar</string>
   <string id="31112">Opciones</string>
-  <string id="31113">Una imágen</string>
-  <string id="31114">Multi-imágen</string>
+  <string id="31113">Una imÃ¡gen</string>
+  <string id="31114">Multi-imÃ¡gen</string>
   <string id="31115">Personalizar</string>
   <string id="31116">Scripts</string>
-  <string id="31117">Mostrar últimos vídeos añadidos</string>
-
-  <string id="31118">Submenús pantalla principal</string>
-  <string id="31119">Habilitar botón personalizado para Script</string>
-  <string id="31120">ETIQUETA DEL BOTÓN</string>
+  <string id="31117">Mostrar Ãºltimos vÃ­deos aÃ±adidos</string>
+  <string id="31118">SubmenÃºs pantalla principal</string>
+  <string id="31119">Habilitar botÃ³n personalizado para Script</string>
+  <string id="31120">ETIQUETA DEL BOTÃ“N</string>
   <string id="31121">RUTA DEL SCRIPT</string>
   <string id="31122">El Tiempo</string>
-
   <string id="31123">Usar "Posters" en lugar de "Banners" para Series de TV</string>
-  <string id="31124">Usar Preview del vídeo en lugar de la carátula</string>
-  <string id="31125">Mostrar Unidad de disco sólo cuando hay un disco dentro</string>
-  <string id="31126">Ocultar Marcas de vídeos ya vistos</string>
-  <string id="31127">Usar Menú Horizontal</string>
-  <string id="31128">Menú principal</string>
-  <string id="31129">Submenú</string>
-  <string id="31130">Botones de vídeo</string>
-  <string id="31131">Botones de películas</string>
+  <string id="31124">Usar Preview del vÃ­deo en lugar de la carÃ¡tula</string>
+  <string id="31125">Mostrar Unidad de disco sÃ³lo cuando hay un disco dentro</string>
+  <string id="31126">Ocultar Marcas de vÃ­deos ya vistos</string>
+  <string id="31127">Usar MenÃº Horizontal</string>
+  <string id="31128">MenÃº principal</string>
+  <string id="31129">SubmenÃº</string>
+  <string id="31130">Botones de vÃ­deo</string>
+  <string id="31131">Botones de pelÃ­culas</string>
   <string id="31132">Botones de series</string>
-  <string id="31133">Botones de música</string>
+  <string id="31133">Botones de mÃºsica</string>
   <string id="31134">Trailers</string>
-  <string id="31135">Usar iconos animados para El Tiempo</string>
-
-  <!-- Script labels -->
+  <string id="31135">Habilitar Letras de canciones</string>
+  <string id="31136">RUTA SCRIPT DE LETRAS</string>
+  <string id="31137">Letras XBMC</string>
   <string id="31200">Accesos directos</string>
-  <string id="31201">Categorías</string>
+  <string id="31201">CategorÃ­as</string>
   <string id="31202">Mostrar reparto</string>
   <string id="31203">Otras opciones</string>
-  <string id="31204">Sección de Links</string>
+  <string id="31204">SecciÃ³n de Links</string>
   <string id="31205">Fuente de letras</string>
-  <string id="31206">Elige tu canción</string>
-  <string id="31207"></string>
-  <string id="31208"></string>
-  <string id="31209"></string>
-
-  <!-- Extra labels -->
+  <string id="31206">Elige tu canciÃ³n</string>
+  <string id="31207">Letras de canciones</string>
+  <string id="31208">
+  </string>
+  <string id="31209">
+  </string>
+  <string id="31250">Radar y pronÃ³stico</string>
+  <string id="31251">PronÃ³stico</string>
+  <string id="31252">TWC Script</string>
   <string id="31300">Tiempo actual</string>
-  <string id="31301">Última actualización</string>
-  <string id="31302">Menú</string>
+  <string id="31301">Ãšltima actualizaciÃ³n</string>
+  <string id="31302">MenÃº</string>
   <string id="31303">Cambiar</string>
-  <string id="31304">Imágen</string>
-  <string id="31305">Ningún disco detectado</string>
+  <string id="31304">ImÃ¡gen</string>
+  <string id="31305">NingÃºn disco detectado</string>
   <string id="31306">Expulsar</string>
   <string id="31307">Mostrar Fanarts</string>
-  <string id="31308">Detalles de la película</string>
+  <string id="31308">Detalles de la pelÃ­cula</string>
   <string id="31309">Memoria usada</string>
-  <string id="31310">Número canción</string>
+  <string id="31310">NÃºmero canciÃ³n</string>
   <string id="31311">IMAGEN[CR]FANART[CR]NO DISPONIBLE</string>
   <string id="31312">Scraper actual</string>
   <string id="31313">Elige un Scraper</string>
-  <string id="31314">Opciones de escanéo de contenido</string>
-  <string id="31315">Básico</string>
-  <string id="31316">Login como</string>
+  <string id="31314">Opciones de escanÃ©o de contenido</string>
+  <string id="31315">BÃ¡sico</string>
+  <string id="31316">Ingresar como</string>
   <string id="31317">Selecciona ruta del Fanart</string>
-  <string id="31318">Fanart pequeño</string>
+  <string id="31318">Fanart pequeÃ±o</string>
   <string id="31319">Perfil seleccionado</string>
-  <string id="31320">Última visita el</string>
-  <string id="31321">Selector de canción de Karaoke</string>
+  <string id="31320">Ãšltima visita el</string>
+  <string id="31321">Selector de canciÃ³n de Karaoke</string>
   <string id="31322">Al aire</string>
-  <string id="31323">Últimas películas</string>
-  <string id="31324">Últimos episodios</string>
-  <string id="31325">Opciones de lista de reproducción</string>
+  <string id="31323">Ãšltimas pelÃ­culas</string>
+  <string id="31324">Ãšltimos episodios</string>
+  <string id="31325">Opciones de lista de reproducciÃ³n</string>
   <string id="31326">Creado</string>
-  <string id="31327">Resolución</string>
-  <string id="31328">Añadidos recientemente</string>
-  <string id="31329">Últimos discos</string>
-
-  <!-- Description Labels  -->
-  <string id="31400">[B]Edita tus opciones de APARIENCIA, incluyendo:[/B][CR][CR]Calibrar el GUI - Cambiar la Skin - Establecer un salvapantallas - Cambiar la configuración regional - Establecer opciones de visualización mundial</string>
-  <string id="31401">[B]Edita tus opciones de VIDEO, incluyendo:[/B][CR][CR]Administrar su Videoteca - Configurar Reproductores de vídeo - Configurar Fuentes de subtítulos - Ajustes de reanudación automática de vídeo</string>
-  <string id="31402">[B]Edita tus opciones de MUSICA, incluyendo:[/B][CR][CR]Seleccionar la visualización - Administrar su Biblioteca de Música - Configurar su cuenta de Last.FM - Cambio y Configuración de Fuentes de Karaoke</string>
-  <string id="31403">[B]Edita tus opciones de IMAGENES, incluyendo:[/B][CR][CR]Permitir la creación automática de miniaturas y lectura de etiquetas EXIF - Ajustar efectos de transición de diapositivas - Seleccionar carpeta de capturas del XBMC</string>
-  <string id="31404">[B]Edita tus opciones de EL TIEMPO, incluyendo:[/B][CR][CR]Establecer las tres ciudades que XBMC mostrará en su pantalla de El Tiempo - Cambiar la configuración regional, incluyendo las unidades de temperatura</string>
-  <string id="31405">[B]Edita tus opciones de RED, incluyendo:[/B][CR][CR]Habilitar el servidor Web interno de XBMC - Configuración de Samba - Activar/Configurar el servidor y el cliente UPNP - Configurar el servidor de eventos</string>
-  <string id="31406">[B]Edita tus opciones de SISTEMA, incluyendo:[/B][CR][CR]Cambiar el valor por defecto del modo de apagado - Configurar la reproducción automática - Configurar su hardware de audio - Configurar la contraseña del usuario Master y los bloqueos del sistema</string>
-  <string id="31407">[B]Cambia las opciones de MediaStream_Redux, incluyendo:[/B][CR][CR]Agregar y quitar botones de pantalla principal - Cambio de Fondos para cada sección - Crear accesos directos a los scripts en toda la skin</string>
-
-
-  <string id="31420">[B][COLOR=white]XBMC no ha detectado ningún disco.[/COLOR][/B][CR][CR]Por favor, pruebe a insertar un disco o cancelar</string>
+  <string id="31327">ResoluciÃ³n</string>
+  <string id="31328">Ãšltimos aÃ±adidos</string>
+  <string id="31329">Ãšltimos discos</string>
+  <string id="31330">[B]TEMPORZADOR[/B] [COLOR=grey2] - EL SISTEMA SE APAGARÃ EN[/COLOR]</string>
+  <string id="31400">[B]Edita tus opciones de APARIENCIA, incluyendo:[/B][CR][CR]Calibrar el GUI - Cambiar la Skin - Establecer un salvapantallas - Cambiar la configuraciÃ³n regional - Establecer opciones de visualizaciÃ³n mundial</string>
+  <string id="31401">[B]Edita tus opciones de VIDEO, incluyendo:[/B][CR][CR]Administrar su Videoteca - Configurar Reproductores de vÃ­deo - Configurar Fuentes de subtÃ­tulos - Ajustes de reanudaciÃ³n automÃ¡tica de vÃ­deo</string>
+  <string id="31402">[B]Edita tus opciones de MUSICA, incluyendo:[/B][CR][CR]Seleccionar la visualizaciÃ³n - Administrar su Biblioteca de MÃºsica - Configurar su cuenta de Last.FM - Cambio y ConfiguraciÃ³n de Fuentes de Karaoke</string>
+  <string id="31403">[B]Edita tus opciones de IMAGENES, incluyendo:[/B][CR][CR]Permitir la creaciÃ³n automÃ¡tica de miniaturas y lectura de etiquetas EXIF - Ajustar efectos de transiciÃ³n de diapositivas - Seleccionar carpeta de capturas del XBMC</string>
+  <string id="31404">[B]Edita tus opciones de EL TIEMPO, incluyendo:[/B][CR][CR]Establecer las tres ciudades que XBMC mostrarÃ¡ en su pantalla de El Tiempo - Cambiar la configuraciÃ³n regional, incluyendo las unidades de temperatura</string>
+  <string id="31405">[B]Edita tus opciones de RED, incluyendo:[/B][CR][CR]Habilitar el servidor Web interno de XBMC - ConfiguraciÃ³n de Samba - Activar/Configurar el servidor y el cliente UPNP - Configurar el servidor de eventos</string>
+  <string id="31406">[B]Edita tus opciones de SISTEMA, incluyendo:[/B][CR][CR]Cambiar el valor por defecto del modo de apagado - Configurar la reproducciÃ³n automÃ¡tica - Configurar su hardware de audio - Configurar la contraseÃ±a del usuario Master y los bloqueos del sistema</string>
+  <string id="31407">[B]Cambia las opciones de MediaStream_Redux, incluyendo:[/B][CR][CR]Agregar y quitar botones de pantalla principal - Cambio de Fondos para cada secciÃ³n - Crear accesos directos a los scripts en toda la skin</string>
+  <string id="31420">[B][COLOR=white]XBMC no ha detectado ningÃºn disco.[/COLOR][/B][CR][CR]Por favor, pruebe a insertar un disco o cancelar</string>
 </strings>
