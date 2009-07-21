@@ -35,7 +35,8 @@
 			<animation effect="slide" start="0,-220" time="300" tween="quadratic" easing="out">Visible</animation>
 			<animation effect="slide" end="0,-220" time="300" tween="quadratic" easing="out" condition="Container(9000).HasFocus(6)">WindowClose</animation>
 			<animation effect="slide" start="0,-220" time="300" tween="quadratic" easing="out" condition="Container(9000).HasFocus(6)">WindowOpen</animation>
-			<animation effect="slide" start="0,0" end="-382,0" time="400" tween="quadratic" easing="out" condition="Window.IsActive(Favourites)">conditional</animation>
+			<animation effect="slide" end="0,-220" time="300" tween="quadratic" easing="out" condition="Container(19000).HasFocus(6)">WindowClose</animation>
+			<animation effect="slide" start="0,-220" time="300" tween="quadratic" easing="out" condition="Container(19000).HasFocus(6)">WindowOpen</animation>
 			<control type="image">
 				<description>background</description>
 				<posx>0</posx>
@@ -45,18 +46,15 @@
 				<colordiffuse>DDFFFFFF</colordiffuse>
 				<texture border="20">OverlayDialogBackground.png</texture>
 			</control>
-			<control type="multiimage">
+			<control type="image">
 				<description>Weather image</description>
-				<posx>10</posx>
-				<posy>20</posy>
+				<posx>20</posx>
+				<posy>15</posy>
 				<width>90</width>
 				<height>85</height>
-			 	<imagepath>weather/$INFO[Weather.FanartCode]</imagepath>   
-				<timeperimage>100</timeperimage>
-				<randomize>false</randomize>
-				<fadetime>0</fadetime>
+				<aspectratio>keep</aspectratio>
+				<texture>$INFO[Weather.Conditions]</texture>
 			</control>
-
 			<control type="fadelabel">
 				<description>location label</description>
 				<posx>130</posx>
@@ -99,6 +97,7 @@
 				<shadowcolor>black</shadowcolor>
 			</control>
 		</control>
+
 	<!-- Music Info Horizontal -->
 		<control type="group">
 			<posx>1285r</posx>
@@ -239,7 +238,7 @@
 					<height>550</height>
 					<onleft>9011</onleft>
 					<onright>9011</onright>
-					<onup>8005</onup>
+					<onup>8006</onup>
 					<ondown>9000</ondown>
 					<itemgap>0</itemgap>
 					<orientation>horizontal</orientation>
@@ -495,7 +494,7 @@
 					<height>550</height>
 					<onleft>9016</onleft>
 					<onright>9016</onright>
-					<onup>8000</onup>
+					<onup>8002</onup>
 					<ondown>9000</ondown>
 					<itemgap>0</itemgap>
 					<orientation>horizontal</orientation>
@@ -564,7 +563,7 @@
 					<height>550</height>
 					<onleft>9017</onleft>
 					<onright>9017</onright>
-					<onup>8001</onup>
+					<onup>8003</onup>
 					<ondown>9000</ondown>
 					<itemgap>0</itemgap>
 					<orientation>horizontal</orientation>
@@ -1322,6 +1321,7 @@
 						<label>8</label>
 						<label2>31004</label2>
 						<onclick>ActivateWindow(Weather)</onclick>
+						<onup>SetFocus(9003)</onup>
 						<icon>special://skin/backgrounds/weather.jpg</icon>
 						<thumb>$INFO[Skin.String(Home_Custom_Back_Weather_Folder)]</thumb>
 						<visible>!Skin.HasSetting(HomeMenuNoWeatherButton)</visible>
@@ -1331,6 +1331,7 @@
 						<label>8</label>
 						<label2>31004</label2>
 						<onclick>ActivateWindow(Weather)</onclick>
+						<onup>SetFocus(9003)</onup>
 						<icon>special://skin/backgrounds/weather.jpg</icon>
 						<thumb>$INFO[Skin.String(WeatherFanartDir)]$INFO[Weather.FanartCode]</thumb>
 						<visible>!Skin.HasSetting(HomeMenuNoWeatherButton)</visible>
