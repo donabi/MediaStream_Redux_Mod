@@ -26,8 +26,8 @@
 			<fadetime>1000</fadetime>
 		 	<visible>!Skin.HasSetting(HorizontalMenu)</visible>   
 		</control>  
-	<!-- weather Info -->
-		<control type="group">
+	<!-- weather Info Original -->
+	 	<control type="group">
 			<posx>510r</posx>
 			<posy>40</posy>
 			<visible>[Container(9000).HasFocus(6) + !Skin.HasSetting(homepageWeatherinfo) + Skin.HasSetting(HorizontalMenu)] | [Container(19000).HasFocus(6) + !Skin.HasSetting(homepageWeatherinfo) + !Skin.HasSetting(HorizontalMenu)]</visible>
@@ -98,14 +98,14 @@
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 			</control>
-		</control>
+		</control>   
 
 	<!-- Music Info Horizontal -->
 		<control type="group">
 			<posx>1285r</posx>
 			<posy>265r</posy>
 			<include>VisibleFadeEffect</include>
-			<visible>Player.HasAudio + !Skin.HasSetting(homepageMusicinfo) + SKin.HasSetting(HorizontalMenu)</visible>
+			<visible>Player.HasAudio + !Skin.HasSetting(homepageMusicinfo) + Skin.HasSetting(HorizontalMenu)</visible>
 			<animation effect="slide" end="0,30" time="0" condition="!system.getbool(lookandfeel.enablerssfeeds)">conditional</animation>
 			<animation effect="slide" end="0,265" time="300" tween="quadratic" easing="out">WindowClose</animation>
 			<animation effect="slide" start="0,200" time="300" tween="quadratic" easing="out">WindowOpen</animation>
@@ -117,7 +117,7 @@
 			<posx>495r</posx>
 			<posy>193r</posy>
 			<include>VisibleFadeEffect</include>
-			<visible>Player.HasAudio + !Skin.HasSetting(homepageMusicinfo) + !SKin.HasSetting(HorizontalMenu)</visible>
+			<visible>Player.HasAudio + !Skin.HasSetting(homepageMusicinfo) + !Skin.HasSetting(HorizontalMenu)</visible>
 			<animation effect="slide" end="0,30" time="0" condition="!system.getbool(lookandfeel.enablerssfeeds)">conditional</animation>
 			<animation effect="slide" end="0,265" time="300" tween="quadratic" easing="out">WindowClose</animation>
 			<animation effect="slide" start="0,200" time="300" tween="quadratic" easing="out">WindowOpen</animation>
@@ -129,7 +129,7 @@
 			<posx>1285r</posx>
 			<posy>265r</posy>
 			<include>VisibleFadeEffect</include>
-			<visible>Player.HasVideo + !Skin.HasSetting(homepageVideoinfo) + SKin.HasSetting(HorizontalMenu)</visible>
+			<visible>Player.HasVideo + !Skin.HasSetting(homepageVideoinfo) + Skin.HasSetting(HorizontalMenu)</visible>
 			<animation effect="slide" end="0,30" time="0" condition="!system.getbool(lookandfeel.enablerssfeeds)">conditional</animation>
 			<animation effect="slide" end="0,350" time="300" tween="quadratic" easing="out" condition="Skin.HasSetting(BigVideoInfo)">WindowClose</animation>
 			<animation effect="slide" start="0,350" time="300" tween="quadratic" easing="out" condition="Skin.HasSetting(BigVideoInfo)">WindowOpen</animation>
@@ -139,21 +139,21 @@
 			<include condition="!Skin.HasSetting(BigVideoInfo)">SmallVideoInfo</include>
 			<include condition="Skin.HasSetting(BigVideoInfo)">BigVideoInfo</include>
 		</control>
-	<!-- Video Info Vertical -->
+	<!-- Video Info Vertical  -->
 		<control type="group">
 			<posx>495r</posx>
 			<posy>193r</posy>
 			<include>VisibleFadeEffect</include>
-			<visible>Player.HasVideo + !Skin.HasSetting(homepageVideoinfo) + !SKin.HasSetting(HorizontalMenu)</visible>
+			<visible>Player.HasVideo + !Skin.HasSetting(homepageVideoinfo) + !Skin.HasSetting(HorizontalMenu)</visible>
 			<animation effect="slide" end="0,30" time="0" condition="!system.getbool(lookandfeel.enablerssfeeds)">conditional</animation>
 			<animation effect="slide" end="0,350" time="300" tween="quadratic" easing="out" condition="Skin.HasSetting(BigVideoInfo)">WindowClose</animation>
 			<animation effect="slide" start="0,350" time="300" tween="quadratic" easing="out" condition="Skin.HasSetting(BigVideoInfo)">WindowOpen</animation>
 			<animation effect="slide" end="0,200" time="300" tween="quadratic" easing="out" condition="!Skin.HasSetting(BigVideoInfo)">WindowClose</animation>
 			<animation effect="slide" start="0,200" time="300" tween="quadratic" easing="out" condition="!Skin.HasSetting(BigVideoInfo)">WindowOpen</animation>
-			<animation effect="slide" start="0,0" end="0,-60" time="300" tween="quadratic" easing="out" condition="ControlGroup(19001).HasFocus">conditional</animation>  
+		<!--	<animation effect="slide" start="0,0" end="0,-60" time="300" tween="quadratic" easing="out" condition="ControlGroup(19001).HasFocus">conditional</animation>   -->
 			<include condition="!Skin.HasSetting(BigVideoInfo)">SmallVideoInfo</include>
 			<include condition="Skin.HasSetting(BigVideoInfo)">BigVideoInfo</include>
-		</control>
+		</control> 
 	<!-- Horizontal Menu -->			
 		<control type="group">
 			<include condition="!Skin.HasSetting(homepageHideRecentlyAdded)">HomeRecentlyAddedInfo</include>
