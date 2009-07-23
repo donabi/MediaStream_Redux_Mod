@@ -114,14 +114,6 @@
 			<visible>substring(ListItem.AudioCodec,dca)</visible>
 		</control>
 		<control type="image">
-			<description>ac3 Image</description>
-			<width>90</width>
-			<height>33</height>
-			<aspectratio>keep</aspectratio>
-			<texture>flagging/audio/ac3.png</texture>
-			<visible>substring(ListItem.AudioCodec,ac3) + !substring(ListItem.AudioChannels,6)</visible>
-		</control>
-		<control type="image">
 			<description>aac Image</description>
 			<width>90</width>
 			<height>33</height>
@@ -130,12 +122,12 @@
 			<visible>substring(ListItem.AudioCodec,aac)</visible>
 		</control>
 		<control type="image">
-			<description>Dolby Digital Image</description>
+			<description>Dolby Digital/AC3 Image</description>
 			<width>90</width>
 			<height>33</height>
 			<aspectratio>keep</aspectratio>
 			<texture>flagging/audio/dolbydigital.png</texture>
-			<visible>substring(ListItem.AudioCodec,ac3) + substring(ListItem.AudioChannels,6)</visible>
+			<visible>substring(ListItem.AudioCodec,ac3)</visible>
 		</control>
 		<control type="image">
 			<description>WMA Pro Codec Image</description>
