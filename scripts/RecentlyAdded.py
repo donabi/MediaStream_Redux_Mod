@@ -28,8 +28,8 @@ class Main:
         # we handle rar:// and zip:// media special
         if ( file.startswith( "rar://" ) or file.startswith( "zip://" ) ):
             play_path = fanart_path = thumb_path = file
-        # strip username/password
-        return xbmc.getCacheThumbName( re.sub( "//.+?@", "//", thumb_path ) ), xbmc.getCacheThumbName( re.sub( "//.+?@", "//", fanart_path ) ), play_path
+        # return media info
+        return xbmc.getCacheThumbName( thumb_path ), xbmc.getCacheThumbName( fanart_path ), play_path
 
     def _parse_argv( self ):
         try:
@@ -50,6 +50,7 @@ class Main:
         # clear properties
         self._clear_properties()
         # format our records start and end
+        xbmc.executehttpapi( "SetResponseFormat()" )
         xbmc.executehttpapi( "SetResponseFormat(OpenRecord,%s)" % ( "<record>", ) )
         xbmc.executehttpapi( "SetResponseFormat(CloseRecord,%s)" % ( "</record>", ) )
         # fetch media info
@@ -113,11 +114,11 @@ class Main:
             self.WINDOW.setProperty( "LatestEpisode.%d.ShowTitle" % ( count + 1, ), fields[ 27 ] )
             self.WINDOW.setProperty( "LatestEpisode.%d.EpisodeTitle" % ( count + 1, ), fields[ 1 ] )
             self.WINDOW.setProperty( "LatestEpisode.%d.EpisodeNo" % ( count + 1, ), "s%02de%02d" % ( int( fields[ 13 ] ), int( fields[ 14 ] ), ) )
-            # self.WINDOW.setProperty( "LatestEpisode.%d.Rating" % ( count + 1, ), fields[ 4 ] )
+            self.WINDOW.setProperty( "LatestEpisode.%d.Rating" % ( count + 1, ), fields[ 4 ] )
             # get cache names of path to use for thumbnail/fanart and play path
             thumb_cache, fanart_cache, play_path = self._get_media( fields[ 24 ], fields[ 23 ] )
             self.WINDOW.setProperty( "LatestEpisode.%d.Path" % ( count + 1, ), play_path )
-            # self.WINDOW.setProperty( "LatestEpisode.%d.Fanart" % ( count + 1, ), "special://profile/Thumbnails/Video/%s/%s" % ( "Fanart", fanart_cache, ) )
+            self.WINDOW.setProperty( "LatestEpisode.%d.Fanart" % ( count + 1, ), "special://profile/Thumbnails/Video/%s/%s" % ( "Fanart", fanart_cache, ) )
             # initial thumb path
             thumb = "special://profile/Thumbnails/Video/%s/%s" % ( thumb_cache[ 0 ], thumb_cache, )
             # if thumb does not exist use an auto generated thumb path

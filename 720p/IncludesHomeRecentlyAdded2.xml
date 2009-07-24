@@ -34,7 +34,7 @@
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>
-				<control type="image">
+			<!--	<control type="image">
 					<description>Main Icon -3</description>
 					<posx>175</posx>
 					<posy>70</posy>
@@ -77,16 +77,41 @@
 					<texture background="true">$INFO[Window.Property(LatestMovie.1.Thumb)]</texture>
 					<bordertexture border="8">ThumbShadow.png</bordertexture>
 					<bordersize>8</bordersize>
+				</control>  -->
+				<control type="image">
+					<description>Main Icon</description>
+					<posx>10</posx>
+					<posy>30</posy>
+					<width>120</width>
+					<height>160</height>
+					<aspectratio>keep</aspectratio>
+					<align>left</align>
+					<texture background="true">$INFO[Window.Property(LatestMovie.1.Thumb)]</texture>
+					<visible>!Control.HasFocus(8005)</visible>
+					<include>VisibleFadeEffect</include>
 				</control>
-				<control type="list" id="8002">
+				<control type="image">
+					<description>Main Icon</description>
+					<posx>10</posx>
+					<posy>30</posy>
+					<width>120</width>
+					<height>160</height>
+					<aspectratio>keep</aspectratio>
+					<align>left</align>
+					<fadetime>200</fadetime>
+					<texture background="true">$INFO[Container(8005).ListItem.Thumb]</texture>
+					<visible>Control.HasFocus(8005)</visible>
+					<include>VisibleFadeEffect</include>
+				</control>
+				<control type="list" id="8005">
 					<posx>0</posx>
 					<posy>200</posy>
 					<width>250</width>
 					<height>92</height>
 					<onleft>19000</onleft>
-					<onright>8003</onright>
-					<onup>8002</onup>
-					<ondown>8002</ondown>
+					<onright>8006</onright>
+					<onup>8005</onup>
+					<ondown>8005</ondown>
 					<viewtype label="535">list</viewtype>
 					<pagecontrol>-</pagecontrol>
 					<scrolltime>0</scrolltime>
@@ -112,7 +137,7 @@
 							<width>250</width>
 							<height>23</height>
 							<texture>MenuItemFO.png</texture>
-							<visible>Control.HasFocus(8002)</visible>
+							<visible>Control.HasFocus(8005)</visible>
 							<include>VisibleFadeEffect</include>
 						</control>
 						<control type="label">
@@ -135,28 +160,28 @@
 							<label2></label2>
 							<onclick>PlayMedia($INFO[Window.Property(LatestMovie.1.Path)])</onclick>
 							<icon>-</icon>
-							<thumb>-</thumb>
+							<thumb>$INFO[Window.Property(LatestMovie.1.Thumb)]</thumb>
 						</item>
 						<item id="2">
 							<label>$INFO[Window.Property(LatestMovie.2.Title)]</label>
 							<label2></label2>
 							<onclick>PlayMedia($INFO[Window.Property(LatestMovie.2.Path)])</onclick>
 							<icon>-</icon>
-							<thumb>-</thumb>
+							<thumb>$INFO[Window.Property(LatestMovie.2.Thumb)]</thumb>
 						</item>
 						<item id="3">
 							<label>$INFO[Window.Property(LatestMovie.3.Title)]</label>
 							<label2></label2>
 							<onclick>PlayMedia($INFO[Window.Property(LatestMovie.3.Path)])</onclick>
 							<icon>-</icon>
-							<thumb>-</thumb>
+							<thumb>$INFO[Window.Property(LatestMovie.3.Thumb)]</thumb>
 						</item>
 						<item id="4">
 							<label>$INFO[Window.Property(LatestMovie.4.Title)]</label>
 							<label2></label2>
 							<onclick>PlayMedia($INFO[Window.Property(LatestMovie.4.Path)])</onclick>
 							<icon>-</icon>
-							<thumb>-</thumb>
+							<thumb>$INFO[Window.Property(LatestMovie.4.Thumb)]</thumb>
 						</item>
 					</content>
 				</control>
@@ -197,7 +222,7 @@
 					<height>120</height>
 					<aspectratio>keep</aspectratio>
 					<texture background="true">$INFO[Window.Property(LatestEpisode.1.Thumb)]</texture>
-					<visible>!Control.HasFocus(8003)</visible>
+					<visible>!Control.HasFocus(8006)</visible>
 					<include>VisibleFadeEffect</include>
 				</control>
 				<control type="image">
@@ -208,19 +233,19 @@
 					<height>120</height>
 					<aspectratio>keep</aspectratio>
 					<fadetime>200</fadetime>
-					<texture background="true">$INFO[Container(8003).ListItem.Thumb]</texture>
-					<visible>Control.HasFocus(8003)</visible>
+					<texture background="true">$INFO[Container(8006).ListItem.Thumb]</texture>
+					<visible>Control.HasFocus(8006)</visible>
 					<include>VisibleFadeEffect</include>
 				</control>
-				<control type="list" id="8003">
+				<control type="list" id="8006">
 					<posx>0</posx>
 					<posy>155</posy>
 					<width>250</width>
 					<height>136</height>
-					<onleft>8002</onleft>
-					<onright>8003</onright>
-					<onup>8003</onup>
-					<ondown>8003</ondown>
+					<onleft>19000</onleft>
+					<onright>8006</onright>
+					<onup>8006</onup>
+					<ondown>8006</ondown>
 					<viewtype label="535">list</viewtype>
 					<pagecontrol>-</pagecontrol>
 					<scrolltime>0</scrolltime>
@@ -259,7 +284,7 @@
 							<width>250</width>
 							<height>34</height>
 							<texture>MenuItemFO.png</texture>
-							<visible>Control.HasFocus(8003)</visible>
+							<visible>Control.HasFocus(8006)</visible>
 							<include>VisibleFadeEffect</include>
 						</control>
 						<control type="label">
@@ -356,8 +381,9 @@
 					<width>230</width>
 					<height>120</height>
 					<aspectratio>keep</aspectratio>
+					<align>right</align>
 					<texture background="true">$INFO[Window.Property(LatestSong.1.Thumb)]</texture>
-					<visible>!Control.HasFocus(8006)</visible>
+					<visible>!Control.HasFocus(8007)</visible>
 					<include>VisibleFadeEffect</include>
 				</control>
 				<control type="image">
@@ -368,24 +394,24 @@
 					<height>120</height>
 					<aspectratio>keep</aspectratio>
 					<fadetime>200</fadetime>
-					<texture background="true">$INFO[Container(8006).ListItem.Thumb]</texture>
-					<visible>Control.HasFocus(8006)</visible>
+					<texture background="true">$INFO[Container(8007).ListItem.Thumb]</texture>
+					<visible>Control.HasFocus(8007)</visible>
 					<include>VisibleFadeEffect</include>
 				</control>
-				<control type="list" id="8006">
+				<control type="list" id="8007">
 					<posx>0</posx>
 					<posy>155</posy>
 					<width>250</width>
 					<height>136</height>
 					<onleft>19000</onleft>
-					<onright>8006</onright>
-					<onup>8006</onup>
-					<ondown>8006</ondown>
+					<onright>8007</onright>
+					<onup>8007</onup>
+					<ondown>8007</ondown>
 					<viewtype label="535">list</viewtype>
 					<pagecontrol>-</pagecontrol>
 					<scrolltime>0</scrolltime>
 					<itemlayout height="34" width="230">
-						<control type="label">
+					<!--	<control type="label">
 							<posx>10</posx>
 							<posy>2</posy>
 							<width>230</width>
@@ -397,10 +423,10 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label2]</label>
-						</control>
+						</control>  -->
 						<control type="label">
 							<posx>10</posx>
-							<posy>12</posy>
+							<posy>6</posy>
 							<width>230</width>
 							<height>20</height>
 							<font>font12caps</font>
@@ -419,10 +445,10 @@
 							<width>250</width>
 							<height>34</height>
 							<texture>MenuItemFO.png</texture>
-							<visible>Control.HasFocus(8006)</visible>
+							<visible>Control.HasFocus(8007)</visible>
 							<include>VisibleFadeEffect</include>
 						</control>
-						<control type="label">
+					<!--	<control type="label">
 							<posx>10</posx>
 							<posy>2</posy>
 							<width>230</width>
@@ -434,10 +460,10 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label2]</label>
-						</control>
+						</control>  -->
 						<control type="label">
 							<posx>10</posx>
-							<posy>12</posy>
+							<posy>6</posy>
 							<width>230</width>
 							<height>20</height>
 							<font>font12caps</font>
@@ -451,29 +477,29 @@
 					</focusedlayout>
 					<content>
 						<item id="1">
-							<label>$INFO[Window.Property(LatestSong.1.Title)]</label>
-							<label2>$INFO[Window.Property(LatestSong.1.Artist)] - $INFO[Window.Property(LatestSong.1.Album)]</label2>
+							<label>$INFO[Window.Property(LatestSong.1.Artist)] - $INFO[Window.Property(LatestSong.1.Album)]</label>
+							<label2></label2>
 							<onclick>PlayMedia($INFO[Window.Property(LatestSong.1.Path)])</onclick>
 							<icon>-</icon>
 							<thumb>$INFO[Window.Property(LatestSong.1.Thumb)]</thumb>
 						</item>
 						<item id="2">
-							<label>$INFO[Window.Property(LatestSong.2.Title)]</label>
-							<label2>$INFO[Window.Property(LatestSong.2.Artist)] - $INFO[Window.Property(LatestSong.2.Album)]</label2>
+							<label>$INFO[Window.Property(LatestSong.2.Artist)] - $INFO[Window.Property(LatestSong.2.Album)]</label>
+							<label2></label2>
 							<onclick>PlayMedia($INFO[Window.Property(LatestSong.2.Path)])</onclick>
 							<icon>-</icon>
 							<thumb>$INFO[Window.Property(LatestSong.2.Thumb)]</thumb>
 						</item>
 						<item id="3">
-							<label>$INFO[Window.Property(LatestSong.3.Title)]</label>
-							<label2>$INFO[Window.Property(LatestSong.3.Artist)] - $INFO[Window.Property(LatestSong.3.Album)]</label2>
+							<label>$INFO[Window.Property(LatestSong.3.Artist)] - $INFO[Window.Property(LatestSong.3.Album)]</label>
+							<label2></label2>
 							<onclick>PlayMedia($INFO[Window.Property(LatestSong.3.Path)])</onclick>
 							<icon>-</icon>
 							<thumb>$INFO[Window.Property(LatestSong.3.Thumb)]</thumb>
 						</item>
 						<item id="4">
-							<label>$INFO[Window.Property(LatestSong.4.Title)]</label>
-							<label2>$INFO[Window.Property(LatestSong.4.Artist)] - $INFO[Window.Property(LatestSong.4.Album)]</label2>
+							<label>$INFO[Window.Property(LatestSong.4.Artist)] - $INFO[Window.Property(LatestSong.4.Album)]</label>
+							<label2></label2>
 							<onclick>PlayMedia($INFO[Window.Property(LatestSong.4.Path)])</onclick>
 							<icon>-</icon>
 							<thumb>$INFO[Window.Property(LatestSong.4.Thumb)]</thumb>

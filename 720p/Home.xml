@@ -186,8 +186,8 @@
 					<width>1280</width>
 					<height>550</height>
 					<onleft>9010</onleft>
-					<onright>9010</onright>
-					<onup>8000</onup>
+					<onright>8003</onright>
+					<onup>8002</onup>
 					<ondown>9000</ondown>
 					<itemgap>0</itemgap>
 					<orientation>horizontal</orientation>
@@ -240,7 +240,7 @@
 					<height>550</height>
 					<onleft>9011</onleft>
 					<onright>9011</onright>
-					<onup>8006</onup>
+					<onup>8004</onup>
 					<ondown>9000</ondown>
 					<itemgap>0</itemgap>
 					<orientation>horizontal</orientation>
@@ -495,7 +495,7 @@
 					<width>1150</width>
 					<height>550</height>
 					<onleft>9016</onleft>
-					<onright>9016</onright>
+					<onright>8003</onright>
 					<onup>8002</onup>
 					<ondown>9000</ondown>
 					<itemgap>0</itemgap>
@@ -622,7 +622,7 @@
 				<height>1</height>
 				<label>-</label>
 				<font>-</font>
-				<onfocus>XBMC.RunScript(special://skin/scripts/RecentlyAdded.py,limit=4)</onfocus>
+				<onfocus>XBMC.RunScript(special://skin/scripts/RecentlyAdded.py,limit=4&amp;albums=True)</onfocus>
 				<onfocus>SetFocus(9000)</onfocus>
 				<texturenofocus>-</texturenofocus>
 				<texturefocus>-</texturefocus>
@@ -862,7 +862,7 @@
 					<width>240</width>
 					<height>550</height>
 					<onleft>19000</onleft>
-					<onright>8002</onright>
+					<onright>8005</onright>
 					<onup>19010</onup>
 					<ondown>19010</ondown>
 					<itemgap>0</itemgap>
@@ -908,7 +908,7 @@
 					<width>240</width>
 					<height>550</height>
 					<onleft>19000</onleft>
-					<onright>8006</onright>
+					<onright>8007</onright>
 					<onup>19011</onup>
 					<ondown>19011</ondown>
 					<itemgap>0</itemgap>
@@ -1138,7 +1138,7 @@
 					<width>240</width>
 					<height>550</height>
 					<onleft>19000</onleft>
-					<onright>8002</onright>
+					<onright>8005</onright>
 					<onup>19016</onup>
 					<ondown>19016</ondown>
 					<itemgap>0</itemgap>
@@ -1198,7 +1198,7 @@
 					<width>240</width>
 					<height>550</height>
 					<onleft>19000</onleft>
-					<onright>8002</onright>
+					<onright>8006</onright>
 					<onup>19017</onup>
 					<ondown>19017</ondown>
 					<itemgap>0</itemgap>
@@ -1438,7 +1438,7 @@
 				<height>1</height>
 				<label>-</label>
 				<font>-</font>
-				<onfocus>XBMC.RunScript(special://skin/scripts/RecentlyAdded.py,limit=4)</onfocus>
+				<onfocus>XBMC.RunScript(special://skin/scripts/RecentlyAdded.py,limit=4&amp;albums=True)</onfocus>
 				<onfocus>SetFocus(19000)</onfocus>
 				<texturenofocus>-</texturenofocus>
 				<texturefocus>-</texturefocus>
