@@ -131,10 +131,10 @@
 			<include>VisibleFadeEffect</include>
 			<visible>Player.HasVideo + !Skin.HasSetting(homepageVideoinfo) + Skin.HasSetting(HorizontalMenu)</visible>
 			<animation effect="slide" end="0,30" time="0" condition="!system.getbool(lookandfeel.enablerssfeeds)">conditional</animation>
-			<animation effect="slide" end="0,350" time="300" tween="quadratic" easing="out" condition="Skin.HasSetting(BigVideoInfo)">WindowClose</animation>
-			<animation effect="slide" start="0,350" time="300" tween="quadratic" easing="out" condition="Skin.HasSetting(BigVideoInfo)">WindowOpen</animation>
-			<animation effect="slide" end="0,200" time="300" tween="quadratic" easing="out" condition="!Skin.HasSetting(BigVideoInfo)">WindowClose</animation>
-			<animation effect="slide" start="0,200" time="300" tween="quadratic" easing="out" condition="!Skin.HasSetting(BigVideoInfo)">WindowOpen</animation>
+			<animation effect="slide" end="0,450" time="300" tween="quadratic" easing="out" condition="Skin.HasSetting(BigVideoInfo)">WindowClose</animation>
+			<animation effect="slide" start="0,450" time="300" tween="quadratic" easing="out" condition="Skin.HasSetting(BigVideoInfo)">WindowOpen</animation>
+			<animation effect="slide" end="0,300" time="300" tween="quadratic" easing="out" condition="!Skin.HasSetting(BigVideoInfo)">WindowClose</animation>
+			<animation effect="slide" start="0,300" time="300" tween="quadratic" easing="out" condition="!Skin.HasSetting(BigVideoInfo)">WindowOpen</animation>
 			<animation effect="slide" start="0,0" end="0,-60" time="300" tween="quadratic" easing="out" condition="ControlGroup(9001).HasFocus">conditional</animation>  
 			<include condition="!Skin.HasSetting(BigVideoInfo)">SmallVideoInfo</include>
 			<include condition="Skin.HasSetting(BigVideoInfo)">BigVideoInfo</include>
