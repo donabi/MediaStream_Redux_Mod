@@ -253,6 +253,22 @@
 					<label>-</label>
 					<font>font13</font>
 				</control>
+				<control type="label">
+					<posx>225</posx>
+					<posy>350</posy>
+					<width>500</width>
+					<height>50</height>
+					<label>MediaStream_Redux_Mod:</label>
+					<font>font12caps_title</font>
+				</control>
+				<control type="label">
+					<posx>490</posx>
+					<posy>346</posy>
+					<width>500</width>
+					<height>50</height>
+					<label>Ver. 1.0 (July 25)</label>
+					<font>font12</font>
+				</control>
 				<control type="label" id="52">
 					<description>XBMC XBE BUILD Version</description>
 					<posx>750</posx>

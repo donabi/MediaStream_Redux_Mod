@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<strings>
+  <!-- home page labels -->
+  <string id="31000">Ver</string>
+  <string id="31001">Ouvir</string>
+  <string id="31002">Ver</string>
+  <string id="31003">Executar</string>
+  <string id="31004">Verificar</string>
+  <string id="31005">Configurar o</string>
+  <string id="31006">Power</string>
+  <string id="31007">Plugins</string>
+  <string id="31008">Ligar/Desligar</string>
+  <string id="31009">Abrir</string>
+  <string id="31010">Reproduzir</string>
+  <string id="31011">Drive</string>
+  <string id="31012"></string>
+  <string id="31013"></string>
+  <string id="31014"></string>
+  <string id="31015"></string>
+  <string id="31016"></string>
+  <string id="31017"></string>
+  <string id="31018"></string>
+  <string id="31019"></string>
+
+  <string id="31020"></string>
+  <string id="31021">Vídeo - Ficheiros</string>
+  <string id="31022">Música - Ficheiros</string>
+  <string id="31023">A tocar</string>
+  <string id="31024">Página</string>
+  <string id="31025">Items</string>
+  <string id="31026">Outras Opções</string>
+  <string id="31027">Localização</string>
+ 
+  <!-- View Type labels -->
+  <string id="31028">Posters</string>
+  <string id="31029">Lista de DVD</string>
+  <string id="31030">Fanart</string>
+  <string id="31031">Lista Completa</string>
+  <string id="31032"></string>
+  <string id="31033">Imagens</string>
+  <string id="31034">Icons Largos</string>
+  <string id="31035">Detalhes</string>
+  <string id="31036">Informação</string>
+  <string id="31037">Imagens</string>
+
+  <string id="31040">A tocar...</string>
+  <string id="31041">Pistas seguintes...</string>
+  <string id="31042">A TOCAR</string>
+  <string id="31043">PAUSA</string>
+  <string id="31044">PARA A FRENTE</string>
+  <string id="31045">PARA TRÁS</string>
+  <string id="31046">Propriedades</string>
+  <string id="31047">Preset Actual</string>
+  <string id="31048">Opções de Visualização</string>
+  <string id="31049">Mudar a preset para</string>
+  <string id="31050">Mudar definições para</string>
+  <string id="31051">Presets de Visualização</string>
+  <string id="31052">Detalhes</string>
+  <string id="31053">Hora de Término</string>
+  <string id="31054">Falta</string>
+
+  <!-- Playlist Editor labels -->
+  <string id="31055">Abrir Playlist</string>
+  <string id="31056">Guardar Playlist</string>
+  <string id="31057">Fechar Playlist</string>
+  <string id="31058">Ficheiros de música do Sistema</string>
+  <string id="31059">Playlist actual</string>
+  <string id="31060">Este ficheiro está dividido. Escolha a parte de onde deseja iniciar.</string>
+  
+  <!-- Skin Settings labels -->
+  <string id="31100">Opções de Fundos</string>
+  <string id="31101">Opções do Menu Principal</string>
+  <string id="31102">Fundo</string>
+  <string id="31103">Mostrar "Em pausa" em Apresentações de Imagens</string>
+  <string id="31104">Botões do Ecrã Principal</string>
+  <string id="31105">Mostrar nomes de Ficheiros no Scanner de Fundo</string>
+  <string id="31106">Outras opções</string>
+  <string id="31107">Escoder as etiquetas "VER", "OUVIR", etc..</string>
+  <string id="31108">Esconder Botões do Menu Principal</string>
+  <string id="31109">Fundo do Ecrã Inicial</string>
+  <string id="31110">Esconder Fundo para Botão Inicial</string>
+  <string id="31111">Esconder</string>
+  <string id="31112">Opções</string>
+  <string id="31113">Imagem Única</string>
+  <string id="31114">Múltiplas Imagens</string>
+  <string id="31115">Definir</string>
+  <string id="31116">Scripts Adicionais</string>
+  <string id="31117">Mostrar Vídeos recentemente adicionados</string>
+  <string id="31118">Sub-Menus da Página Inicial</string>
+  <string id="31119">Ligar botões de Scrits Definidos</string>
+  <string id="31120">Nome no Botão</string>
+  <string id="31121">Caminho do Script</string>
+  <string id="31122">Página de Meteorologia</string>
+  <string id="31123">Use "Posters" instead of "Banners" for TV Shows</string>
+  <string id="31124">Use Video Preview Instead of Cover</string>
+  <string id="31125">Show Disc Drive only when media inserted</string>
+  <string id="31126">Hide Checkmark for watched movies</string>
+  <string id="31127">Use Horizontal Menu</string>
+  <string id="31128">Menu Principal</string>
+  <string id="31129">Sub-Menu</string>
+  <string id="31130">Botões de Vídeo</string>
+  <string id="31131">Botões de Filmes</string>
+  <string id="31132">Botões de Séries de TV</string>
+  <string id="31133">Botões de Música</string>
+  <string id="31134">Trailers</string>
+  <string id="31135">Usar Ícones de Meteorologia Animados</string>
+  <string id="31136">CAMINHO PARA SCRIPT DE LETRAS</string>
+  <string id="31137">XBMC Lyrics</string>
+  
+  <!-- Script labels -->
+  <string id="31200">Atalhos</string>
+  <string id="31201">Categorias</string>
+  <string id="31202">Mostrar Elenco</string>
+  <string id="31203">Outras Opções</string>
+  <string id="31204">Ligações de Secção</string>
+  <string id="31205">Origem das Letras</string>
+  <string id="31206">Escolha a sua Música</string>
+  <string id="31207">Letras de Música</string>
+  <string id="31208"></string>
+  <string id="31209"></string>
+
+  <!-- The Weather Channel Script labels -->
+  <string id="31250">Previsão de Radar</string>
+  <string id="31251">Previsão</string>
+  <string id="31252">Script TWC</string>
+  
+  <!-- Extra labels -->
+  <string id="31300">Temp. Actual</string>
+  <string id="31301">Última Actualização</string>
+  <string id="31302">Menu</string>
+  <string id="31303">Mudar</string>
+  <string id="31304">Imagem</string>
+  <string id="31305">Não foi detectado Disco</string>
+  <string id="31306">Ejectar</string>
+  <string id="31307">Mostar Fanart</string>
+  <string id="31308">Detalhe do Filme</string>
+  <string id="31309">Memória em uso:</string>
+  <string id="31310">Nº da Faixa</string>
+  <string id="31311">IMAGEM DE FANART [CR][CR]NÃO DISPONÍVEL[CR][CR]CARREGUE NO BOTÃO PARA DEFINIR</string>
+  <string id="31312">Scraper Actual</string>
+  <string id="31313">Escolher Scraper</string>
+  <string id="31314">Opções de Procura de Conteúdo</string>
+  <string id="31315">Básico</string>
+  <string id="31316">Iniciar como</string>
+  <string id="31317">Definir caminho do FanArt</string>
+  <string id="31318">Fanart Pequena</string>
+  <string id="31319">Escolher Perfil</string>
+  <string id="31320">Último Logon</string>
+  <string id="31321">Escolha de Músicas de KARAOKE</string>
+  <string id="31322">Estréia</string>
+  <string id="31323">Filmes Recentes</string>
+  <string id="31324">Episódios Recentes</string>
+  <string id="31325">Opções de Playlists</string>
+  <string id="31326">Criado</string>
+  <string id="31327">Resolução</string>
+  <string id="31328">Recentes</string>
+  <string id="31329">Música Recente</string>
+  <string id="31330">[B]CRONÓMETRO ACTIVO![/B] [COLOR=grey2] - SISTEMA DESLIGA AUTOMATICAMENTE EM[/COLOR]</string>
+  
+  <!-- Description Labels  -->
+  <string id="31400">[B]Modificar Definições de Visualização, Incluindo:[/B][CR][CR]Calibrar a GUI · Mudar a Skin · Definir o ScreenSaver · Mudar definições regionais · Definir Opções Globais de VIsualização</string>
+  <string id="31401">[B]Modificar Definições de Vídeo, Incluindo:[/B][CR][CR]Gerir a Biblioteca de Vídeo · Descodificador de Vídeo e Qualidade · Configurar as Legendas · Mudar definições para resumir automaticamente o Vídeo</string>
+  <string id="31402">[B][B]Modificar Definições de Música, Incluindo:[/B][CR][CR]Escolher a Visualização · Gerir a Biblioteca de Vídeo · Definir a Conta do Last.FM · Mudar fontes de definições do Karaoke</string>
+  <string id="31403">[B][B]Modificar Definições de Imagens, Incluindo:[/B][CR][CR]Ligar Extracção automática de Minituras e leitura de Tags EXIF · Ajustar efeitos de Transição em Apresentações · Definir a Pasta para Capturas de Ecrã</string>
+  <string id="31404">[B][B]Modificar Definições de Meteorologia, Incluindo:[/B][CR][CR]Definir as 3 cidades que o XBMC mostra na Meteorologia· Mudar Definições Regionais, Incluindo unidades de Temperatura</string>
+  <string id="31405">[B][B]Modificar Definições de Rede, Incluindo:[/B][CR][CR]Ligar o Servidor Web Interno do XBMC · Mudar definições de SAMBA · Ligar/Configurar o Servidor e Cliente UPNP · Configurar o Servidor de Eventos</string>
+  <string id="31406">[B][B]Modificar Definições do Sistema, Incluindo:[/B][CR][CR]Mudar o modo de Desligar · Configurar a Auto-Reprodução · Definir Hardware de Audio · Configurar a Password e os Locks do Sistema do Utilizador Master</string>
+  <string id="31407">[B][B]Modificar Definições da MediaStream Redux, Incluindo:[/B][CR][CR]Adicionar ou Remover Botões do Menu Principal · Mudar o fundo de todas as secções · Criar atalhos para Scripts em toda a Skin</string>
+
+  <string id="31420">[B][COLOR=white]O XBMC não detectou nenhum Disco.[/COLOR][/B][CR][CR]Por favor insira um disco na Drive e tente outra vez ou Cancele</string>
+</strings>
