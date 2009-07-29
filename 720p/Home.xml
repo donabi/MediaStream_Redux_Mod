@@ -859,7 +859,7 @@
 				<control type="grouplist" id="19010">
 					<posx>10</posx>
 					<posy>355</posy>
-					<width>240</width>
+					<width>215</width>
 					<height>550</height>
 					<onleft>19000</onleft>
 					<onright>8005</onright>
@@ -905,7 +905,7 @@
 				<control type="grouplist" id="19011">
 					<posx>10</posx>
 					<posy>355</posy>
-					<width>240</width>
+					<width>215</width>
 					<height>550</height>
 					<onleft>19000</onleft>
 					<onright>8007</onright>
@@ -959,7 +959,7 @@
 				<control type="grouplist" id="19012">
 					<posx>10</posx>
 					<posy>355</posy>
-					<width>240</width>
+					<width>215</width>
 					<height>550</height>
 					<onleft>19000</onleft>
 					<onright>19001</onright>
@@ -981,7 +981,7 @@
 				<control type="grouplist" id="19013">
 					<posx>10</posx>
 					<posy>355</posy>
-					<width>240</width>
+					<width>215</width>
 					<height>550</height>
 					<onleft>19000</onleft>
 					<onright>19001</onright>
@@ -1032,7 +1032,7 @@
 				<control type="grouplist" id="19014">
 					<posx>10</posx>
 					<posy>355</posy>
-					<width>240</width>
+					<width>215</width>
 					<height>550</height>
 					<onleft>19000</onleft>
 					<onright>19001</onright>
@@ -1075,7 +1075,7 @@
 				<control type="grouplist" id="19015">
 					<posx>10</posx>
 					<posy>355</posy>
-					<width>240</width>
+					<width>215</width>
 					<height>550</height>
 					<onleft>19000</onleft>
 					<onright>19001</onright>
@@ -1135,7 +1135,7 @@
 				<control type="grouplist" id="19016">
 					<posx>10</posx>
 					<posy>355</posy>
-					<width>240</width>
+					<width>215</width>
 					<height>550</height>
 					<onleft>19000</onleft>
 					<onright>8005</onright>
@@ -1195,7 +1195,7 @@
 				<control type="grouplist" id="19017">
 					<posx>10</posx>
 					<posy>355</posy>
-					<width>240</width>
+					<width>215</width>
 					<height>550</height>
 					<onleft>19000</onleft>
 					<onright>8006</onright>
@@ -1222,7 +1222,7 @@
 						<visible>!Skin.HasSetting(SubMenuNoTVYearsButton)</visible>
 					</control>
 					<control type="button" id="190174">
-						<include>ButtonHomeSubCommonValues</include>
+					 	<include>ButtonHomeSubCommonValues</include>
 						<label>31328</label>
 						<onclick>ActivateWindow(VideoLibrary,RecentlyAddedEpisodes)</onclick>
 						<visible>!Skin.HasSetting(SubMenuNoTVRecentlyAddedButton)</visible>

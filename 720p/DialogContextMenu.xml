@@ -3,7 +3,7 @@
 	<include>dialogeffect</include>
 	<coordinates>
 		<system>1</system>
-		<posx>0</posx>
+		<posx>-10</posx>
 		<posy>0</posy>
 	</coordinates>
 	<controls>
@@ -11,7 +11,7 @@
 			<description>background top image</description>
 			<posx>0</posx>
 			<posy>-74</posy>
-			<width>370</width>
+			<width>400</width>
 			<height>74</height>
 			<texture border="45,45,45,0">DialogContextTop.png</texture>
 		</control>
@@ -19,7 +19,7 @@
 			<description>header label</description>
 			<posx>34</posx>
 			<posy>-40</posy>
-			<width>297</width>
+			<width>340</width>
 			<height>30</height>
 			<font>font28caps_title</font>
 			<label>31302</label>
@@ -31,7 +31,7 @@
 		<control type="image">
 			<posx>34</posx>
 			<posy>-6</posy>
-			<width>297</width>
+			<width>340</width>
 			<height>4</height>
 			<texture>separator.png</texture>
 		</control>
@@ -39,13 +39,13 @@
 			<description>background image</description>
 			<posx>0</posx>
 			<posy>0</posy>
-			<width>370</width>
+			<width>410</width>
 			<texture border="45,0,45,0">DialogContextMiddle.png</texture>
 		</control>
 		<control type="image" id="998">
 			<description>background bottom image</description>
 			<posx>0</posx>
-			<width>370</width>
+			<width>410</width>
 			<height>50</height>
 			<texture border="45,0,45,49">DialogContextBottom.png</texture>
 		</control>
@@ -53,7 +53,7 @@
 			<description>button template</description>
 			<posx>34</posx>
 			<posy>-</posy>
-			<width>297</width>
+			<width>340</width>
 			<height>38</height>
 			<font>fontContextMenu</font>
 			<align>center</align>
