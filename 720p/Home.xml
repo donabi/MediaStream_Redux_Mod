@@ -30,13 +30,17 @@
 	 	<control type="group">
 			<posx>510r</posx>
 			<posy>40</posy>
-			<visible>[Container(9000).HasFocus(6) + !Skin.HasSetting(homepageWeatherinfo) + Skin.HasSetting(HorizontalMenu)] | [Container(19000).HasFocus(6) + !Skin.HasSetting(homepageWeatherinfo) + !Skin.HasSetting(HorizontalMenu)]</visible>
+		 	<visible>[!Skin.HasSetting(WeatherAllScreens)] | [Container(9000).HasFocus(6) + !Skin.HasSetting(homepageWeatherinfo) + Skin.HasSetting(HorizontalMenu)] | [Container(19000).HasFocus(6) + !Skin.HasSetting(homepageWeatherinfo) + !Skin.HasSetting(HorizontalMenu)]</visible> 
 			<animation effect="slide" end="0,-220" time="300" tween="quadratic" easing="out">Hidden</animation>
 			<animation effect="slide" start="0,-220" time="300" tween="quadratic" easing="out">Visible</animation>
-			<animation effect="slide" end="0,-220" time="300" tween="quadratic" easing="out" condition="Container(9000).HasFocus(6)">WindowClose</animation>
-			<animation effect="slide" start="0,-220" time="300" tween="quadratic" easing="out" condition="Container(9000).HasFocus(6)">WindowOpen</animation>
-			<animation effect="slide" end="0,-220" time="300" tween="quadratic" easing="out" condition="Container(19000).HasFocus(6)">WindowClose</animation>
-			<animation effect="slide" start="0,-220" time="300" tween="quadratic" easing="out" condition="Container(19000).HasFocus(6)">WindowOpen</animation>
+			<animation effect="slide" end="0,-220" time="300" tween="quadratic" easing="out" condition="Container(9000).HasFocus">WindowClose</animation>
+			<animation effect="slide" start="0,-220" time="300" tween="quadratic" easing="out" condition="Container(9000).HasFocus">WindowOpen</animation>
+			<animation effect="slide" end="0,-220" time="300" tween="quadratic" easing="out" condition="Container(19000).HasFocus">WindowClose</animation>
+			<animation effect="slide" start="0,-220" time="300" tween="quadratic" easing="out" condition="Container(19000).HasFocus">WindowOpen</animation>
+			<animation effect="slide" end="-145,0" time="300"  tween="quadratic" easing="out" condition=" !Skin.HasSetting(homepageHideRecentlyAdded) + [Container(9000).HasFocus(11) | Container(9000).HasFocus(10) | Container(9000).HasFocus(3)]">conditional</animation>
+			<animation effect="slide" start="145,0" time="300"  tween="quadratic" easing="out" condition="!Skin.HasSetting(homepageHideRecentlyAdded) + [Container(9000).HasFocus(11) | Container(9000).HasFocus(10) | Container(9000).HasFocus(3)]">conditional</animation>
+			<animation effect="slide" end="-145,0" time="300"  tween="quadratic" easing="out" condition=" !Skin.HasSetting(homepageHideRecentlyAdded) + [Container(19000).HasFocus(11) | Container(19000).HasFocus(10) | Container(19000).HasFocus(3)]">conditional</animation>
+			<animation effect="slide" start="145,0" time="300"  tween="quadratic" easing="out" condition="!Skin.HasSetting(homepageHideRecentlyAdded) + [Container(19000).HasFocus(11) | Container(19000).HasFocus(10) | Container(19000).HasFocus(3)]">conditional</animation>
 			<control type="image">
 				<description>background</description>
 				<posx>0</posx>
@@ -1490,6 +1494,8 @@
 		<control type="group">
 			<posx>0</posx>
 			<posy>0</posy>
+			<animation effect="slide" end="0,-50" time="300" tween="quadratic" easing="out">WindowClose</animation>
+			<animation effect="slide" start="0,-50" time="300" tween="quadratic" easing="out">WindowOpen</animation>
 			<control type="image">
 				<description>RSS background</description>
 				<posx>0</posx>

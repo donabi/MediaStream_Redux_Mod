@@ -904,6 +904,20 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
 					<control type="radiobutton" id="207">
+						<description>enable weather on all screens</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>- $LOCALIZE[31138]</label>
+						<onclick>Skin.ToggleSetting(WeatherAllScreens)</onclick>
+						<selected>!Skin.HasSetting(WeatherAllScreens)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<enable>!Skin.HasSetting(homepageWeatherinfo)</enable>
+					</control>
+					<control type="radiobutton" id="208">
 						<description>Show Recently added info</description>
 						<width>750</width>
 						<height>40</height>
