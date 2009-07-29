@@ -121,7 +121,7 @@
 				</control>
 				<control type="label">
 					<description>current feels like label</description>
-					<posx>170</posx>
+					<posx>225</posx>
 					<posy>400</posy>
 					<height>35</height>
 					<font>font13</font>
@@ -133,7 +133,7 @@
 				</control>
 				<control type="label">
 					<description>current dew label</description>
-					<posx>170</posx>
+					<posx>225</posx>
 					<posy>430</posy>
 					<height>35</height>
 					<font>font13</font>
@@ -145,7 +145,7 @@
 				</control>
 				<control type="label">
 					<description>current humidity label</description>
-					<posx>170</posx>
+					<posx>225</posx>
 					<posy>460</posy>
 					<height>35</height>
 					<font>font13</font>
@@ -157,7 +157,7 @@
 				</control>
 				<control type="label">
 					<description>current UV Index label</description>
-					<posx>170</posx>
+					<posx>225</posx>
 					<posy>490</posy>
 					<height>35</height>
 					<font>font13</font>
@@ -169,7 +169,7 @@
 				</control>
 				<control type="label">
 					<description>current Wind label</description>
-					<posx>170</posx>
+					<posx>225</posx>
 					<posy>520</posy>
 					<height>35</height>
 					<font>font13</font>
@@ -181,7 +181,7 @@
 				</control>
 				<control type="label">
 					<description>current feels like Value</description>
-					<posx>185</posx>
+					<posx>240</posx>
 					<posy>400</posy>
 					<height>35</height>
 					<font>font13</font>
@@ -193,7 +193,7 @@
 				</control>
 				<control type="label">
 					<description>current dew Value</description>
-					<posx>185</posx>
+					<posx>240</posx>
 					<posy>430</posy>
 					<height>35</height>
 					<font>font13</font>
@@ -205,7 +205,7 @@
 				</control>
 				<control type="label">
 					<description>current humidity Value</description>
-					<posx>185</posx>
+					<posx>240</posx>
 					<posy>460</posy>
 					<height>35</height>
 					<font>font13</font>
@@ -217,7 +217,7 @@
 				</control>
 				<control type="label">
 					<description>current UV Index Value</description>
-					<posx>185</posx>
+					<posx>240</posx>
 					<posy>490</posy>
 					<height>35</height>
 					<font>font13</font>
@@ -229,7 +229,7 @@
 				</control>
 				<control type="label">
 					<description>current Wind Value</description>
-					<posx>185</posx>
+					<posx>240</posx>
 					<posy>520</posy>
 					<height>35</height>
 					<font>font13</font>
