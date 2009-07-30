@@ -571,19 +571,30 @@
 				<label>$LOCALIZE[563]: $INFO[ListItem.RatingAndVotes]</label>
 				<scrollout>false</scrollout>
 				<pauseatend>2000</pauseatend>
+			</control> 
+			<control type="grouplist">
+				<description>MPAA Flagging Images</description>
+				<posx>335</posx>
+				<posy>360</posy>
+				<width>150</width>
+				<align>left</align>
+				<itemgap>0</itemgap>
+				<orientation>horizontal</orientation>  
+				<include>MPAAFlaggingConditions</include>
 			</control>
 			<control type="grouplist">
 				<description>Media Codec Flagging Images</description>
-				<posx>320</posx>
+				<posx>465</posx>
 				<posy>370</posy>
-				<width>560</width>
+				<width>850</width>
 				<align>left</align>
 				<itemgap>0</itemgap>
-				<orientation>horizontal</orientation>
-			<!--	<include>MPAAFlaggingConditions</include>  -->
+				<orientation>horizontal</orientation>  
+				<include>VideoTypeFlaggingConditions</include>
 				<include>VideoCodecFlaggingConditions</include>
+				<include>AspectCodecFlaggingConditions</include> 
 				<include>AudioCodecFlaggingConditions</include>
-				<include>AspectCodecFlaggingConditions</include>
+				<include>StudioFlaggingConditions</include>
 			</control>
 			<control type="label">
 				<posx>780</posx>
