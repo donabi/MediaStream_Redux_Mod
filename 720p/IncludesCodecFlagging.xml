@@ -39,8 +39,8 @@
 			<aspectratio>keep</aspectratio>
 			<texture>$INFO[ListItem.VideoResolution,flagging/video/,.png]</texture>
 		</control>
-	</include>
-	<include name="VideoCodecFlaggingConditions">
+		</include>
+		<include name="VideoCodecFlaggingConditions">
 		<control type="image">
 			<description>Xvid Codec Image</description>
 			<width>90</width>
@@ -171,7 +171,7 @@
 			<height>50</height>
 			<aspectratio>keep</aspectratio>	
 			<texture>flagging/ratings/mpaa_restricted.png</texture>
-			<visible>substring(ListItem.mpaa,R ) + !substring(ListItem.mpaa,ated)</visible>
+			<visible>substring(ListItem.mpaa,Rated R)</visible>
 		</control>
 		<control type="image">
 			<description>MPAA PG-13 Image</description>
@@ -179,7 +179,7 @@
 			<height>50</height>
 			<aspectratio>keep</aspectratio>
 			<texture>flagging/ratings/mpaa_pg13.png</texture>
-			<visible>substring(ListItem.mpaa,PG-13 )</visible>
+			<visible>substring(ListItem.mpaa,Rated PG-13)</visible>
 		</control>
 		<control type="image">
 			<description>MPAA PG Image</description>
@@ -187,7 +187,7 @@
 			<height>50</height>
 			<aspectratio>keep</aspectratio>
 			<texture>flagging/ratings/mpaa_pg.png</texture>
-			<visible>substring(ListItem.mpaa,PG ) + !substring(ListItem.mpaa,PG-13) + !substring(ListItem.mpaa,G)</visible>
+			<visible>substring(ListItem.mpaa,Rated PG )</visible>
 		</control>
 		<control type="image">
 			<description>MPAA G Image</description>
@@ -195,7 +195,7 @@
 			<height>50</height>
 			<aspectratio>keep</aspectratio>
 			<texture>flagging/ratings/mpaa_general.png</texture>
-			<visible>substring(ListItem.mpaa,G ) + !substring(ListItem.mpaa,PG)</visible>
+			<visible>substring(ListItem.mpaa,Rated G)</visible>
 		</control>
 		<control type="image">
 			<description>MPAA Not Rated Image</description>
@@ -203,7 +203,7 @@
 			<height>50</height>
 			<aspectratio>keep</aspectratio>
 			<texture>flagging/ratings/mpaa_unrated.png</texture>
-			<visible>substring(ListItem.mpaa,Not )</visible>
+			<visible>substring(ListItem.mpaa,Unrated)</visible>
 		</control>
 		<control type="image">
 			<description>MPAA NC-17 Image</description>
@@ -211,11 +211,11 @@
 			<height>50</height>
 			<aspectratio>keep</aspectratio>
 			<texture>flagging/ratings/mpaa_nc17.png</texture>
-			<visible>substring(ListItem.mpaa,NC-17 )</visible>
+			<visible>substring(ListItem.mpaa,NC-17)</visible>
 		</control>
 	</include>
 	<include name="StudioFlaggingConditions">
-		<control type="image">
+	<control type="image">
 			<description>007 Image</description>
 			<width>100</width>
 			<height>38</height>
@@ -255,5 +255,5 @@
 			<texture>flagging/studios/Pixar Animation Studios.png</texture>
 			<visible>substring(ListItem.Studio,Pixar)</visible>
 		</control>
-	</include>
+		</include>
 </includes>
