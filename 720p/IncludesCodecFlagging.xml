@@ -6,7 +6,7 @@
 			<height>33</height>
 			<aspectratio>keep</aspectratio>
 			<texture>flagging/video/bluray.png</texture>
-			<visible>substring(ListItem.filename,bluray)</visible>
+			<visible>substring(ListItem.filename,bluray) | substring(ListItem.filename,brrip)</visible>
 		</control>
 		<control type="image">
 			<description>HDDVD Image</description>
@@ -22,7 +22,7 @@
 			<height>33</height>
 			<aspectratio>keep</aspectratio>
 			<texture>flagging/video/dvd.png</texture>
-			<visible>substring(ListItem.filename,sddvd)</visible>
+			<visible>substring(ListItem.filename,sddvd) | substring(ListItem.filename,dvdrip)</visible>
 		</control>
 		<control type="image">
 			<description>HDTV Image</description>
