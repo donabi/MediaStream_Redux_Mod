@@ -357,6 +357,14 @@
 				<visible>substring(VideoPlayer.VideoCodec,mpeg1video)</visible>
 			</control>
 			<control type="image">
+				<description>mpeg2video Codec Image</description>
+				<width>90</width>
+				<height>33</height>
+				<aspectratio>keep</aspectratio>
+				<texture>flagging/video/mpeg2video.png</texture>
+				<visible>substring(VideoPlayer.VideoCodec,mpeg2video)</visible>
+			</control>
+			<control type="image">
 				<description>mp3 Codec Image</description>
 				<width>90</width>
 				<height>33</height>
@@ -373,14 +381,6 @@
 				<visible>substring(VideoPlayer.AudioCodec,dca)</visible>
 			</control>
 			<control type="image">
-				<description>ac3 Image</description>
-				<width>45</width>
-				<height>33</height>
-				<aspectratio>keep</aspectratio>
-				<texture>flagging/audio/ac3.png</texture>
-				<visible>substring(VideoPlayer.AudioCodec,ac3) + !substring(VideoPlayer.AudioChannels,6)</visible>
-			</control>
-			<control type="image">
 				<description>aac Image</description>
 				<width>45</width>
 				<height>33</height>
@@ -394,7 +394,7 @@
 				<height>33</height>
 				<aspectratio>keep</aspectratio>
 				<texture>flagging/audio/dolbydigital.png</texture>
-				<visible>substring(VideoPlayer.AudioCodec,ac3) + substring(VideoPlayer.AudioChannels,6)</visible>
+				<visible>substring(VideoPlayer.AudioCodec,ac3)</visible>
 			</control>
 			<control type="image">
 				<description>WMA Pro Codec Image</description>
