@@ -220,7 +220,7 @@
 			<width>100</width>
 			<height>38</height>
 			<aspectratio>keep</aspectratio>	
-			<texture>$INFO[ListItem.studio,flagging/studios/,.png]</texture>
+			<texture>$INFO[ListItem.studio,studios/,.png]</texture>
 		</control>
 	</include>
 </includes>
