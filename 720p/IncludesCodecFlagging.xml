@@ -6,7 +6,7 @@
 			<height>33</height>
 			<aspectratio>keep</aspectratio>
 			<texture>flagging/video/bluray.png</texture>
-			<visible>substring(ListItem.filename,bluray) | substring(ListItem.filename,brrip)</visible>
+			<visible>substring(ListItem.filename,bluray) | substring(ListItem.filename,blu-ray) | substring(ListItem.filename,brrip)</visible>
 		</control>
 		<control type="image">
 			<description>HDDVD Image</description>
@@ -14,7 +14,7 @@
 			<height>33</height>
 			<aspectratio>keep</aspectratio>
 			<texture>flagging/video/hddvd.png</texture>
-			<visible>substring(ListItem.filename,hddvd)</visible>
+			<visible>substring(ListItem.filename,hddvd) | substring(ListItem.filename,hd-dvd)</visible>
 		</control>
         	<control type="image">
 			<description>DVD Image</description>
@@ -40,7 +40,7 @@
 			<texture>$INFO[ListItem.VideoResolution,flagging/video/,.png]</texture>
 		</control>
 		</include>
-		<include name="VideoCodecFlaggingConditions">
+	<include name="VideoCodecFlaggingConditions">
 		<control type="image">
 			<description>Xvid Codec Image</description>
 			<width>90</width>
@@ -187,7 +187,7 @@
 			<height>50</height>
 			<aspectratio>keep</aspectratio>
 			<texture>flagging/ratings/mpaa_pg.png</texture>
-			<visible>substring(ListItem.mpaa,Rated PG )</visible>
+			<visible>substring(ListItem.mpaa,Rated PG) + !substring(ListItem.mpaa,Rated PG-)</visible>
 		</control>
 		<control type="image">
 			<description>MPAA G Image</description>
@@ -215,45 +215,12 @@
 		</control>
 	</include>
 	<include name="StudioFlaggingConditions">
-	<control type="image">
-			<description>007 Image</description>
-			<width>100</width>
-			<height>38</height>
-			<aspectratio>keep</aspectratio>	
-			<texture>flagging/studios/007.png</texture>
-			<visible>substring(ListItem.Studio,007)</visible>
-		</control>
 		<control type="image">
-			<description>DreamWorks SKG Image</description>
+			<description>Studio Flags</description>
 			<width>100</width>
 			<height>38</height>
 			<aspectratio>keep</aspectratio>	
-			<texture>flagging/studios/Dreamworks SKG.png</texture>
-			<visible>substring(ListItem.Studio,DreamWorks SKG)</visible>
+			<texture>$INFO[ListItem.studio,flagging/studios/,.png]</texture>
 		</control>
-		<control type="image">
-			<description>Lionsgate SKG Image</description>
-			<width>100</width>
-			<height>38</height>
-			<aspectratio>keep</aspectratio>	
-			<texture>flagging/studios/Lionsgate.png</texture>
-			<visible>substring(ListItem.Studio,Lionsgate)</visible>
-		</control>
-		<control type="image">
-			<description>Paramount Image</description>
-			<width>100</width>
-			<height>38</height>
-			<aspectratio>keep</aspectratio>	
-			<texture>flagging/studios/Paramount.png</texture>
-			<visible>substring(ListItem.Studio,Paramount)</visible>
-		</control>
-		<control type="image">
-			<description>Pixar Image</description>
-			<width>100</width>
-			<height>38</height>
-			<aspectratio>keep</aspectratio>	
-			<texture>flagging/studios/Pixar Animation Studios.png</texture>
-			<visible>substring(ListItem.Studio,Pixar)</visible>
-		</control>
-		</include>
+	</include>
 </includes>
