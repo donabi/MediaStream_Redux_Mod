@@ -1,53 +1,5 @@
 ﻿<includes>
 	<include name="MPAA-StudioFlaggingConditions">
-    <control type="image">
-			<description>MPAA R Image</description>
-			<width>90</width>
-			<height>33</height>
-			<aspectratio>keep</aspectratio>	
-			<texture>flagging/ratings/mpaa_restricted.png</texture>
-			<visible>substring(ListItem.mpaa,Rated R)</visible>
-		</control>
-		<control type="image">
-			<description>MPAA PG-13 Image</description>
-			<width>90</width>
-			<height>33</height>
-			<aspectratio>keep</aspectratio>
-			<texture>flagging/ratings/mpaa_pg13.png</texture>
-			<visible>substring(ListItem.mpaa,Rated PG-13)</visible>
-		</control>
-		<control type="image">
-			<description>MPAA PG Image</description>
-			<width>90</width>
-			<height>33</height>
-			<aspectratio>keep</aspectratio>
-			<texture>flagging/ratings/mpaa_pg.png</texture>
-			<visible>substring(ListItem.mpaa,Rated PG) + !substring(ListItem.mpaa,Rated PG-)</visible>
-		</control>
-		<control type="image">
-			<description>MPAA G Image</description>
-			<width>90</width>
-			<height>33</height>
-			<aspectratio>keep</aspectratio>
-			<texture>flagging/ratings/mpaa_general.png</texture>
-			<visible>substring(ListItem.mpaa,Rated G)</visible>
-		</control>
-		<control type="image">
-			<description>MPAA Not Rated Image</description>
-			<width>90</width>
-			<height>33</height>
-			<aspectratio>keep</aspectratio>
-			<texture>flagging/ratings/mpaa_unrated.png</texture>
-			<visible>substring(ListItem.mpaa,Unrated)</visible>
-		</control>
-		<control type="image">
-			<description>MPAA NC-17 Image</description>
-			<width>90</width>
-			<height>33</height>
-			<aspectratio>keep</aspectratio>
-			<texture>flagging/ratings/mpaa_nc17.png</texture>
-			<visible>substring(ListItem.mpaa,NC-17)</visible>
-		</control>
 	  <control type="image">
 	 <description>Studio Flags</description>
 			<width>90</width>

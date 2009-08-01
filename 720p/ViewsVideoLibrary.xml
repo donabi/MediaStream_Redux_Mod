@@ -501,7 +501,7 @@
 			</control>
 			<control type="label">
 				<posx>330</posx>
-				<posy>215</posy>
+				<posy>205</posy>
 				<width>400</width>
 				<height>30</height>
 				<font>font24caps_title</font>
@@ -514,7 +514,7 @@
 			</control>
 			<control type="fadelabel">
 				<posx>330</posx>
-				<posy>245</posy>
+				<posy>235</posy>
 				<width>400</width>
 				<height>30</height>
 				<font>font13</font>
@@ -529,7 +529,7 @@
 			</control>
 			<control type="fadelabel">
 				<posx>330</posx>
-				<posy>270</posy>
+				<posy>260</posy>
 				<width>400</width>
 				<height>30</height>
 				<font>font13</font>
@@ -544,7 +544,7 @@
 			</control>
 			<control type="fadelabel">
 				<posx>330</posx>
-				<posy>295</posy>
+				<posy>285</posy>
 				<width>400</width>
 				<height>30</height>
 				<font>font13</font>
@@ -557,37 +557,56 @@
 				<scrollout>false</scrollout>
 				<pauseatend>2000</pauseatend>
 			</control>
-			<control type="fadelabel">
+			<control type="group">
 				<posx>330</posx>
 				<posy>320</posy>
-				<width>400</width>
-				<height>30</height>
-				<font>font13</font>
-				<textcolor>white</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<scroll>true</scroll>
-				<align>left</align>
-				<aligny>center</aligny>
-				<label>$LOCALIZE[563]: $INFO[ListItem.RatingAndVotes]</label>
-				<scrollout>false</scrollout>
-				<pauseatend>2000</pauseatend>
+				<control type="image">
+					<include>Objects_FSInfoCertificate</include>
+					<texture>flagging/ratings/mpaa_pg13.png</texture>
+					<visible>substring(listitem.mpaa,Rated PG-13)</visible>
+				</control>
+				<control type="image">
+					<include>Objects_FSInfoCertificate</include>
+					<texture>flagging/ratings/mpaa_restricted.png</texture>
+					<visible>substring(listitem.mpaa,Rated R)</visible>
+				</control>
+				<control type="image">
+					<include>Objects_FSInfoCertificate</include>
+					<texture>flagging/ratings/mpaa_nc17.png</texture>
+					<visible>substring(listitem.mpaa,Rated NC-17)</visible>
+				</control>
+				<control type="image">
+					<include>Objects_FSInfoCertificate</include>
+					<texture>flagging/ratings/mpaa_general.png</texture>
+					<visible>substring(listitem.mpaa,Rated G)</visible>
+				</control>
+				<control type="image">
+					<include>Objects_FSInfoCertificate</include>
+					<texture>flagging/ratings/mpaa_pg.png</texture>
+					<visible>substring(listitem.mpaa,Rated PG )</visible>
+				</control>
+				<control type="image">
+					<include>Objects_FSInfoCertificate</include>
+					<texture>flagging/ratings/mpaa_unrated.png</texture>
+					<visible>substring(listitem.mpaa,Unrated)</visible>
+				</control>
 			</control>
 			<control type="grouplist">
-				<description>MPAA/Studio Flagging Images</description>
+			<description>Studio Flagging Images</description>
 				<posx>330</posx>
-				<posy>370</posy>
-				<width>800</width>
+				<posy>370</posy>			
+				<width>850</width>
 				<align>left</align>
 				<aligny>center</aligny>
-				<itemgap>0</itemgap>
+				<itemgap>37</itemgap>
 				<orientation>horizontal</orientation>
 				<include>MPAA-StudioFlaggingConditions</include>
 				<include>VideoFlaggingConditions</include>
 				<include>AudioFlaggingConditions</include>
-			</control>
+				</control>
 			<control type="label">
 				<posx>780</posx>
-				<posy>215</posy>
+				<posy>205</posy>
 				<width>400</width>
 				<height>30</height>
 				<font>font24caps_title</font>
@@ -600,7 +619,7 @@
 			</control>
 			<control type="label">
 				<posx>780</posx>
-				<posy>245</posy>
+				<posy>235</posy>
 				<width>400</width>
 				<height>30</height>
 				<font>font13</font>
@@ -613,7 +632,7 @@
 			</control>
 			<control type="label">
 				<posx>780</posx>
-				<posy>295</posy>
+				<posy>285</posy>
 				<width>400</width>
 				<height>30</height>
 				<font>font24caps_title</font>
@@ -626,7 +645,7 @@
 			</control>
 			<control type="label">
 				<posx>780</posx>
-				<posy>325</posy>
+				<posy>315</posy>
 				<width>400</width>
 				<height>30</height>
 				<font>font13</font>
