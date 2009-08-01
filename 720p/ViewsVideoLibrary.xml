@@ -1,4 +1,4 @@
-<includes>  
+﻿<includes>  
 	<include name="PosterWrapView">
 		<control type="group">
 			<visible>Control.IsVisible(501)</visible>
@@ -186,9 +186,9 @@
 				<align>center</align>
 				<itemgap>0</itemgap>
 				<orientation>horizontal</orientation>
-				<include>VideoCodecFlaggingConditions</include>
-				<include>AudioCodecFlaggingConditions</include>
-				<include>AspectCodecFlaggingConditions</include>
+				<include>MPAA-StudioFlaggingConditions</include>
+				<include>VideoFlaggingConditions</include>
+				<include>AudioFlaggingConditions</include>
 			</control>
 			<control type="label">
 				<posx>0</posx>
@@ -571,30 +571,19 @@
 				<label>$LOCALIZE[563]: $INFO[ListItem.RatingAndVotes]</label>
 				<scrollout>false</scrollout>
 				<pauseatend>2000</pauseatend>
-			</control> 
-			<control type="grouplist">
-				<description>MPAA Flagging Images</description>
-				<posx>335</posx>
-				<posy>360</posy>
-				<width>150</width>
-				<align>left</align>
-				<itemgap>0</itemgap>
-				<orientation>horizontal</orientation>  
-				<include>MPAAFlaggingConditions</include>
 			</control>
 			<control type="grouplist">
-				<description>Media Codec Flagging Images</description>
-				<posx>465</posx>
+				<description>MPAA/Studio Flagging Images</description>
+				<posx>330</posx>
 				<posy>370</posy>
-				<width>850</width>
+				<width>800</width>
 				<align>left</align>
+				<aligny>center</aligny>
 				<itemgap>0</itemgap>
-				<orientation>horizontal</orientation>  
-				<include>VideoTypeFlaggingConditions</include>
-				<include>VideoCodecFlaggingConditions</include>
-				<include>AspectCodecFlaggingConditions</include> 
-				<include>AudioCodecFlaggingConditions</include>
-				<include>StudioFlaggingConditions</include>
+				<orientation>horizontal</orientation>
+				<include>MPAA-StudioFlaggingConditions</include>
+				<include>VideoFlaggingConditions</include>
+				<include>AudioFlaggingConditions</include>
 			</control>
 			<control type="label">
 				<posx>780</posx>
@@ -748,21 +737,21 @@
 				<description>Media Codec Flagging Images</description>
 				<posx>10</posx>
 				<posy>215</posy>
-				<width>290</width>
+				<width>370</width>
 				<align>right</align>
 				<itemgap>0</itemgap>
 				<orientation>horizontal</orientation>
-				<include>VideoCodecFlaggingConditions</include>
+				<include>VideoFlaggingConditions</include>
 			</control>
 			<control type="grouplist">
 				<description>Media Codec Flagging Images</description>
-				<posx>300r</posx>
+				<posx>270r</posx>
 				<posy>215</posy>
 				<width>290</width>
 				<align>left</align>
 				<itemgap>0</itemgap>
 				<orientation>horizontal</orientation>
-				<include>AudioCodecFlaggingConditions</include>
+				<include>AudioFlaggingConditions</include>
 			</control>
 			<control type="label">
 				<posx>40</posx>
@@ -778,9 +767,9 @@
 				<label>$INFO[ListItem.Label]</label>
 			</control>
 			<control type="scrollbar" id="60">
-				<posx>310</posx>
+				<posx>380</posx>
 				<posy>225</posy>
-				<width>660</width>
+				<width>600</width>
 				<height>25</height>
 				<texturesliderbackground border="14,0,14,0">ScrollBarH.png</texturesliderbackground>
 				<texturesliderbar border="14,0,14,0">ScrollBarH_bar.png</texturesliderbar>
@@ -1358,9 +1347,8 @@
 					<align>left</align>
 					<itemgap>0</itemgap>
 					<orientation>horizontal</orientation>
-					<include>VideoCodecFlaggingConditions</include>
-					<include>AudioCodecFlaggingConditions</include>
-					<include>AspectCodecFlaggingConditions</include>
+					<include>VideoFlaggingConditions</include>
+					<include>AudioFlaggingConditions</include>
 				</control>
 				<control type="image">
 					<posx>0</posx>
@@ -1424,13 +1412,12 @@
 					<description>Media Codec Flagging Images</description>
 					<posx>0</posx>
 					<posy>480</posy>
-					<width>590</width>
+					<width>620</width>
 					<align>center</align>
 					<itemgap>0</itemgap>
 					<orientation>horizontal</orientation>
-					<include>VideoCodecFlaggingConditions</include>
-					<include>AudioCodecFlaggingConditions</include>
-					<include>AspectCodecFlaggingConditions</include>
+					<include>VideoFlaggingConditions</include>
+					<include>AudioFlaggingConditions</include>
 				</control>
 				<control type="textbox">
 					<description>Description Value for Movie</description>
@@ -2002,9 +1989,8 @@
 						<align>center</align>
 						<itemgap>0</itemgap>
 						<orientation>horizontal</orientation>
-						<include>VideoCodecFlaggingConditions</include>
-						<include>AudioCodecFlaggingConditions</include>
-						<include>AspectCodecFlaggingConditions</include>
+						<include>VideoFlaggingConditions</include>
+						<include>AudioFlaggingConditions</include>
 					</control>
 					<control type="image">
 						<posx>0</posx>
@@ -2092,9 +2078,8 @@
 						<align>center</align>
 						<itemgap>0</itemgap>
 						<orientation>horizontal</orientation>
-						<include>VideoCodecFlaggingConditions</include>
-						<include>AudioCodecFlaggingConditions</include>
-						<include>AspectCodecFlaggingConditions</include>
+						<include>VideoFlaggingConditions</include>
+						<include>AudioFlaggingConditions</include>
 					</control>
 					<control type="image">
 						<posx>0</posx>
@@ -2268,9 +2253,8 @@
 						<align>center</align>
 						<itemgap>0</itemgap>
 						<orientation>horizontal</orientation>
-						<include>VideoCodecFlaggingConditions</include>
-						<include>AudioCodecFlaggingConditions</include>
-						<include>AspectCodecFlaggingConditions</include>
+						<include>VideoFlaggingConditions</include>
+						<include>AudioFlaggingConditions</include>
 					</control>
 					<control type="image">
 						<posx>0</posx>

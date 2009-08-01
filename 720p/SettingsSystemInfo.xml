@@ -266,7 +266,7 @@
 					<posy>346</posy>
 					<width>500</width>
 					<height>50</height>
-					<label>Ver. 1.0.6 (July 31)</label>
+					<label>Ver. 1.0.7 (July 31)</label>
 					<font>font12</font>
 				</control>
 				<control type="label" id="52">

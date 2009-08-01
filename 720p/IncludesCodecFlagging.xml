@@ -1,6 +1,63 @@
-<includes>
-	<include name="VideoTypeFlaggingConditions">
+﻿<includes>
+	<include name="MPAA-StudioFlaggingConditions">
+    <control type="image">
+			<description>MPAA R Image</description>
+			<width>90</width>
+			<height>33</height>
+			<aspectratio>keep</aspectratio>	
+			<texture>flagging/ratings/mpaa_restricted.png</texture>
+			<visible>substring(ListItem.mpaa,Rated R)</visible>
+		</control>
 		<control type="image">
+			<description>MPAA PG-13 Image</description>
+			<width>90</width>
+			<height>33</height>
+			<aspectratio>keep</aspectratio>
+			<texture>flagging/ratings/mpaa_pg13.png</texture>
+			<visible>substring(ListItem.mpaa,Rated PG-13)</visible>
+		</control>
+		<control type="image">
+			<description>MPAA PG Image</description>
+			<width>90</width>
+			<height>33</height>
+			<aspectratio>keep</aspectratio>
+			<texture>flagging/ratings/mpaa_pg.png</texture>
+			<visible>substring(ListItem.mpaa,Rated PG) + !substring(ListItem.mpaa,Rated PG-)</visible>
+		</control>
+		<control type="image">
+			<description>MPAA G Image</description>
+			<width>90</width>
+			<height>33</height>
+			<aspectratio>keep</aspectratio>
+			<texture>flagging/ratings/mpaa_general.png</texture>
+			<visible>substring(ListItem.mpaa,Rated G)</visible>
+		</control>
+		<control type="image">
+			<description>MPAA Not Rated Image</description>
+			<width>90</width>
+			<height>33</height>
+			<aspectratio>keep</aspectratio>
+			<texture>flagging/ratings/mpaa_unrated.png</texture>
+			<visible>substring(ListItem.mpaa,Unrated)</visible>
+		</control>
+		<control type="image">
+			<description>MPAA NC-17 Image</description>
+			<width>90</width>
+			<height>33</height>
+			<aspectratio>keep</aspectratio>
+			<texture>flagging/ratings/mpaa_nc17.png</texture>
+			<visible>substring(ListItem.mpaa,NC-17)</visible>
+		</control>
+	  <control type="image">
+	 <description>Studio Flags</description>
+			<width>90</width>
+			<height>33</height>
+			<aspectratio>keep</aspectratio>	
+			<texture>$INFO[ListItem.studio,studios/,.png]</texture>
+		</control>
+  </include>
+  <include name="VideoFlaggingConditions">
+    		<control type="image">
 			<description>Bluray Image</description>
 			<width>90</width>
 			<height>33</height>
@@ -16,7 +73,7 @@
 			<texture>flagging/video/hddvd.png</texture>
 			<visible>substring(ListItem.filename,hddvd) | substring(ListItem.filename,hd-dvd)</visible>
 		</control>
-        	<control type="image">
+    		<control type="image">
 			<description>DVD Image</description>
 			<width>90</width>
 			<height>33</height>
@@ -39,8 +96,6 @@
 			<aspectratio>keep</aspectratio>
 			<texture>$INFO[ListItem.VideoResolution,flagging/video/,.png]</texture>
 		</control>
-		</include>
-	<include name="VideoCodecFlaggingConditions">
 		<control type="image">
 			<description>Xvid Codec Image</description>
 			<width>90</width>
@@ -97,8 +152,6 @@
 			<texture>flagging/video/mpeg2video.png</texture>
 			<visible>substring(ListItem.VideoCodec,mpeg2video)</visible>
 		</control>
-	</include>
-	<include name="AspectCodecFlaggingConditions">
 		<control type="image">
 			<description>Aspectratio Image</description>
 			<width>90</width>
@@ -106,9 +159,9 @@
 			<aspectratio>keep</aspectratio>
 			<texture>$INFO[ListItem.VideoAspect,flagging/aspectratio/,.png]</texture>
 		</control>
-	</include>
-	<include name="AudioCodecFlaggingConditions">
-		<control type="image">
+ </include>
+  <include name="AudioFlaggingConditions">
+    <control type="image">
 			<description>mp3 Codec Image</description>
 			<width>90</width>
 			<height>33</height>
@@ -163,64 +216,5 @@
 			<aspectratio>keep</aspectratio>
 			<texture>$INFO[ListItem.AudioChannels,flagging/audio/,.png]</texture>
 		</control>
-	</include>
-	<include name="MPAAFlaggingConditions">
-		<control type="image">
-			<description>MPAA R Image</description>
-			<width>120</width>
-			<height>50</height>
-			<aspectratio>keep</aspectratio>	
-			<texture>flagging/ratings/mpaa_restricted.png</texture>
-			<visible>substring(ListItem.mpaa,Rated R)</visible>
-		</control>
-		<control type="image">
-			<description>MPAA PG-13 Image</description>
-			<width>120</width>
-			<height>50</height>
-			<aspectratio>keep</aspectratio>
-			<texture>flagging/ratings/mpaa_pg13.png</texture>
-			<visible>substring(ListItem.mpaa,Rated PG-13)</visible>
-		</control>
-		<control type="image">
-			<description>MPAA PG Image</description>
-			<width>120</width>
-			<height>50</height>
-			<aspectratio>keep</aspectratio>
-			<texture>flagging/ratings/mpaa_pg.png</texture>
-			<visible>substring(ListItem.mpaa,Rated PG) + !substring(ListItem.mpaa,Rated PG-)</visible>
-		</control>
-		<control type="image">
-			<description>MPAA G Image</description>
-			<width>120</width>
-			<height>50</height>
-			<aspectratio>keep</aspectratio>
-			<texture>flagging/ratings/mpaa_general.png</texture>
-			<visible>substring(ListItem.mpaa,Rated G)</visible>
-		</control>
-		<control type="image">
-			<description>MPAA Not Rated Image</description>
-			<width>120</width>
-			<height>50</height>
-			<aspectratio>keep</aspectratio>
-			<texture>flagging/ratings/mpaa_unrated.png</texture>
-			<visible>substring(ListItem.mpaa,Unrated)</visible>
-		</control>
-		<control type="image">
-			<description>MPAA NC-17 Image</description>
-			<width>120</width>
-			<height>50</height>
-			<aspectratio>keep</aspectratio>
-			<texture>flagging/ratings/mpaa_nc17.png</texture>
-			<visible>substring(ListItem.mpaa,NC-17)</visible>
-		</control>
-	</include>
-	<include name="StudioFlaggingConditions">
-		<control type="image">
-			<description>Studio Flags</description>
-			<width>100</width>
-			<height>38</height>
-			<aspectratio>keep</aspectratio>	
-			<texture>$INFO[ListItem.studio,studios/,.png]</texture>
-		</control>
-	</include>
+  </include>
 </includes>
