@@ -1,18 +1,11 @@
 ﻿<includes>
 	<include name="MPAA-StudioFlaggingConditions">
-	  <control type="image">
-	 <description>Studio Flags</description>
-			<width>90</width>
-			<height>33</height>
-			<aspectratio>keep</aspectratio>	
-			<texture>$INFO[ListItem.studio,studios/,.png]</texture>
-		</control>
   </include>
   <include name="VideoFlaggingConditions">
     		<control type="image">
 			<description>Bluray Image</description>
 			<width>90</width>
-			<height>33</height>
+			<height>35</height>
 			<aspectratio>keep</aspectratio>
 			<texture>flagging/video/bluray.png</texture>
 			<visible>substring(ListItem.filename,bluray) | substring(ListItem.filename,blu-ray) | substring(ListItem.filename,brrip)</visible>
@@ -20,7 +13,7 @@
 		<control type="image">
 			<description>HDDVD Image</description>
 			<width>90</width>
-			<height>33</height>
+			<height>40</height>
 			<aspectratio>keep</aspectratio>
 			<texture>flagging/video/hddvd.png</texture>
 			<visible>substring(ListItem.filename,hddvd) | substring(ListItem.filename,hd-dvd)</visible>
@@ -106,7 +99,7 @@
 		</control>
 		<control type="image">
 			<description>Aspectratio Image</description>
-			<width>90</width>
+			<width>70</width>
 			<height>33</height>
 			<aspectratio>keep</aspectratio>
 			<texture>$INFO[ListItem.VideoAspect,flagging/aspectratio/,.png]</texture>
@@ -163,7 +156,7 @@
 		</control>
 		<control type="image">
 			<description>Audio Channels Image</description>
-			<width>90</width>
+			<width>70</width>
 			<height>33</height>
 			<aspectratio>keep</aspectratio>
 			<texture>$INFO[ListItem.AudioChannels,flagging/audio/,.png]</texture>

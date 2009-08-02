@@ -785,29 +785,6 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="label" id="624">
-						<width>750</width>
-						<height>45</height>
-						<font>font13caps_title</font>
-						<label>Weather</label>
-						<textcolor>blue</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-					</control>
-					<control type="radiobutton" id="625">
-						<description>Hide 3 day forecast</description>
-						<width>750</width>
-						<height>40</height>
-						<font>font13</font>
-						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<label>$LOCALIZE[31111] - 3 day forecast</label>
-						<onclick>Skin.ToggleSetting(SubMenuNo3dayWeather)</onclick>
-						<selected>Skin.HasSetting(SubMenuNo3dayWeather)</selected>
-						<texturefocus>MenuItemFO.png</texturefocus>
-						<texturenofocus>MenuItemNF.png</texturenofocus>
-					</control>
 				</control>
 				<control type="scrollbar" id="60">
 					<posx>1060</posx>
@@ -927,15 +904,15 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
 					<control type="radiobutton" id="207">
-						<description>enable weather on all screens</description>
+						<description>Show extended weather</description>
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<label>- $LOCALIZE[31138]</label>
-						<onclick>Skin.ToggleSetting(WeatherAllScreens)</onclick>
-						<selected>!Skin.HasSetting(WeatherAllScreens)</selected>
+						<onclick>Skin.ToggleSetting(ExtendedWeather)</onclick>
+						<selected>Skin.HasSetting(ExtendedWeather)</selected>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<enable>!Skin.HasSetting(homepageWeatherinfo)</enable>

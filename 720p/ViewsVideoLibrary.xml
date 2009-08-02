@@ -186,7 +186,6 @@
 				<align>center</align>
 				<itemgap>0</itemgap>
 				<orientation>horizontal</orientation>
-				<include>MPAA-StudioFlaggingConditions</include>
 				<include>VideoFlaggingConditions</include>
 				<include>AudioFlaggingConditions</include>
 			</control>
@@ -426,7 +425,7 @@
 				<showonepage>false</showonepage>
 				<orientation>horizontal</orientation>
 			</control>
-			<control type="label">
+				<control type="label">
 				<description>Movie Count Label</description>
 				<posx>1230</posx>
 				<posy>625</posy>
@@ -477,7 +476,7 @@
 			<control type="label">
 				<posx>330</posx>
 				<posy>0</posy>
-				<width>850</width>
+				<width>730</width>
 				<height>35</height>
 				<font>font30caps_title</font>
 				<textcolor>white</textcolor>
@@ -598,12 +597,29 @@
 				<width>850</width>
 				<align>left</align>
 				<aligny>center</aligny>
-				<itemgap>37</itemgap>
+				<itemgap>0</itemgap>
 				<orientation>horizontal</orientation>
-				<include>MPAA-StudioFlaggingConditions</include>
 				<include>VideoFlaggingConditions</include>
 				<include>AudioFlaggingConditions</include>
 				</control>
+		<control type="image">
+			<description>Studio Flags</description>
+			<posx>1070</posx>
+			<posy>2</posy>
+			<width>100</width>
+			<height>37</height>
+			<aspectratio>keep</aspectratio>	
+			<texture>$INFO[ListItem.studio,studios/,.png]</texture>
+		</control>
+		<include name="MPAA-StudioFlaggingConditions">
+		  <control type="image">
+			<description>Studio Flags</description>
+			<width>90</width>
+			<height>33</height>
+			<aspectratio>keep</aspectratio>	
+			<texture>$INFO[ListItem.studio,studios/,.png]</texture>
+		</control>
+  </include>
 			<control type="label">
 				<posx>780</posx>
 				<posy>205</posy>
@@ -774,8 +790,8 @@
 			</control>
 			<control type="label">
 				<posx>40</posx>
-				<posy>190</posy>
-				<width>1200</width>
+				<posy>187</posy>
+				<width>1250</width>
 				<height>30</height>
 				<font>font24caps_title</font>
 				<textcolor>white</textcolor>
