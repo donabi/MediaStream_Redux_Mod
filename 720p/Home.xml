@@ -552,8 +552,8 @@
 				</control>
 	<!-- Music Info Horizontal -->
 		<control type="group">
-			<posx>1285r</posx>
-			<posy>265r</posy>
+			<posx>1280r</posx>
+			<posy>275r</posy>
 			<include>VisibleFadeEffect</include>
 			<visible>Player.HasAudio + !Skin.HasSetting(homepageMusicinfo) + Skin.HasSetting(HorizontalMenu)</visible>
 			<animation effect="slide" end="0,30" time="0" condition="!system.getbool(lookandfeel.enablerssfeeds)">conditional</animation>
