@@ -934,12 +934,13 @@
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<label>- $LOCALIZE[31138]</label>
-						<onclick>Skin.ToggleSetting(ExtendedWeather)</onclick>
+					 	<onclick>Skin.ToggleSetting(ExtendedWeather)</onclick>  
+						<onclick>Skin.Reset(ExtendedWeatherSub)</onclick>
 						<selected>Skin.HasSetting(ExtendedWeather)</selected>
 						<visible>Skin.HasSetting(HorizontalMenu)</visible>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<enable>!Skin.HasSetting(homepageWeatherinfo) + !Skin.HasSetting(ExtendedWeatherSub)</enable>
+						<enable>!Skin.HasSetting(homepageWeatherinfo)</enable>
 					</control>
 					<control type="radiobutton" id="210">
 						<description>Show extended weather as submenu</description>
@@ -950,11 +951,12 @@
 						<focusedcolor>white</focusedcolor>
 						<label>- $LOCALIZE[31139]</label>
 						<onclick>Skin.ToggleSetting(ExtendedWeatherSub)</onclick>
+						<onclick>Skin.Reset(ExtendedWeather)</onclick>
 						<selected>Skin.HasSetting(ExtendedWeatherSub)</selected>
 						<visible>Skin.HasSetting(HorizontalMenu)</visible>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<enable>!Skin.HasSetting(homepageWeatherinfo) + !Skin.HasSetting(ExtendedWeather)</enable>
+						<enable>!Skin.HasSetting(homepageWeatherinfo)</enable>
 					</control>
 				</control>
 				<control type="group">
