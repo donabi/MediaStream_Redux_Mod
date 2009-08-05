@@ -891,6 +891,29 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
 					<control type="radiobutton" id="206">
+						<description>Show Recently added info</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>31117</label>
+						<onclick>Skin.ToggleSetting(homepageHideRecentlyAdded)</onclick>
+						<selected>!Skin.HasSetting(homepageHideRecentlyAdded)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+					</control>
+					<control type="label" id="207">
+						<width>750</width>
+						<height>45</height>
+						<font>font13caps_title</font>
+						<label>8</label>
+						<textcolor>blue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+					</control>
+					<control type="radiobutton" id="208">
 						<description>enable weather info</description>
 						<width>750</width>
 						<height>40</height>
@@ -903,8 +926,8 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="radiobutton" id="207">
-						<description>Show extended weather</description>
+					<control type="radiobutton" id="209">
+						<description>Show extended weather on screen</description>
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -913,22 +936,25 @@
 						<label>- $LOCALIZE[31138]</label>
 						<onclick>Skin.ToggleSetting(ExtendedWeather)</onclick>
 						<selected>Skin.HasSetting(ExtendedWeather)</selected>
+						<visible>Skin.HasSetting(HorizontalMenu)</visible>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<enable>!Skin.HasSetting(homepageWeatherinfo)</enable>
+						<enable>!Skin.HasSetting(homepageWeatherinfo) + !Skin.HasSetting(ExtendedWeatherSub)</enable>
 					</control>
-					<control type="radiobutton" id="208">
-						<description>Show Recently added info</description>
+					<control type="radiobutton" id="210">
+						<description>Show extended weather as submenu</description>
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
-						<label>31117</label>
-						<onclick>Skin.ToggleSetting(homepageHideRecentlyAdded)</onclick>
-						<selected>!Skin.HasSetting(homepageHideRecentlyAdded)</selected>
+						<label>- $LOCALIZE[31139]</label>
+						<onclick>Skin.ToggleSetting(ExtendedWeatherSub)</onclick>
+						<selected>Skin.HasSetting(ExtendedWeatherSub)</selected>
+						<visible>Skin.HasSetting(HorizontalMenu)</visible>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<enable>!Skin.HasSetting(homepageWeatherinfo) + !Skin.HasSetting(ExtendedWeather)</enable>
 					</control>
 				</control>
 				<control type="group">
@@ -1913,7 +1939,6 @@
 							<align>left</align>
 							<aligny>center</aligny>
 						</control>
-
 						<control type="radiobutton" id="401">
 							<width>750</width>
 							<height>40</height>

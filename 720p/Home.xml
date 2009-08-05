@@ -30,7 +30,7 @@
 	 	<control type="group">
 			<posx>510r</posx>
 			<posy>40</posy>
-		 	<visible>[Container(9000).HasFocus(6) + !Skin.HasSetting(homepageWeatherinfo) + Skin.HasSetting(HorizontalMenu) + !Skin.HasSetting(ExtendedWeather)] | [Container(19000).HasFocus(6) + !Skin.HasSetting(homepageWeatherinfo) + !Skin.HasSetting(HorizontalMenu)]</visible> 
+		 	<visible>[Container(9000).HasFocus(6) + !Skin.HasSetting(homepageWeatherinfo) + Skin.HasSetting(HorizontalMenu) + ![Skin.HasSetting(ExtendedWeatherSub) | Skin.HasSetting(ExtendedWeather)]] | [Container(19000).HasFocus(6) + !Skin.HasSetting(homepageWeatherinfo) + !Skin.HasSetting(HorizontalMenu)]</visible> 
 			<animation effect="slide" end="0,-220" time="300" tween="quadratic" easing="out">Hidden</animation>
 			<animation effect="slide" start="0,-220" time="300" tween="quadratic" easing="out">Visible</animation>
 			<animation effect="slide" end="0,-220" time="300" tween="quadratic" easing="out" condition="Container(9000).HasFocus">WindowClose</animation>
@@ -101,25 +101,28 @@
 				<font>font13</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
-			</control>
-		</control>    -->
-			<!-- Weather Extended -->
-				<control type="group">
+			</control>[Container(9000).HasFocus(6) + !Skin.HasSetting(homepageWeatherinfo) + Skin.HasSetting(HorizontalMenu) + !Skin.HasSetting(ExtendedWeather)]
+		</control>   
+			<!-- Weather Extended On-screen -->
+			 	<control type="group">
 					<posx>0</posx>
 					<posy>150</posy>
 					<width>1280</width>
 					<height>350</height> 
 					<visible>[Container(9000).HasFocus(6) + !Skin.HasSetting(homepageWeatherinfo) + Skin.HasSetting(HorizontalMenu) + Skin.HasSetting(ExtendedWeather)]</visible> 
-				 	<animation effect="fade" start="0" end="100" time="500">WindowOpen</animation>
-					<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>   
+				  	<animation effect="fade" start="0" end="100" delay="500" time="500">VisibleChange</animation>  
+				  	<animation effect="fade" start="100" end="0" time="300">Hidden</animation>  
 				<!-- day0 / now	-->
 					<control type="group">
 						<posx>-100</posx>
+						<posy>0</posy>
 						<width>0</width>
 						<height>115</height>
-				 		<visible>Container(9000).HasFocus(6)</visible> 
+					 	<visible>Container(9000).HasFocus(6)</visible>
+						<animation effect="fade" start="0" end="100" delay="600" time="2200">Visible</animation>
+					  	<animation effect="fade" start="100" end="0" time="300">Hidden</animation> 
 						<animation effect="fade" start="0" end="100" delay="600" time="2200">WindowOpen</animation>
-					 	<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>  
+					  	<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>  
 					 	<control type="image">
 							<description>Background image</description>
 							<posx>140</posx>
@@ -195,8 +198,11 @@
 						<posy>0</posy>
 						<width>227</width>
 						<height>115</height>
+						<visible>Container(9000).HasFocus(6)</visible>
+				 		<animation effect="fade" start="0" end="100" delay="1000" time="2200">Visible</animation>
+						<animation effect="fade" start="100" end="0" time="300">Hidden</animation> 
 				 		<animation effect="fade" start="0" end="100" delay="1000" time="2200">WindowOpen</animation>
-						<animation effect="fade" start="100" end="0" time="200">WindowClose</animation> 
+						<animation effect="fade" start="100" end="0" time="300">WindowClose</animation> 
 					 	<control type="image">
 							<description>Background image</description>
 							<posx>140</posx>
@@ -285,8 +291,11 @@
 						<posy>0</posy>
 						<width>227</width>
 						<height>115</height>
+						<visible>Container(9000).HasFocus(6)</visible>
+				 		<animation effect="fade" start="0" end="100" delay="1400" time="2200">Visible</animation>
+						<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
 				 		<animation effect="fade" start="0" end="100" delay="1400" time="2200">WindowOpen</animation>
-						<animation effect="fade" start="100" end="0" time="200">WindowClose</animation> 
+						<animation effect="fade" start="100" end="0" time="300">WindowClose</animation> 
 					 	<control type="image">
 							<description>Background image</description>
 							<posx>140</posx>
@@ -375,8 +384,11 @@
 						<posy>0</posy>
 						<width>227</width>
 						<height>115</height>
+						<visible>Container(9000).HasFocus(6)</visible>
+				 		<animation effect="fade" start="0" end="100" delay="1900" time="2200">Visible</animation>
+						<animation effect="fade" start="100" end="0" time="300">Hidden</animation> 
 				 		<animation effect="fade" start="0" end="100" delay="1900" time="2200">WindowOpen</animation>
-						<animation effect="fade" start="100" end="0" time="200">WindowClose</animation> 
+						<animation effect="fade" start="100" end="0" time="300">WindowClose</animation> 
 					 	<control type="image">
 							<description>Background image</description>
 							<posx>140</posx>
@@ -465,8 +477,11 @@
 						<posy>0</posy>
 						<width>227</width>
 						<height>115</height>
+						<visible>Container(9000).HasFocus(6)</visible>
+				 		<animation effect="fade" start="0" end="100" delay="2400" time="2200">Visible</animation>
+						<animation effect="fade" start="100" end="0" time="300">Hidden</animation> 
 				 		<animation effect="fade" start="0" end="100" delay="2400" time="2200">WindowOpen</animation>
-						<animation effect="fade" start="100" end="0" time="200">WindowClose</animation> 
+						<animation effect="fade" start="100" end="0" time="300">WindowClose</animation> 
 					 	<control type="image">
 							<description>Background image</description>
 							<posx>140</posx>
@@ -549,7 +564,7 @@
 							<visible>!IsEmpty(Window(Weather).Property(Day3.LowTemp))</visible>
 						</control>
 					</control>   
-				</control>
+			 	</control>   
 	<!-- Music Info Horizontal -->
 		<control type="group">
 			<posx>1280r</posx>
@@ -1061,6 +1076,416 @@
 						<label>31007</label>
 						<onclick>ActivateWindow(VideoLibrary,Plugins)</onclick>
 						<visible>!Skin.HasSetting(SubMenuNoTVPluginsButton)</visible>
+					</control>
+				</control>
+			<!-- WEATHER SUB-MENU -->
+				<control type="grouplist" id="9018">
+					<posx>0</posx>
+					<posy>-205</posy>
+					<width>1350</width>
+					<height>550</height>
+					<onleft>9018</onleft>
+					<onright>9018</onright>
+					<onup>8003</onup>
+					<ondown>9000</ondown>
+					<itemgap>0</itemgap>
+					<orientation>horizontal</orientation>
+					<visible>Container(9000).HasFocus(6) + Skin.HasSetting(ExtendedWeatherSub)</visible>
+				<!-- day0 / now	-->
+					<control type="group">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>213</width>
+						<height>115</height>
+						<visible>Container(9000).HasFocus(6)</visible>
+						<animation effect="slide" end="0,0" time="500" tween="quadratic" easing="out">WindowClose</animation>
+						<animation effect="slide" start="0,-200" time="500" tween="quadratic" easing="out">WindowOpen</animation>
+						<animation effect="slide" end="0,-50" time="400" delay="500" tween="quadratic" easing="out" condition="ControlGroup(9018).HasFocus">conditional</animation>
+						<animation effect="slide" start="0,0" time="400" delay="500" tween="quadratic" easing="out" condition="ControlGroup(9018).HasFocus">conditional</animation>
+						<animation effect="fade" start="0" end="100" delay="500" time="400" condition="ControlGroup(9018).HasFocus">conditional</animation>
+						
+						<control type="multiimage">
+							<description>Weather image</description>
+							<posx>140</posx>
+							<posy>65</posy>
+							<width>90</width>
+							<height>85</height>
+							<imagepath>weather/$INFO[Window(Weather).Property(Current.FanartCode)]</imagepath>
+							<timeperimage>100</timeperimage>
+							<randomize>false</randomize>
+							<fadetime>0</fadetime>
+						</control>
+					      	<control type="fadelabel">
+							<description>now label</description>
+							<posx>233</posx>
+							<posy>73</posy>
+							<height>30</height>
+							<width>355</width>
+							<label>[B]Now[/B]</label>
+							<align>left</align>
+							<aligny>center</aligny>
+							<font>font13</font>
+							<textcolor>white</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<scrollout>false</scrollout>
+							<pauseatend>2000</pauseatend>
+					      </control>
+					      <control type="label">
+							<description>Conditions Label</description>
+							<posx>233</posx>
+							<posy>94</posy>
+							<height>25</height>
+							<width>355</width>
+							<label>$INFO[Weather.Conditions]</label>
+							<align>left</align>
+							<aligny>center</aligny>
+							<font>font12</font>
+							<textcolor>white</textcolor>
+							<shadowcolor>black</shadowcolor>
+						</control>
+						<control type="label">
+							<description>Temp Label</description>
+							<posx>233</posx>
+							<posy>110</posy>
+							<height>30</height>
+							<width>355</width>
+							<label>[B]$INFO[Weather.Temperature][/B]</label>
+							<align>left</align>
+							<aligny>center</aligny>
+							<font>font13</font>
+							<textcolor>white</textcolor>
+							<shadowcolor>black</shadowcolor>
+						</control>
+					</control>   
+					<!-- day0 -->
+					<control type="group" >
+						<posx>0</posx>
+						<posy>50</posy>
+						<width>227</width>
+						<height>115</height>
+						<visible>Container(9000).HasFocus(6)</visible>
+						<animation effect="slide" end="0,0" time="500" tween="quadratic" easing="out">WindowClose</animation>
+						<animation effect="slide" start="0,-200" time="500" tween="quadratic" easing="out">WindowOpen</animation>
+						<animation effect="slide" end="0,-50" time="400" delay="650" tween="quadratic" easing="out" condition="ControlGroup(9018).HasFocus">conditional</animation>
+						<animation effect="slide" start="0,0" time="400" delay="650" tween="quadratic" easing="out" condition="ControlGroup(9018).HasFocus">conditional</animation>
+						<animation effect="fade" start="0" end="100" delay="650" time="400" condition="ControlGroup(9018).HasFocus">conditional</animation>
+						<control type="multiimage">
+							<description>Weather image</description>
+							<posx>140</posx>
+							<posy>65</posy>
+							<width>90</width>
+							<height>85</height>
+							<imagepath>weather/$INFO[Window(Weather).Property(Day0.FanartCode)]</imagepath>
+							<timeperimage>100</timeperimage>
+							<randomize>false</randomize>
+							<fadetime>0</fadetime>
+						</control>
+					      	<control type="fadelabel">
+							<description>day label</description>
+							<posx>233</posx>
+							<posy>73</posy>
+							<height>30</height>
+							<width>355</width>
+							<label>[B]$INFO[Window(Weather).Property(Day0.Title)][/B]</label>
+							<align>left</align>
+							<aligny>center</aligny>
+							<font>font13</font>
+							<textcolor>white</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<scrollout>false</scrollout>
+							<pauseatend>2000</pauseatend>
+					      	</control>
+					      	<control type="label">
+							<description>Conditions Label</description>
+							<posx>233</posx>
+							<posy>94</posy>
+							<height>25</height>
+							<width>355</width>
+							<label>$INFO[Window(Weather).Property(Day0.Outlook)]</label>
+							<align>left</align>
+							<aligny>center</aligny>
+							<font>font12</font>
+							<textcolor>white</textcolor>
+							<shadowcolor>black</shadowcolor>
+						</control>
+						<control type="label">
+							<description>high value</description>
+							<posx>233</posx>
+							<posy>110</posy>
+							<height>30</height>							
+							<label>$INFO[Window(Weather).Property(Day0.HighTemp)]$INFO[System.TemperatureUnits]</label>
+							<font>font13</font>
+							<align>left</align>
+							<aligny>center</aligny>
+							<textcolor>white</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<visible>!IsEmpty(Window(Weather).Property(Day0.HighTemp))</visible>
+						</control>
+						<control type="label">
+							<description>low value</description>
+							<posx>330</posx>
+							<posy>116</posy>
+							<height>20</height>
+							<label>$INFO[Window(Weather).Property(Day0.LowTemp)]$INFO[System.TemperatureUnits]</label>
+							<font>font12</font>
+							<align>right</align>
+							<aligny>center</aligny>
+							<textcolor>grey2</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<visible>!IsEmpty(Window(Weather).Property(Day0.LowTemp))</visible>
+						</control>
+					</control>   
+					<!-- day1 -->
+					<control type="group" >
+						<posx>0</posx>
+						<posy>50</posy>
+						<width>227</width>
+						<height>115</height>
+						<visible>Container(9000).HasFocus(6)</visible>
+						<animation effect="slide" end="0,0" time="500" tween="quadratic" easing="out">WindowClose</animation>
+						<animation effect="slide" start="0,-200" time="500" tween="quadratic" easing="out">WindowOpen</animation>
+						<animation effect="slide" end="0,-50" time="400" delay="800" tween="quadratic" easing="out" condition="ControlGroup(9018).HasFocus">conditional</animation>
+						<animation effect="slide" start="0,0" time="400" delay="800"  tween="quadratic" easing="out" condition="ControlGroup(9018).HasFocus">conditional</animation>
+						<animation effect="fade" start="0" end="100" delay="800" time="400" condition="ControlGroup(9018).HasFocus">conditional</animation>
+						<control type="multiimage">
+							<description>Weather image</description>
+							<posx>140</posx>
+							<posy>65</posy>
+							<width>90</width>
+							<height>85</height>
+							<imagepath>weather/$INFO[Window(Weather).Property(Day1.FanartCode)]</imagepath>
+							<timeperimage>100</timeperimage>
+							<randomize>false</randomize>
+							<fadetime>0</fadetime>
+						</control>
+					     	<control type="fadelabel">
+							<description>day label</description>
+							<posx>233</posx>
+							<posy>73</posy>
+							<height>30</height>
+							<width>355</width>
+							<label>[B]$INFO[Window(Weather).Property(Day1.Title)][/B]</label>
+							<align>left</align>
+							<aligny>center</aligny>
+							<font>font13</font>
+							<textcolor>white</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<scrollout>false</scrollout>
+							<pauseatend>2000</pauseatend>
+					       	</control>
+					      	<control type="label">
+							<description>Conditions Label</description>
+							<posx>233</posx>
+							<posy>94</posy>
+							<height>25</height>
+							<width>355</width>
+							<label>$INFO[Window(Weather).Property(Day1.Outlook)]</label>
+							<align>left</align>
+							<aligny>center</aligny>
+							<font>font12</font>
+							<textcolor>white</textcolor>
+							<shadowcolor>black</shadowcolor>
+						</control>
+						<control type="label">
+							<description>high value</description>
+							<posx>233</posx>
+							<posy>110</posy>
+							<height>30</height>							
+							<label>$INFO[Window(Weather).Property(Day1.HighTemp)]$INFO[System.TemperatureUnits]</label>
+							<font>font13</font>
+							<align>left</align>
+							<aligny>center</aligny>
+							<textcolor>white</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<visible>!IsEmpty(Window(Weather).Property(Day1.HighTemp))</visible>
+						</control>
+						<control type="label">
+							<description>low value</description>
+							<posx>330</posx>
+							<posy>116</posy>
+							<height>20</height>
+							<label>$INFO[Window(Weather).Property(Day1.LowTemp)]$INFO[System.TemperatureUnits]</label>
+							<font>font12</font>
+							<align>right</align>
+							<aligny>center</aligny>
+							<textcolor>grey2</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<visible>!IsEmpty(Window(Weather).Property(Day1.LowTemp))</visible>
+						</control>
+					</control>   
+					<!-- day2 -->
+					<control type="group" >
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>227</width>
+						<height>115</height>
+						<visible>Container(9000).HasFocus(6)</visible>
+						<animation effect="slide" end="0,0" time="500" tween="quadratic" easing="out">WindowClose</animation>
+						<animation effect="slide" start="0,-200" time="500" tween="quadratic" easing="out">WindowOpen</animation>
+						<animation effect="slide" end="0,-50" time="400" delay="950" tween="quadratic" easing="out" condition="ControlGroup(9018).HasFocus">conditional</animation>
+						<animation effect="slide" start="0,0" time="400" delay="950" tween="quadratic" easing="out" condition="ControlGroup(9018).HasFocus">conditional</animation>
+						<animation effect="fade" start="0" end="100" delay="950" time="400" condition="ControlGroup(9018).HasFocus">conditional</animation>
+						<control type="multiimage">
+							<description>Weather image</description>
+							<posx>140</posx>
+							<posy>65</posy>
+							<width>90</width>
+							<height>85</height>
+							<imagepath>weather/$INFO[Window(Weather).Property(Day2.FanartCode)]</imagepath>
+							<timeperimage>100</timeperimage>
+							<randomize>false</randomize>
+							<fadetime>0</fadetime>
+						</control>
+					      	<control type="fadelabel">
+							<description>day label</description>
+							<posx>233</posx>
+							<posy>73</posy>
+							<height>30</height>
+							<width>355</width>
+							<label>[B]$INFO[Window(Weather).Property(Day2.Title)][/B]</label>
+							<align>left</align>
+							<aligny>center</aligny>
+							<font>font13</font>
+							<textcolor>white</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<scrollout>false</scrollout>
+							<pauseatend>2000</pauseatend>
+					      	</control>
+					      	<control type="label">
+							<description>Conditions Label</description>
+							<posx>233</posx>
+							<posy>94</posy>
+							<height>25</height>
+							<width>355</width>
+							<label>$INFO[Window(Weather).Property(Day2.Outlook)]</label>
+							<align>left</align>
+							<aligny>center</aligny>
+							<font>font12</font>
+							<textcolor>white</textcolor>
+							<shadowcolor>black</shadowcolor>
+						</control>
+						<control type="label">
+							<description>high value</description>
+							<posx>233</posx>
+							<posy>110</posy>
+							<height>30</height>							
+							<label>$INFO[Window(Weather).Property(Day2.HighTemp)]$INFO[System.TemperatureUnits]</label>
+							<font>font13</font>
+							<align>left</align>
+							<aligny>center</aligny>
+							<textcolor>white</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<visible>!IsEmpty(Window(Weather).Property(Day2.HighTemp))</visible>
+						</control>
+						<control type="label">
+							<description>low value</description>
+							<posx>330</posx>
+							<posy>116</posy>
+							<height>20</height>
+							<label>$INFO[Window(Weather).Property(Day2.LowTemp)]$INFO[System.TemperatureUnits]</label>
+							<font>font12</font>
+							<align>right</align>
+							<aligny>center</aligny>
+							<textcolor>grey2</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<visible>!IsEmpty(Window(Weather).Property(Day2.LowTemp))</visible>
+						</control>
+					</control>   
+					<!-- day3 -->
+					<control type="group" >
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>227</width>
+						<height>115</height>
+						<visible>Container(9000).HasFocus(6)</visible>
+						<animation effect="slide" end="0,0" time="500" tween="quadratic" easing="out">WindowClose</animation>
+						<animation effect="slide" start="0,-200" time="500" tween="quadratic" easing="out">WindowOpen</animation>
+						<animation effect="slide" end="0,-50" time="400" delay="1100" tween="quadratic" easing="out" condition="ControlGroup(9018).HasFocus">conditional</animation>
+			 			<animation effect="slide" start="0,0" time="400" delay="1100" tween="quadratic" easing="out" condition="ControlGroup(9018).HasFocus">conditional</animation>
+						<animation effect="fade" start="0" end="100" delay="1100" time="400" condition="ControlGroup(9018).HasFocus">conditional</animation>
+						<control type="multiimage">
+							<description>Weather image</description>
+							<posx>140</posx>
+							<posy>65</posy>
+							<width>90</width>
+							<height>85</height>
+							<imagepath>weather/$INFO[Window(Weather).Property(Day3.FanartCode)]</imagepath>
+							<timeperimage>100</timeperimage>
+							<randomize>false</randomize>
+							<fadetime>0</fadetime>
+						</control>
+					      	<control type="fadelabel">
+							<description>day label</description>
+							<posx>233</posx>
+							<posy>73</posy>
+							<height>30</height>
+							<width>355</width>
+							<label>[B]$INFO[Window(Weather).Property(Day3.Title)][/B]</label>
+							<align>left</align>
+							<aligny>center</aligny>
+							<font>font13</font>
+							<textcolor>white</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<scrollout>false</scrollout>
+							<pauseatend>2000</pauseatend>
+					      	</control>
+					      	<control type="label">
+							<description>Conditions Label</description>
+							<posx>233</posx>
+							<posy>94</posy>
+							<height>25</height>
+							<width>355</width>
+							<label>$INFO[Window(Weather).Property(Day3.Outlook)]</label>
+							<align>left</align>
+							<aligny>center</aligny>
+							<font>font12</font>
+							<textcolor>white</textcolor>
+							<shadowcolor>black</shadowcolor>
+						</control>
+						<control type="label">
+							<description>high value</description>
+							<posx>233</posx>
+							<posy>110</posy>
+							<height>30</height>							
+							<label>$INFO[Window(Weather).Property(Day3.HighTemp)]$INFO[System.TemperatureUnits]</label>
+							<font>font13</font>
+							<align>left</align>
+							<aligny>center</aligny>
+							<textcolor>white</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<visible>!IsEmpty(Window(Weather).Property(Day3.HighTemp))</visible>
+						</control>
+						<control type="label">
+							<description>low value</description>
+							<posx>330</posx>
+							<posy>116</posy>
+							<height>20</height>
+							<label>$INFO[Window(Weather).Property(Day3.LowTemp)]$INFO[System.TemperatureUnits]</label>
+							<font>font12</font>
+							<align>right</align>
+							<aligny>center</aligny>
+							<textcolor>grey2</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<visible>!IsEmpty(Window(Weather).Property(Day3.LowTemp))</visible>
+						</control>
+					</control>   
+				<!-- ### TODO ### BUG FIX 4 a button for now push it off screen ############################ -->
+					<control type="group" >
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>700</width>
+						<height>115</height>
+					</control>-->
+				<!-- /SPACE ############################ -->
+					<control type="button" id="90181">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>200</width>
+						<height>200</height>
+						<include>ButtonHomeSubCommonValues</include>
+						<align>center</align>
+						<label>Weather</label>
+						<onclick>ActivateWindow(Weather)</onclick>
 					</control>
 				</control>
 			</control>

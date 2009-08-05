@@ -107,7 +107,8 @@
   <string id="31135">Enable Lyrics in Music OSD</string>
   <string id="31136">PATH TO LYRICS SCRIPT</string>
   <string id="31137">XBMC Lyrics</string>
-  <string id="31138">Enable Extended Weather</string>
+  <string id="31138">Enable Extended Weather - On screen</string>
+  <string id="31139">Enable Extended Weather - As Sub-menu</string>
 
   <!-- Script labels -->
   <string id="31200">Shortcuts</string>
