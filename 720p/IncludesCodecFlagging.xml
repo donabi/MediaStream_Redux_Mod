@@ -1,6 +1,4 @@
 ﻿<includes>
-	<include name="MPAA-StudioFlaggingConditions">
-  </include>
   <include name="VideoFlaggingConditions">
     		<control type="image">
 			<description>Bluray Image</description>

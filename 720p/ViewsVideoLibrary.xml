@@ -560,32 +560,26 @@
 				<posx>330</posx>
 				<posy>320</posy>
 				<control type="image">
-					<include>Objects_FSInfoCertificate</include>
 					<texture>flagging/ratings/mpaa_pg13.png</texture>
 					<visible>substring(listitem.mpaa,Rated PG-13)</visible>
 				</control>
 				<control type="image">
-					<include>Objects_FSInfoCertificate</include>
 					<texture>flagging/ratings/mpaa_restricted.png</texture>
 					<visible>substring(listitem.mpaa,Rated R)</visible>
 				</control>
 				<control type="image">
-					<include>Objects_FSInfoCertificate</include>
 					<texture>flagging/ratings/mpaa_nc17.png</texture>
 					<visible>substring(listitem.mpaa,Rated NC-17)</visible>
 				</control>
 				<control type="image">
-					<include>Objects_FSInfoCertificate</include>
 					<texture>flagging/ratings/mpaa_general.png</texture>
 					<visible>substring(listitem.mpaa,Rated G)</visible>
 				</control>
 				<control type="image">
-					<include>Objects_FSInfoCertificate</include>
 					<texture>flagging/ratings/mpaa_pg.png</texture>
 					<visible>substring(listitem.mpaa,Rated PG )</visible>
 				</control>
 				<control type="image">
-					<include>Objects_FSInfoCertificate</include>
 					<texture>flagging/ratings/mpaa_unrated.png</texture>
 					<visible>substring(listitem.mpaa,Unrated)</visible>
 				</control>
@@ -611,15 +605,6 @@
 			<aspectratio>keep</aspectratio>	
 			<texture>$INFO[ListItem.studio,studios/,.png]</texture>
 		</control>
-		<include name="MPAA-StudioFlaggingConditions">
-		  <control type="image">
-			<description>Studio Flags</description>
-			<width>90</width>
-			<height>33</height>
-			<aspectratio>keep</aspectratio>	
-			<texture>$INFO[ListItem.studio,studios/,.png]</texture>
-		</control>
-  </include>
 			<control type="label">
 				<posx>780</posx>
 				<posy>205</posy>

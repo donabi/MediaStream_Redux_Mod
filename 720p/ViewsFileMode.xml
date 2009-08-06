@@ -181,7 +181,7 @@
 					<height>50</height>
 					<aspectratio>keep</aspectratio>
 					<texture>$INFO[ListItem.Overlay]</texture>
-					<visible>[![Container.Content(Movies) | Container.Content(Episodes) | Container.Content(Seasons) | Container.Content(MusicVideos)] + !Skin.HasSetting(MoviesNoCheckmark)</visible>
+				 	<visible>[!Container.Content(Movies) | Container.Content(Episodes) | Container.Content(Seasons) | Container.Content(MusicVideos)] + !Skin.HasSetting(MoviesNoCheckmark)</visible>  
 				</control>
 				<control type="label">
 					<description>Page Count Label</description>
