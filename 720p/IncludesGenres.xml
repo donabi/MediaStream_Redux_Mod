@@ -30,6 +30,7 @@
 			<posy>145</posy>
 			<width>433</width>
 			<height>430</height>
+			<aspectratio>keep</aspectratio>
 			<fadetime>200</fadetime>
 			<texture>studios/$INFO[ListItem.Label].png</texture>
 			<visible>Container.Content(Studios)</visible>
