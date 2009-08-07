@@ -738,8 +738,8 @@
 					<align>center</align>
 					<itemgap>0</itemgap>
 					<orientation>horizontal</orientation>
-					<include>VideoCodecFlaggingConditions</include>
-					<include>AudioCodecFlaggingConditions</include>
+					<include>VideoFlaggingConditions</include>
+					<include>AudioFlaggingConditions</include>
 				</control>
 				<control type="label">
 					<posx>40</posx>

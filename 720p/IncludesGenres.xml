@@ -23,4 +23,17 @@
 			<visible>Container.Content(Genres)</visible>
 		</control>
 	</include>
+	<include name="StudioLogos">
+		<control type="image">
+			<include>Window_OpenClose_Animation</include>
+			<posx>113</posx>
+			<posy>145</posy>
+			<width>433</width>
+			<height>430</height>
+			<aspectratio>keep</aspectratio>
+			<fadetime>200</fadetime>
+			<texture>studios/$INFO[ListItem.Label].png</texture>
+			<visible>Container.Content(Studios)</visible>
+		</control>
+	</include>
 </includes>
