@@ -262,7 +262,7 @@
 			<width>550</width>
 			<height>30</height>
 			<font>font30caps_title</font>
-			<label>$LOCALIZE[20159]</label>
+			<label>$LOCALIZE[31331]</label>
 			<align>right</align>
 			<aligny>center</aligny>
 			<textcolor>white</textcolor>

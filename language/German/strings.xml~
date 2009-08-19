@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<strings>
+  <!-- home page labels -->
+  <string id="31000">Schau Deine</string>
+  <string id="31001">Hör Deine</string>
+  <string id="31002">Zeige Deine</string>
+  <string id="31003">Starte Deine</string>
+  <string id="31004">Prüfe Das</string>
+  <string id="31005">Konfiguriere Das</string>
+  <string id="31006">XBMC</string>
+  <string id="31007">Plugins</string>
+  <string id="31008">Beenden</string>
+  <string id="31009">Öffne Deine</string>
+  <string id="31010">Starte Das</string>
+  <string id="31011">CD/DVD Laufwerk</string>
+  <string id="31012">Albuminfo</string>
+  <string id="31013"></string>
+  <string id="31014"></string>
+  <string id="31015"></string>
+  <string id="31016"></string>
+  <string id="31017"></string>
+  <string id="31018"></string>
+  <string id="31019"></string>
+
+  <string id="31020">Video Informationen</string>
+  <string id="31021">Video - Dateien</string>
+  <string id="31022">Music - Dateien</string>
+  <string id="31023">jetzt läuft:</string>
+  <string id="31024">Seite</string>
+  <string id="31025">Einträge</string>
+  <string id="31026">Mehr Optionen</string>
+  <string id="31027">Standort</string>
+ 
+  <!-- View Type labels -->
+  <string id="31028">Poster Wrap</string>
+  <string id="31029">DVD Liste</string>
+  <string id="31030">Fanart</string>
+  <string id="31031">Erw. Liste</string>
+  <string id="31032"></string>
+  <string id="31033">Pic Thumbs</string>
+  <string id="31034">Wide icons</string>
+  <string id="31035">Details</string>
+  <string id="31036">Info Wrap</string>
+  <string id="31037">Image Wrap</string>
+
+  <string id="31040">Jetzt Läuft:</string>
+  <string id="31041">Danach kommt:</string>
+  <string id="31042">SPIELEN</string>
+  <string id="31043">PAUSIERT</string>
+  <string id="31044">Vorspulen</string>
+  <string id="31045">Zurückspulen</string>
+  <string id="31046">Audio-Einstellungen</string>
+  <string id="31047">Aktuelle Vorgabe</string>
+  <string id="31048">Visualisierung - Einstellungen</string>
+  <string id="31049">Ändere Vorgabe für</string>
+  <string id="31050">Ändere Einstellung für</string>
+  <string id="31051">Visualisierungs-Vorgaben</string>
+  <string id="31052">Details</string>
+  <string id="31053">Endet um</string>
+  <string id="31054">verbleibend</string>
+
+
+  <!-- Playlist Editor labels -->
+  <string id="31055">Öffne Playlist</string>
+  <string id="31056">Speichere Playlist</string>
+  <string id="31057">Schliesse Playlist</string>
+  <string id="31058">System Musik-Dateien</string>
+  <string id="31059">Aktuelle Playlist</string>
+  <string id="31060">Diese Datei ist zusammengesetzt, wähle den abzuspielenden Teil</string>
+  
+  <!-- Skin Settings labels -->
+  <string id="31100">Hintergrund Optionen</string>
+  <string id="31101">Hauptfenster-Optionen</string>
+  <string id="31102">Hintergrund</string>
+  <string id="31103">Zeige "Pausiert"-Hinweis in Bilder-Diaschau</string>
+  <string id="31104">Hauptfenster-Schaltflächen</string>
+  <string id="31105">Zeige im Hintergrundscanner die Titel der Medien an</string>
+  <string id="31106">Generelle Optionen</string>
+  <string id="31107">Verstecke "SCHAUE DEINE" "HÖRE DEINE" usw. Beschriftungen</string>
+  <string id="31108">Schaltflächen des Hauptmenüs ausblenden</string>
+  <string id="31109">Hintergrundbilder des Hauptfensters</string>
+  <string id="31110">Bearbeite Hintergrund für Schaltfläche:</string>
+  <string id="31111">ausblenden</string>
+  <string id="31112">Optionen</string>
+  <string id="31113">Einzelnes Bild</string>
+  <string id="31114">Mehrere Bilder</string>
+  <string id="31115">anpassen</string>
+  <string id="31116">Zusatz-scripte</string>
+  <string id="31117">Zeige die letzten hinzugefügten Filme/Episoden</string>
+  <string id="31118">Untermenüs im Hauptfenster</string>
+  <string id="31119">Aktiviere benutzerdefinierte Script-Schaltfläche</string>
+  <string id="31120">Beschriftung für Schaltfläche</string>
+  <string id="31121">Pfad zum Script</string>
+  <string id="31122">Wetter-Seite</string>
+  <string id="31123">Benutze "Poster" anstatt "Banner" für TV-Serien</string>
+  <string id="31124">Zeige das laufende Video anstatt dem Coverbild</string>
+  <string id="31125">Disc-Laufwerk nur anzeigen, wenn Medium eingelegt ist</string>
+  <string id="31126">Markierung für "gesehene Filme" ausblenden</string>
+  <string id="31127">Benutze das horizontale Menü</string>
+  <string id="31128">Hauptmenü</string>
+  <string id="31129">Untermenü</string>
+  <string id="31130">Videos - Schaltflächen ausblenden</string>
+  <string id="31131">Filme - Schaltfächen ausblenden</string>
+  <string id="31132">TV-Serien - Schaltflächen ausblenden</string>
+  <string id="31133">Musik - Schaltflächen ausblenden</string>
+  <string id="31134">Trailer</string>
+  <string id="31135">Aktiviere Songtexte in Musik-OSD</string>
+  <string id="31136">Pfad zum Songtexte-Script</string>
+  <string id="31137">XBMC Songtexte</string>
+  <string id="31138">Erweiterte Wetterinformationen - Auf Wetter-Seite anzeigen</string>
+  <string id="31139">Erweiterte Wetterinformationen - Auf allen Seiten anzeigen</string>
+  <string id="31140">Erweiterte Wetterinformationen - Als Untermenü anzeigen</string>
+  
+  <!-- Script labels -->
+  <string id="31200">verwalten</string>
+  <string id="31201">Kategorien</string>
+  <string id="31202">Darsteller</string>
+  <string id="31203">Mehr Optionen</string>
+  <string id="31204">Section Links</string>
+  <string id="31205">Quelle f. Sontexte</string>
+  <string id="31206">Wähle Song</string>
+  <string id="31207">Song Text</string>
+  <string id="31208"></string>
+  <string id="31209"></string>
+
+  <!-- The Weather Channel Script labels -->
+  <string id="31250">Radar &amp; Vorhersage</string>
+  <string id="31251">Vorhersage</string>
+  <string id="31252">TWC Script</string>
+
+  <!-- Extra labels -->
+  <string id="31300">Aktuelle Temperatur</string>
+  <string id="31301">Zuletzt aktualisiert</string>
+  <string id="31302">Menü</string>
+  <string id="31303">Ändern</string>
+  <string id="31304">Bild</string>
+  <string id="31305">Kein Medium in Disc-Laufwerk erkannt</string>
+  <string id="31306">Auswerfen</string>
+  <string id="31307">Zeige Fanart</string>
+  <string id="31308">Film-Details</string>
+  <string id="31309">Benutzter Speicher</string>
+  <string id="31310">Song Nummer</string>
+  <string id="31311">KEIN FANART-BILD[CR][CR]VORHANDEN[CR][CR] ENTER/OK FÜR AUSWAHL</string>
+  <string id="31312">Aktueller Scraper</string>
+  <string id="31313">Scraper auswählen</string>
+  <string id="31314">Scanner-Optionen</string>
+  <string id="31315">Basis</string>
+  <string id="31316">Anmelden als</string>
+  <string id="31317">Fanart Pfad festlegen</string>
+  <string id="31318">Fanart-Vorschau</string>
+  <string id="31319">Gewähltes Profil</string>
+  <string id="31320">Zuletzt angemeldet</string>
+  <string id="31321">Karaoke Song-Auswahl</string>
+  <string id="31322">Ausgestrahlt</string>
+  <string id="31323">Neue Filme</string>
+  <string id="31324">Neue Episoden</string>
+  <string id="31325">Playlist Optionen</string>
+  <string id="31326">Erstellt</string>
+  <string id="31327">Auflösung</string>
+  <string id="31328">Neue Einträge</string>
+  <string id="31329">Neue Alben</string>
+  <string id="31330">[B]TIMER GESETZT![/B] [COLOR=grey2] - SYSTEM FÄHRT HERUNTER IN[/COLOR]</string>
+
+  <!-- Description Labels  -->
+  <string id="31400">[B]Bearbeite das Aussehen, zum Beispiel:[/B][CR][CR]Oberfläche kalibrieren · Skin festlegen · Bildschirmschoner einrichten · Regionaleinstellungen ändern · Allgemeine Darstellung festlegen</string>
+  <string id="31401">[B]Video-Einstellungen bearbeiten, zum Beispiel:[/B][CR][CR]Video Datenbank verwalten · Video Rendering und Qualität · Untertitel-Schriften festlegen · Video-Fortsetzungsmodus bestimmen</string>
+  <string id="31402">[B]Musik-Einstellungen bearbeiten, zum Beispiel:[/B][CR][CR]Visualisierung auswählen · Musik-Datenbank verwalten · Last.FM Account einrichten · Karaoke Schriftarten & Einstellungen bestimmen</string>
+  <string id="31403">[B]Bilder-Einstellungen bearbeiten, zum Beispiel:[/B][CR][CR]Automatisches Erstellen von Minibildern & EXIF-Lesemodus aktivieren · Übergangseffekte für Diaschau konfigurieren · Ordner für Screenshots festlegen</string>
+  <string id="31404">[B]Wetter-Einstellungen bearbeiten, zum Beispiel:[/B][CR][CR]Die 3 Städte festlegen, für die Wetterinfo angezeigt wird · Regionale Einstellungen inklusive Temperatureinheit bestimmen</string>
+  <string id="31405">[B]Netzwerk-Einstellungen bearbeiten, zum Beispiel:[/B][CR][CR]XBMC Web Server aktivieren · Samba-Einstellungen festlegen · UPNP Server & Client aktivieren/konfigurieren · Event Server einrichten</string>
+  <string id="31406">[B]System-Einstellungen bearbeiten, zum Beispiel:[/B][CR][CR]Standard-Modus für Herunterfahren ändern · Automatisches Abspielen einstellen · Audio-Hardware einrichten · Das Master-Benutzer Passwort und Systemsperren festlegen</string>
+  <string id="31407">[B]Mediastream Redux Einstellungen ändern, zum Beispiel:[/B][CR][CR]Schaltflächen im Hauptfenster hinzufügen/ausblenden · Hintergrundbilder ändern  · Schaltflächen für Zusatzscripte erstellen/verwalten</string>
+
+
+  <string id="31420">[B][COLOR=white]XBMC konnte keine CD/DVD finden.[/COLOR][/B][CR][CR]Bitte lege ein Medium ins Laufwerk ein und versuch's nochmal oder brich ab</string>
+</strings>

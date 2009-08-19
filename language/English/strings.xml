@@ -160,6 +160,8 @@
   <string id="31328">Recently Added</string>
   <string id="31329">Latest Music</string>
   <string id="31330">[B]TIMER SET![/B] [COLOR=grey2] - SYSTEM AUTO SHUTDOWN IN[/COLOR]</string>
+  <string id="31331">Video Information</string>
+  <string id="31332">Album Info</string>
 
   <!-- Description Labels  -->
   <string id="31400">[B]Edit your Appearance settings, Including.[/B][CR][CR]Calibrate the GUI · Change the Skin · Set up a screensaver · Change your regional settings · Set global Viewing options</string>

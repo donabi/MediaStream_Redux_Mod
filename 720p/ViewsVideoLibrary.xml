@@ -577,11 +577,11 @@
 				</control>
 				<control type="image">
 					<texture>flagging/ratings/mpaa_pg.png</texture>
-					<visible>substring(listitem.mpaa,Rated PG )</visible>
+					<visible>substring(listitem.mpaa,Rated PG) + !substring(listitem.mpaa,Rated PG-13)</visible>
 				</control>
 				<control type="image">
 					<texture>flagging/ratings/mpaa_unrated.png</texture>
-					<visible>substring(listitem.mpaa,Unrated)</visible>
+					<visible>substring(listitem.mpaa,Unrated) | substring(listitem.mpaa,Not Rated)</visible>
 				</control>
 			</control>
 			<control type="grouplist">

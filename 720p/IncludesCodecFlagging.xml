@@ -22,7 +22,7 @@
 			<height>33</height>
 			<aspectratio>keep</aspectratio>
 			<texture>flagging/video/dvd.png</texture>
-			<visible>substring(ListItem.filename,sddvd) | substring(ListItem.filename,dvdrip)</visible>
+			<visible>substring(ListItem.filename,sddvd)</visible>
 		</control>
 		<control type="image">
 			<description>HDTV Image</description>
@@ -31,6 +31,46 @@
 			<aspectratio>keep</aspectratio>
 			<texture>flagging/video/hdtv.png</texture>
 			<visible>substring(ListItem.filename,hdtv)</visible>
+		</control>
+		<control type="image">
+			<description>DVDRIP Image</description>
+			<width>90</width>
+			<height>33</height>
+			<aspectratio>keep</aspectratio>
+			<texture>flagging/video/dvdrip.png</texture>
+			<visible>substring(ListItem.filename,dvdrip)</visible>
+		</control>
+	 	<control type="image">
+			<description>DVDR5 Image</description>
+			<width>90</width>
+			<height>33</height>
+			<aspectratio>keep</aspectratio>
+			<texture>flagging/video/dvdr5.png</texture>
+			<visible>substring(ListItem.filename,dvdr5) | substring(ListItem.filename,.r5)</visible>
+		</control>
+		<control type="image">
+			<description>DVD SCREENER Image</description>
+			<width>90</width>
+			<height>33</height>
+			<aspectratio>keep</aspectratio>
+			<texture>flagging/video/dvdscreener.png</texture>
+			<visible>substring(ListItem.filename,dvdscreener) | substring(ListItem.filename,dvdscr) | substring(ListItem.filename,.screener)</visible>
+		</control>
+		<control type="image">
+			<description>TELESYNC Image</description>
+			<width>90</width>
+			<height>33</height>
+			<aspectratio>keep</aspectratio>
+			<texture>flagging/video/telesync.png</texture>
+			<visible>substring(ListItem.filename,telesync) | substring(ListItem.filename,.ts.)</visible>
+		</control>
+		<control type="image">
+			<description>CAM Image</description>
+			<width>90</width>
+			<height>33</height>
+			<aspectratio>keep</aspectratio>
+			<texture>flagging/video/cam.png</texture>
+			<visible>substring(ListItem.filename,.CAM)</visible>
 		</control>
 		<control type="image">
 			<description>Video rez Image</description>
